@@ -1,51 +1,20 @@
-IMAGE CREDITS
+Hong Kong Wastewater Explorer
 
-Slide 1: Stonecutters Island Sewage Treatment Works, northwest view
-建園春秋 / Wikimedia Commons / CC BY-SA 4.0 (2023).
-Source: https://commons.wikimedia.org/wiki/File:2023%E5%B9%B43%E6%9C%88-%E6%98%82%E8%88%B9%E6%B4%B2%E6%B1%A1%E6%B0%B4%E8%99%95%E7%90%86%E5%BB%A0A.jpg
-Terms: https://creativecommons.org/licenses/by-sa/4.0/
-Presentation: cropped for layout. The cropped Stonecutters photograph is shared under CC BY-SA 4.0.
-
-Slide 6: Customisable in-manhole sampling robot
-Photo: Drainage Services Department, HKSAR Government (2023).
-Source: https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news30863.html
-Terms: https://www.dsd.gov.hk/EN/HTML/224.html
-Presentation: cropped for layout. Copyright: Drainage Services Department, HKSAR Government.
-
-DATA
-Department of Health, HKSAR Government. COVID-19 Express.
+Data
+Department of Health, Hong Kong SAR Government — COVID-19 Express.
+Frozen snapshot: 23 October 2026.
 https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express
-Snapshot: 23 October 2026.
 
+Project introduction
+Interface and animation: project source in experience-renderer.js.
+The video uses the project's saved results. Geographic scope: Hong Kong citywide.
 
-ADDITIONAL PHOTOGRAPHS
+Map imagery
+Google Maps, Terrain view. Map data ©2026.
+Captured in Safari on 26 October 2026 for the educational project demonstration.
+Original map colours, Google Maps attribution, copyright notice and scale are retained.
+https://www.google.com/maps/@22.52,114.12,10z/data=!5m1!1e4?hl=en
+https://www.google.com/maps/@22.4108903,114.2108782,11z/data=!5m1!1e4?hl=en
+Usage guidelines: https://about.google/brand-resource-center/products-and-services/geo-guidelines/
 
-Slide 2
-Photo: Drainage Services Department, HKSAR Government. Routine laboratory demonstration at Sha Tin Central Laboratory, source article dated 26 April 2022. https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news30804.html
-Original image: https://www.dsd.gov.hk/uploads/page/STSTW%20Central%20Laboratory/003.JPG
-Government copyright: https://www.dsd.gov.hk/EN/HTML/224.html
-Native crop for layout. The photograph supplies routine laboratory context.
-
-Slide 3
-Photo: Drainage Services Department, HKSAR Government. Historical field sewage sampling, Sustainability Report 2020–21. https://www.dsd.gov.hk/Documents/SustainabilityReports/2021/content.php?lang=en
-Original image: https://www.dsd.gov.hk/Documents/SustainabilityReports/2021/images/1%20sewage%20sampling%20for%20RnD%20study.png
-Government copyright: https://www.dsd.gov.hk/EN/HTML/224.html
-Native crop for layout. Capture date is not stated.
-
-Government copyright permits accurate, attributed reproduction and distribution free of charge for personal use or internal organisational use, with no resale or commercial distribution. Other purposes and third-party content require permission.
-
-ADDITIONAL PHOTOGRAPHS
-
-Slide 2
-Photo: Drainage Services Department, HKSAR Government. Routine laboratory demonstration at Sha Tin Central Laboratory, source article dated 26 April 2022. https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news30804.html
-Original image: https://www.dsd.gov.hk/uploads/page/STSTW%20Central%20Laboratory/003.JPG
-Government copyright: https://www.dsd.gov.hk/EN/HTML/224.html
-Native crop for layout. The photograph supplies routine laboratory context.
-
-Slide 3
-Photo: Drainage Services Department, HKSAR Government. Historical field sewage sampling, Sustainability Report 2020–21. https://www.dsd.gov.hk/Documents/SustainabilityReports/2021/content.php?lang=en
-Original image: https://www.dsd.gov.hk/Documents/SustainabilityReports/2021/images/1%20sewage%20sampling%20for%20RnD%20study.png
-Government copyright: https://www.dsd.gov.hk/EN/HTML/224.html
-Native crop for layout. Capture date is not stated.
-
-Government copyright permits accurate, attributed reproduction and distribution free of charge for personal use or internal organisational use, with no resale or commercial distribution. Other purposes and third-party content require permission.
+Plotly.js is distributed under the MIT licence; its notice is included in plotly.min.js.

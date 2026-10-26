@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-26T13:10:58.043836+08:00",
+  "renderer": "experience-renderer.js",
+  "data_bundle": "experience-data.js",
+  "canonical_data": "data.js",
+  "source_manifest": "source_manifest.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "caption_safe_area_top": 930
+  },
+  "duration_seconds": 180,
+  "scenes": [
+    {
+      "name": "Map",
+      "start": 0,
+      "end": 30
+    },
+    {
+      "name": "Query",
+      "start": 30,
+      "end": 60
+    },
+    {
+      "name": "Data",
+      "start": 60,
+      "end": 90
+    },
+    {
+      "name": "Models & patterns",
+      "start": 90,
+      "end": 120
+    },
+    {
+      "name": "Evaluation",
+      "start": 120,
+      "end": 150
+    },
+    {
+      "name": "Review & export",
+      "start": 150,
+      "end": 180
+    }
+  ],
+  "monitoring_scope": "Hong Kong citywide. The map is a geographic entry to aggregate monitoring, without district-level values.",
+  "map_visuals": {
+    "captured_at": "2026-10-26T13:02:38.425876+08:00",
+    "provider": "Google Maps",
+    "view": "Terrain",
+    "browser": "Safari, ordinary window",
+    "method": "Visible Google Maps print view screenshot; viewport crop retains Google Maps logo, copyright notice and scale.",
+    "source_urls": [
+      "https://www.google.com/maps/@22.52,114.12,10z/data=!5m1!1e4?hl=en",
+      "https://www.google.com/maps/@22.4108903,114.2108782,11z/data=!5m1!1e4?hl=en"
+    ],
+    "guidelines": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+    "role": "Educational project demonstration, geographic backdrop only",
+    "crop_pixels": [
+      0,
+      297,
+      1090,
+      746
+    ],
+    "colors_unchanged": true,
+    "original_attribution_preserved": true,
+    "images": {
+      "wide": "69a99cfb1495440675aaf9c1054c2f357469e04bea0eb934ccaa146ab6f40da4",
+      "near": "332951b9f3d40688a38cb3f46b6ce9f626879e3e2c4cb23dcd745f39363b0dc2"
+    }
+  },
+  "map_assets": {
+    "wide": {
+      "file": "experience-terrain-wide.png",
+      "sha256": "69a99cfb1495440675aaf9c1054c2f357469e04bea0eb934ccaa146ab6f40da4"
+    },
+    "near": {
+      "file": "experience-terrain-near.png",
+      "sha256": "332951b9f3d40688a38cb3f46b6ce9f626879e3e2c4cb23dcd745f39363b0dc2"
+    }
+  },
+  "analysis": {
+    "browser_model_training": false,
+    "source_data_sha256": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342",
+    "source_snapshot": "2026-10-23",
+    "display_scaling": "Clinical proportions multiplied by 100 once; saved errors already use percentage points."
+  },
+  "renderer_sha256": "cf8e2a37e8ce8d0c0c89c1ed820d92e4fac6a91271b13017119356fc124b2bd2"
+}
