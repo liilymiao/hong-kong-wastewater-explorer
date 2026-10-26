@@ -1,0 +1,174 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:05.590
+Hong Kong publica datos de vigilancia de COVID-19
+procedentes de aguas residuales y pruebas clínicas.
+
+2
+00:00:06.062 --> 00:00:12.055
+Si las señales divergen, los investigadores necesitan saber
+si las aguas residuales ayudan a prever lo que viene.
+
+3
+00:00:12.075 --> 00:00:15.890
+Mi producto propone comprobar una pregunta concreta:
+
+4
+00:00:16.440 --> 00:00:22.855
+¿Las aguas residuales mejoran la predicción
+de positividad de las muestras clínicas,
+
+5
+00:00:22.875 --> 00:00:28.930
+frente al historial clínico solo? El foco es medir
+ese valor predictivo añadido para esta tarea de vigilancia.
+
+6
+00:00:31.458 --> 00:00:36.608
+El producto se dirige a investigadores de salud pública
+y asistentes de investigación de Hong Kong.
+
+7
+00:00:37.195 --> 00:00:40.368
+Necesitan comparar señales y examinar semanas atípicas,
+
+8
+00:00:40.638 --> 00:00:43.188
+y explicar la fiabilidad de una predicción.
+
+9
+00:00:43.718 --> 00:00:46.168
+La herramienta reúne estos pasos en un mismo flujo:
+
+10
+00:00:46.698 --> 00:00:50.648
+elegir una semana histórica, comparar predicciones
+y examinar la evidencia,
+
+11
+00:00:50.758 --> 00:00:51.988
+y exportar resultados.
+
+12
+00:00:52.598 --> 00:00:57.068
+Así se facilita una revisión transparente,
+sin rehacer el análisis cada vez.
+
+13
+00:00:59.540 --> 00:01:04.495
+La fuente principal es COVID-19 Express,
+del Departamento de Salud de Hong Kong,
+
+14
+00:01:04.515 --> 00:01:10.415
+en data.gov.hk. Esta instantánea contiene
+194 registros semanales,
+
+15
+00:01:10.435 --> 00:01:13.630
+que abarcan de 2023 a 2026.
+
+16
+00:01:14.200 --> 00:01:19.070
+Combina la positividad de las muestras clínicas
+con el indicador oficial de aguas residuales.
+
+17
+00:01:19.640 --> 00:01:22.450
+Las dos semanas sin datos de aguas residuales
+siguen sin datos.
+
+18
+00:01:23.021 --> 00:01:27.370
+Predecimos la proporción de muestras analizadas
+que dan positivo.
+
+19
+00:01:29.980 --> 00:01:33.530
+El prototipo Python ya ofrece gráficos de tendencias,
+
+20
+00:01:33.860 --> 00:01:38.450
+revisión histórica, comparación de modelos
+y exploración de patrones atípicos.
+
+21
+00:01:39.069 --> 00:01:43.750
+Ridge compara modelos con historial clínico,
+con y sin aguas residuales.
+
+22
+00:01:44.355 --> 00:01:51.135
+K-means agrupa combinaciones de señales similares.
+Local Outlier Factor señala observaciones atípicas
+
+23
+00:01:51.155 --> 00:01:56.750
+para su revisión. Se implementan con NumPy,
+lo que permite examinar los cálculos,
+
+24
+00:01:57.040 --> 00:01:59.670
+explicarlos y reproducirlos
+con las entradas guardadas.
+
+25
+00:02:02.243 --> 00:02:06.638
+Previsión principal: dos semanas de vigilancia
+tras la última semana observada,
+
+26
+00:02:06.658 --> 00:02:08.893
+con las fechas objetivo visibles.
+
+27
+00:02:09.521 --> 00:02:11.478
+Se evalúan en las mismas semanas de prueba,
+
+28
+00:02:11.498 --> 00:02:13.553
+con ajustes elegidos previamente.
+
+29
+00:02:14.043 --> 00:02:18.053
+La evaluación retrospectiva actual utiliza
+una instantánea fija de los datos.
+
+30
+00:02:18.696 --> 00:02:22.693
+La mejora inicial varía con los límites de predicción
+y aún es incierta.
+
+31
+00:02:23.303 --> 00:02:29.173
+La próxima evaluación reconstruirá la disponibilidad pasada
+de los datos y examinará sus revisiones.
+
+32
+00:02:31.870 --> 00:02:38.165
+Buscamos evaluar con más transparencia
+el valor de los datos de aguas residuales de Hong Kong.
+
+33
+00:02:38.185 --> 00:02:44.285
+Los investigadores podrán usar la herramienta
+para identificar preguntas que merecen estudiarse,
+
+34
+00:02:44.305 --> 00:02:46.500
+y juzgar cuándo ayuda una señal adicional.
+
+35
+00:02:47.080 --> 00:02:50.480
+Los próximos pasos incluyen opiniones de usuarios
+y explicaciones más claras.
+
+36
+00:02:51.090 --> 00:02:55.280
+Saber cuándo las aguas residuales aportan poco
+también es un resultado útil,
+
+37
+00:02:55.310 --> 00:02:57.780
+con la evidencia disponible para su revisión.

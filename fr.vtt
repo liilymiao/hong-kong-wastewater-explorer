@@ -1,0 +1,174 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:05.590
+Hong Kong publie des données de surveillance
+COVID-19 issues des eaux usées et des tests cliniques.
+
+2
+00:00:06.062 --> 00:00:12.055
+Quand ces signaux divergent, les chercheurs veulent savoir
+si les eaux usées apportent des informations sur la suite.
+
+3
+00:00:12.075 --> 00:00:15.890
+Mon produit propose de tester une question précise :
+
+4
+00:00:16.440 --> 00:00:22.855
+les eaux usées améliorent-elles la prévision du taux
+de positivité des prélèvements cliniques,
+
+5
+00:00:22.875 --> 00:00:28.930
+par rapport à l'historique clinique seul ?
+Nous mesurons ce gain pour cette tâche de surveillance.
+
+6
+00:00:31.458 --> 00:00:36.608
+L'outil vise les chercheurs en santé publique
+et les assistants de recherche de Hong Kong.
+
+7
+00:00:37.195 --> 00:00:40.368
+Ils comparent les signaux et examinent
+les semaines atypiques,
+
+8
+00:00:40.638 --> 00:00:43.188
+et expliquer la fiabilité d'une prévision.
+
+9
+00:00:43.718 --> 00:00:46.168
+L'outil réunit ces étapes dans un même parcours :
+
+10
+00:00:46.698 --> 00:00:50.648
+choisir une semaine passée, comparer les prévisions,
+examiner les éléments de preuve,
+
+11
+00:00:50.758 --> 00:00:51.988
+exporter les résultats.
+
+12
+00:00:52.598 --> 00:00:57.068
+Le travail devient vérifiable,
+sans refaire l'analyse à chaque fois.
+
+13
+00:00:59.540 --> 00:01:04.495
+La source principale est COVID-19 Express,
+du Département de la santé de Hong Kong,
+
+14
+00:01:04.515 --> 00:01:10.415
+sur data.gov.hk. L'instantané actuel contient
+194 observations hebdomadaires,
+
+15
+00:01:10.435 --> 00:01:13.630
+couvrant la période de 2023 à 2026.
+
+16
+00:01:14.200 --> 00:01:19.070
+Il combine la positivité des prélèvements cliniques
+et l'indicateur officiel des eaux usées.
+
+17
+00:01:19.640 --> 00:01:22.450
+Les deux semaines sans données d'eaux usées
+restent manquantes.
+
+18
+00:01:23.021 --> 00:01:27.370
+La cible est la proportion de prélèvements testés
+qui sont positifs.
+
+19
+00:01:29.980 --> 00:01:33.530
+Le prototype Python propose déjà des courbes de tendance,
+
+20
+00:01:33.860 --> 00:01:38.450
+la relecture de semaines passées, la comparaison de modèles
+et l'exploration de profils atypiques.
+
+21
+00:01:39.069 --> 00:01:43.750
+Ridge compare des modèles avec historique clinique,
+avec ou sans eaux usées.
+
+22
+00:01:44.355 --> 00:01:51.135
+K-means regroupe les combinaisons de signaux similaires.
+Local Outlier Factor repère les observations atypiques
+
+23
+00:01:51.155 --> 00:01:56.750
+à examiner. Le code NumPy permet de vérifier
+et d'expliquer les calculs,
+
+24
+00:01:57.040 --> 00:01:59.670
+puis de les reproduire avec les entrées conservées.
+
+25
+00:02:02.243 --> 00:02:06.638
+Prévision principale : deux semaines de surveillance
+après la dernière semaine observée,
+
+26
+00:02:06.658 --> 00:02:08.893
+avec les dates cibles affichées.
+
+27
+00:02:09.521 --> 00:02:11.478
+Mêmes semaines de test pour les modèles,
+
+28
+00:02:11.498 --> 00:02:13.553
+avec des réglages choisis à l'avance.
+
+29
+00:02:14.043 --> 00:02:18.053
+L'évaluation rétrospective actuelle utilise
+un instantané figé des données.
+
+30
+00:02:18.696 --> 00:02:22.693
+Le gain initial dépend des bornes de prévision
+et reste incertain.
+
+31
+00:02:23.303 --> 00:02:29.173
+La prochaine évaluation reconstituera la disponibilité
+des données dans le passé et examinera leurs révisions.
+
+32
+00:02:31.870 --> 00:02:38.165
+L'objectif est d'évaluer plus clairement la valeur
+des données de surveillance des eaux usées à Hong Kong.
+
+33
+00:02:38.185 --> 00:02:44.285
+Les chercheurs pourront utiliser l'outil
+pour trouver des questions à approfondir,
+
+34
+00:02:44.305 --> 00:02:46.500
+et juger quand le signal supplémentaire est utile.
+
+35
+00:02:47.080 --> 00:02:50.480
+Ensuite : recueillir des avis d'utilisateurs
+et clarifier les explications.
+
+36
+00:02:51.090 --> 00:02:55.280
+Savoir quand les eaux usées apportent peu
+constitue aussi un résultat utile,
+
+37
+00:02:55.310 --> 00:02:57.780
+avec des éléments de preuve consultables.

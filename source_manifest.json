@@ -1,0 +1,118 @@
+{
+  "source_files": {
+    "data/processed/clean.csv": {
+      "sha256": "3aa92a8f9f69942e6ed2374bb71042926760b543d1cabc8a26f1dc8b9ebcf78e",
+      "bytes": 93054,
+      "rows": 194
+    },
+    "outputs/predictions.csv": {
+      "sha256": "f04371f9cfa8827dc384e8fb3dfdaef265522a888cd22c06a9a5a7d8c52551f5",
+      "bytes": 1158500,
+      "rows": 546
+    },
+    "outputs/metrics.csv": {
+      "sha256": "a9b324f97dfe6d1097dacf5a3b50326e47097138a0da718fd813068e203ba9f4",
+      "bytes": 3052,
+      "rows": 12
+    },
+    "outputs/raw_metrics.csv": {
+      "sha256": "c886b9873bd24d6d70378d27be25260e301f58e3db4e1d950953479ce4e26cc9",
+      "bytes": 3012,
+      "rows": 12
+    },
+    "outputs/paired_errors.csv": {
+      "sha256": "0792fb5d40a6c70bb40fa49221785e4fb23d6a3c559137992fb868f37466f55a",
+      "bytes": 26045,
+      "rows": 180
+    },
+    "outputs/raw_paired_errors.csv": {
+      "sha256": "4d37af16f099b658401c07f7536f582f721b6a813af137ed41135e0f4e63d659",
+      "bytes": 25325,
+      "rows": 180
+    },
+    "outputs/stage_metrics.csv": {
+      "sha256": "04d2a04080da9ddccad3820c01aa3ece01e85f27717447625a0e98029092b3eb",
+      "bytes": 795,
+      "rows": 8
+    },
+    "outputs/raw_stage_metrics.csv": {
+      "sha256": "5cd67a8d480cab0641cba87c1317983d7cde6a858e29114d1e2c1d7b94848e30",
+      "bytes": 769,
+      "rows": 8
+    },
+    "outputs/bootstrap_sensitivity.csv": {
+      "sha256": "8c91e5b4fc01624a03c3c3487fc69e64c028abd6b5670187a717802e7da40298",
+      "bytes": 1776,
+      "rows": 12
+    },
+    "outputs/raw_bootstrap_sensitivity.csv": {
+      "sha256": "29509542e7ff67dd731353c884627a9ed519026d03b0189a1fbce9abe3deec84",
+      "bytes": 1738,
+      "rows": 12
+    },
+    "outputs/patterns.csv": {
+      "sha256": "157bd7ac214e03b82caa3d08d7b0897e3f9a944b66909fb3e0c1011fb2260df0",
+      "bytes": 150919,
+      "rows": 194
+    },
+    "outputs/pattern_centers.csv": {
+      "sha256": "ebd203bb1545ff31b2683ceea20516df4d19645d27d2c39e899f28858ac0e148",
+      "bytes": 193862,
+      "rows": 188
+    },
+    "outputs/pattern_neighbors.csv": {
+      "sha256": "0f92c9dffc108050d2f457fa8de93c0c03fd76011a7a98ac2bf3e6d9d828a24a",
+      "bytes": 1316833,
+      "rows": 2820
+    },
+    "outputs/pattern_sensitivity.csv": {
+      "sha256": "c952cd60e3eaf79fb85ef49e394521e7f4f69973b445669597002605f233f596",
+      "bytes": 38258,
+      "rows": 282
+    },
+    "outputs/delay_sensitivity.csv": {
+      "sha256": "fc77e335cff4b713873eda9a25fc9ea9755c3d6af7f2ee3d2e3137fd022176ce",
+      "bytes": 221100,
+      "rows": 1552
+    },
+    "outputs/origins.csv": {
+      "sha256": "6fb2b9f13cc24172fe6eb040b303a61d925f035179df5f88a8ce7306499e77fc",
+      "bytes": 218350,
+      "rows": 180
+    },
+    "outputs/config.json": {
+      "sha256": "f648862d3fa946fcdcd10fe4c35b6288c57aeb2a51ec0336c0251ca6f6e0dd65",
+      "bytes": 3135
+    },
+    "outputs/frozen_config.json": {
+      "sha256": "1705c608ce3bbdc8ae2d7c1af7975edc59d314360381298752279621922d7fc2",
+      "bytes": 4527
+    },
+    "outputs/pattern_config.json": {
+      "sha256": "0f4f41fe4f27fc5219e8a17349c059372dd0aaef1e16d9446941f211585a689b",
+      "bytes": 5860
+    },
+    "outputs/artifact_manifest.json": {
+      "sha256": "e93f34d7a7ae9fb9c471b198ad30ca4dbc3b010f70f08bc0ea5c49e68f6f2d3e",
+      "bytes": 8124
+    }
+  },
+  "records": {
+    "clean": 194,
+    "predictions": 546,
+    "metrics": 12,
+    "raw_metrics": 12,
+    "paired_errors": 180,
+    "raw_paired_errors": 180,
+    "stage_metrics": 8,
+    "raw_stage_metrics": 8,
+    "bootstrap_sensitivity": 12,
+    "raw_bootstrap_sensitivity": 12,
+    "patterns": 194,
+    "pattern_centers": 188,
+    "pattern_neighbors": 2820,
+    "pattern_sensitivity": 282,
+    "delay_sensitivity": 1552,
+    "origins": 180
+  }
+}

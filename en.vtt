@@ -1,0 +1,170 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:05.590
+Hong Kong publishes both wastewater
+and clinical COVID-19 monitoring data.
+
+2
+00:00:06.062 --> 00:00:12.055
+When the signals move differently, researchers need to know
+whether wastewater adds useful information about what comes
+
+3
+00:00:12.075 --> 00:00:15.890
+next. My proposed product tests a specific question:
+
+4
+00:00:16.440 --> 00:00:22.855
+can wastewater improve forecasts of clinical test
+positivity beyond forecasts using clinical history
+
+5
+00:00:22.875 --> 00:00:28.930
+alone? The focus is measurable added predictive
+value for this particular monitoring task.
+
+6
+00:00:31.458 --> 00:00:36.608
+The intended users are public health researchers
+and research assistants in Hong Kong.
+
+7
+00:00:37.195 --> 00:00:40.368
+They need to compare signals, examine unusual weeks,
+
+8
+00:00:40.638 --> 00:00:43.188
+and explain how reliable a forecast is.
+
+9
+00:00:43.718 --> 00:00:46.168
+The tool brings these steps into one workflow:
+
+10
+00:00:46.698 --> 00:00:50.648
+choose a historical week, compare
+predictions, inspect the evidence,
+
+11
+00:00:50.758 --> 00:00:51.988
+and export the results.
+
+12
+00:00:52.598 --> 00:00:57.068
+This supports transparent review without
+rebuilding the analysis each time.
+
+13
+00:00:59.540 --> 00:01:04.495
+The main source is the Department
+of Health's COVID-19 Express dataset on
+
+14
+00:01:04.515 --> 00:01:10.415
+data.gov.hk. The current snapshot contains
+one hundred and ninety-four weekly
+
+15
+00:01:10.435 --> 00:01:13.630
+records from 2023 to 2026.
+
+16
+00:01:14.200 --> 00:01:19.070
+It combines clinical specimen positivity
+with the official wastewater indicator.
+
+17
+00:01:19.640 --> 00:01:22.450
+Two wastewater weeks are missing and remain missing.
+
+18
+00:01:23.021 --> 00:01:27.370
+The prediction target is the proportion
+of tested specimens that are positive.
+
+19
+00:01:29.980 --> 00:01:33.530
+A working Python prototype already provides trend charts,
+
+20
+00:01:33.860 --> 00:01:38.450
+historical replay, model comparison,
+and unusual-pattern exploration.
+
+21
+00:01:39.069 --> 00:01:43.750
+Ridge regression compares clinical history
+with the same history plus wastewater.
+
+22
+00:01:44.355 --> 00:01:51.135
+K-means groups similar signal combinations, while Local
+Outlier Factor highlights unusual observations for
+
+23
+00:01:51.155 --> 00:01:56.750
+review. These methods are implemented with NumPy,
+so their calculations can be examined,
+
+24
+00:01:57.040 --> 00:01:59.670
+explained and reproduced from saved inputs.
+
+25
+00:02:02.243 --> 00:02:06.638
+The primary forecast is two monitoring
+weeks after the latest observed week,
+
+26
+00:02:06.658 --> 00:02:08.893
+with actual target dates displayed.
+
+27
+00:02:09.521 --> 00:02:11.478
+Models are compared on the same test weeks,
+
+28
+00:02:11.498 --> 00:02:13.553
+with settings selected earlier.
+
+29
+00:02:14.043 --> 00:02:18.053
+The current retrospective evaluation uses a frozen snapshot.
+
+30
+00:02:18.696 --> 00:02:22.693
+Initial gains depend on prediction
+bounds, and uncertainty remains.
+
+31
+00:02:23.303 --> 00:02:29.173
+The next evaluation will reconstruct historical
+data availability and examine revisions.
+
+32
+00:02:31.870 --> 00:02:38.165
+The intended impact is a more transparent way to assess
+the value of Hong Kong's wastewater monitoring
+
+33
+00:02:38.185 --> 00:02:44.285
+data. Researchers could use the tool
+to identify questions worth investigating and
+
+34
+00:02:44.305 --> 00:02:46.500
+judge when an extra signal helps.
+
+35
+00:02:47.080 --> 00:02:50.480
+Next steps include user feedback and clearer explanations.
+
+36
+00:02:51.090 --> 00:02:55.280
+A useful outcome is also learning
+when wastewater adds little value,
+
+37
+00:02:55.310 --> 00:02:57.780
+with the evidence available for inspection.
