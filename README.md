@@ -2,26 +2,23 @@
 
 [**Open app**](https://liilymiao.github.io/hong-kong-wastewater-explorer/) · [**Download**](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/latest/download/project.zip) · [**Video**](https://liilymiao.github.io/hong-kong-wastewater-explorer/video.html)
 
-A research workspace for Hong Kong COVID-19 monitoring and wastewater–clinical antimicrobial resistance research. Query observations, inspect their sources, compare saved forecasts and export an analysis with its conditions.
+Select research data, compare results and download the tables, matrices or cohorts needed for the next analysis.
 
-The app includes nine public research datasets alongside the frozen COVID-19 analysis:
-
-| Dataset | Available records |
+| Research task | Output |
 | --- | --- |
-| Hong Kong PHLSB outpatient resistance | 234 annual records, 2020–2025, across 5 specimen types and 12 organisms. Official resistance percentages and marker-positive counts remain separate. |
-| European sewage ARG study | 235 biological samples, 554 ResFinder gene columns and 130,190 raw count cells, 2019–2021. |
-| Hong Kong community sewage study | 189 sample identifiers with sequencing and assembly QC; a separate ENA index contains 406 run records. |
-| Hospital Authority blood-culture AMR | 175 annual non-susceptibility records, 2020–2024, with confidence intervals and count-quality flags. |
-| Hong Kong antimicrobial supply | 444 annual sector/group records, 2014–2025, in DID; 2025 is provisional. |
-| BV-BRC experimental AST | 15,777 E. coli/ciprofloxacin experimental records linked to 10,904 genomes; 12,305 records meet the documented cohort rules. |
-| HKO rainfall | 2,830 daily station records, 2019–September 2026; Trace and completeness flags retained. |
-| Flu Express | 669 weeks and 27 clinical indicators, 2014W1–2026W43, with the official field units. |
-| Global Sewage 3 | Fixed v1 subset: 16 samples, 17,402 reported cluster-count rows and 2,638 clusters. |
+| Explore annual resistance trends | PHLSB or HA records, trend figures and reported-percentage comparisons |
+| Build an ARG sample matrix | Selected European sewage samples, a 554-gene raw-count matrix and sequencing metadata |
+| Build a genome–AST cohort | BV-BRC experimental susceptibility records, genome links and measurement details |
+| Compare sequencing quality | Hong Kong sewage sample lists, sequencing metrics and assembly QC |
+| Prepare background variables | Rainfall, influenza, antimicrobial supply or Global Sewage records |
+| Match our wastewater and clinical data | An analysis table built from three uploaded CSVs: environmental data, clinical data and area correspondence |
 
-Dataset queries retain source units, missing values and original identifiers. Local wastewater measurements, exact clinical AST counts and explicit area mappings can also be imported to construct ecological research tables. The loaded datasets do not include a wastewater–clinical pairing matrix.
+Filters, saved queries, shared links and downloads use the same effective conditions. Download selected data directly or keep the full research package with source details, exclusions, query settings and checksums. Each page ends with a collapsed **Data coverage & sources** section.
 
-The complete download includes website **1.6.0**, Python application **1.5.2**, scientific configuration **1.1**, frozen results, video and eight subtitle tracks. The Python package and media are unchanged from v1.5.2.
+The app includes nine public research datasets alongside the frozen Hong Kong COVID-19 monitoring analysis. Its overview, historical replay, model comparison and unusual-week tools remain available.
 
-[Data sources and updates](DATA_SOURCES.md) · [Release notes](RELEASE_NOTES.md) · [Dataset manifest](research-datasets.json) · [Frozen COVID-19 sources](source_manifest.json) · [Credits](CREDITS.txt)
+Website **1.6.1** · Python application **1.5.2** · Scientific configuration **1.1**. The complete download includes frozen results, video and eight subtitle tracks.
 
-Project-owned code and documentation use the [MIT License](LICENSE). Other materials retain their recorded terms in [Third-party notices](THIRD_PARTY_NOTICES.md).
+[Data sources and updates](DATA_SOURCES.md) · [Release notes](RELEASE_NOTES.md) · [Dataset manifest](research-datasets.json) · [Credits](CREDITS.txt)
+
+Project-owned code and documentation use the [MIT License](LICENSE). Source data and other materials retain the terms recorded in [Third-party notices](THIRD_PARTY_NOTICES.md).

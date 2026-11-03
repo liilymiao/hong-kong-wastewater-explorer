@@ -1,5 +1,6 @@
-/* Verified research-source catalogue. External entries are links and specifications, not imported cohorts. */
-window.ResearchCatalog=[
+/* Source cards are derived from the same dataset registry used by query pages. */
+(function(root){'use strict';
+const reference=[
   {
     "verifiedDate": "2026-11-03",
     "id": "covid-weekly",
@@ -144,7 +145,7 @@ window.ResearchCatalog=[
       "en": "Hong Kong Hospital Authority AMR · 2024 report",
       "zh": "香港医管局耐药监测 · 2024 年报告"
     },
-    "status": "catalog_only",
+    "status": "loaded",
     "unitOfObservation": {
       "en": "Published annual specimen–organism–drug–onset stratum, after source deduplication",
       "zh": "按来源去重后的年度标本—菌种—药物—发病地点汇总层"
@@ -154,12 +155,12 @@ window.ResearchCatalog=[
       "zh": "年度"
     },
     "coverage": {
-      "start": "2016",
+      "start": "2020",
       "end": "2024",
-      "recordCount": null,
+      "recordCount": 175,
       "description": {
-        "en": "Report trends cover 2016–2024. The linked blood and urine result tables show 2020–2024; coverage varies by table and specimen. No rows are loaded here.",
-        "zh": "报告趋势覆盖 2016–2024 年；所列血液和尿液结果表显示 2020–2024 年。各表及标本覆盖不同，本程序尚未载入数值行。"
+        "en": "175 annual blood-culture records, 2020–2024.",
+        "zh": "2020–2024 年的 175 条年度血培养记录。"
       },
       "strata": [
         {
@@ -383,13 +384,14 @@ window.ResearchCatalog=[
       }
     ],
     "access": {
-      "en": "Public reports; catalogued links and definitions only. Structured extraction and validation are pending.",
-      "zh": "公开报告；目前仅收录入口与定义，待结构化提取及核验。"
+      "en": "Queryable blood-culture subset with confidence intervals, original counts and quality flags.",
+      "zh": "可查询血培养子集，含置信区间、原始计数和质量标记。"
     },
     "fitScope": {
       "en": "Annual AMR context and stratified surveillance questions. Annual aggregates cannot supply weekly clinical targets or matched isolate-level labels.",
       "zh": "用于年度耐药背景及分层监测问题。年度汇总不提供周度临床目标或菌株级配对标签。"
-    }
+    },
+    "topic": "ha"
   },
   {
     "verifiedDate": "2026-11-03",
@@ -398,7 +400,7 @@ window.ResearchCatalog=[
       "en": "BV-BRC · AMR phenotype and genome evidence",
       "zh": "BV-BRC · 耐药表型与基因组证据"
     },
-    "status": "catalog_only",
+    "status": "loaded",
     "unitOfObservation": {
       "en": "Genome–antimicrobial result with evidence provenance",
       "zh": "带证据来源的基因组—抗菌药物结果"
@@ -408,18 +410,18 @@ window.ResearchCatalog=[
       "zh": "按记录提供采集及发布元数据，完整度不一"
     },
     "coverage": {
-      "start": null,
-      "end": null,
-      "recordCount": null,
+      "start": "1970",
+      "end": "2022",
+      "recordCount": 15777,
       "description": {
-        "en": "A research subset has not been selected. Taxa, antibiotics, dates and Hong Kong coverage require a reproducible query and record review.",
-        "zh": "尚未选定研究子集。菌种、药物、日期及香港覆盖需通过可复现检索逐条核实。"
+        "en": "15,777 experimental E. coli–ciprofloxacin AST records in the frozen query.",
+        "zh": "冻结查询中含 15,777 条大肠杆菌—环丙沙星实验药敏记录。"
       },
       "strata": []
     },
     "region": {
-      "en": "Multiple source studies; no Hong Kong subset verified",
-      "zh": "来自多项来源研究；尚未核实香港子集"
+      "en": "International source records",
+      "zh": "国际来源记录"
     },
     "measurements": [
       {
@@ -580,13 +582,14 @@ window.ResearchCatalog=[
       }
     ],
     "access": {
-      "en": "Public search and documentation; no phenotype or genome records imported.",
-      "zh": "公开检索及说明；尚未导入表型或基因组记录。"
+      "en": "Queryable experimental AST records and linked genome metadata.",
+      "zh": "可查询实验药敏记录及关联基因组元数据。"
     },
     "fitScope": {
       "en": "Candidate evidence for genotype–phenotype research after provenance and assay review. Computational labels require separate analysis from measured phenotypes.",
       "zh": "可用于经来源及检测方法核查后的基因型—表型研究；计算标签与实测表型分开分析。"
-    }
+    },
+    "topic": "bvbrc"
   },
   {
     "verifiedDate": "2026-11-03",
@@ -994,3 +997,27 @@ window.ResearchCatalog=[
     }
   }
 ];
+const L=(en,zh)=>({en,zh});
+const titles={phlsb:L('Hong Kong outpatient AMR','香港门诊耐药统计'),arg:L('European wastewater ARG counts','欧洲污水 ARG 计数'),hk:L('Hong Kong sewage samples & sequencing QC','香港污水样本与测序质控'),ha:L('Hong Kong hospital AMR','香港医院耐药统计'),supply:L('Antimicrobial wholesale supply','抗微生物药物批发供应'),bvbrc:L('Genome–experimental AST cohort','基因组—实验药敏队列'),rainfall:L('Hong Kong rainfall','香港降雨'),flu:L('Hong Kong influenza surveillance','香港流感监测'),global:L('Global Sewage 3','Global Sewage 3')};
+const data=()=>({phlsb:root.PHLSB_DATA?.meta,arg:root.EUROPE_ARG_DATA?.meta,hk:root.HK_COMMUNITY_DATA?.meta,...root.ResearchExtensionIndex});
+const aliases={'hk-amr-annual':'ha-amr','bv-brc':'bvbrc-ast'};
+function card(topic,m){
+ const legacy=reference.find(c=>c.topic===topic)||{},source=m.source||{},count=m.record_count??m.independent_sample_count??m.sample_count;
+ const start=m.start_date||(m.years?`${Math.min(...m.years)}-01-01`:topic==='hk'?'2021-05':null),end=m.end_date||(m.years?`${Math.max(...m.years)}-12-31`:topic==='hk'?'2022-01':null);
+ const unit=m.unit_of_observation||(topic==='arg'?'One biological sample × ARG count matrix row':topic==='hk'?'One published sample QC identifier':'');
+ const resolution=topic==='phlsb'||topic==='ha'||topic==='supply'?'Annual':topic==='flu'?'Weekly':topic==='rainfall'?'Daily':topic==='hk'?'Reported campaign / sample identifier':'Source record date';
+ const url=source.url||m.source_url||m.article_url;
+ const summary=topic==='arg'?L(`${count} samples × ${m.gene_count} ARGs`,`${count} 个样本 × ${m.gene_count} 个 ARG`):topic==='hk'?L(`${count} sample QC records`,`${count} 条样本质控记录`):L(`${count??'—'} records${start&&end?' · '+start+' — '+end:''}`,`${count??'—'} 条记录${start&&end?' · '+start+' — '+end:''}`);
+ const notes=m.scope_note||m.count_explanation||m.normalization_status||'';
+ return{...legacy,id:m.dataset_id,topic,title:titles[topic],status:'loaded',verifiedDate:source.retrieved_at_utc||m.retrieved_at_utc||m.retrieved||'',unitOfObservation:L(unit,unit),temporalResolution:L(resolution,resolution),region:m.region||legacy.region||L(topic==='arg'?'Europe':topic==='bvbrc'||topic==='global'?'International':'Hong Kong',topic==='arg'?'欧洲':topic==='bvbrc'||topic==='global'?'国际':'香港'),coverage:{start,end,recordCount:count,description:summary},display_summary:summary,coverage_notes:notes,access:L('Query, filter and download the included records.','查询、筛选并下载已收录记录。'),fitScope:L('Research data selection and export.','研究数据筛选与导出。'),links:[...(url?[{label:L('Original source','原始来源'),url,kind:'source'}]:[]),...(m.project_url?[{label:L('Sequence archive','测序档案'),url:m.project_url,kind:'archive'}]:[])],source_version:m.source_version||m.dataset_version,source_sha256:source.source_sha256||m.source_sha256};
+}
+function current(){
+ const connected=Object.entries(data()).filter(([,m])=>m?.dataset_id).map(([t,m])=>card(t,m));
+ const available=new Set(connected.map(c=>c.id));
+ // Fallbacks are used only before the small source index has loaded.
+ const fallback=reference.filter(c=>c.topic&&!available.has(aliases[c.id]||c.id)).map(c=>({...c,id:aliases[c.id]||c.id}));
+ return[reference.find(c=>c.id==='covid-weekly'),...connected,...fallback,...reference.filter(c=>['ena','clinical-partner'].includes(c.id))].filter(Boolean);
+}
+root.ResearchCatalogRegistry={current,get(id){return current().find(c=>c.id===(aliases[id]||id))}};
+Object.defineProperty(root,'ResearchCatalog',{configurable:true,get:current});
+})(window);

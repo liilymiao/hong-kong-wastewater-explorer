@@ -115,7 +115,7 @@
     "delay_sensitivity": 1552,
     "origins": 180
   },
-  "release_version": "1.6.0",
+  "release_version": "1.6.1",
   "map_source": "map-source.json",
   "review_diagnostics": "review-diagnostics.json",
   "third_party_notices": "THIRD_PARTY_NOTICES.md",
