@@ -104,3 +104,10 @@ video::cue{color:#fff;background-color:#000;font-family:-apple-system,BlinkMacSy
 
 video::-webkit-media-text-track-display-backdrop{background-color:#000!important}
 video::-webkit-media-text-track-display{background-color:#000!important}
+
+/* Compact data status and selection-aware interpretation. */
+.snapshot-status{position:sticky;top:0;z-index:5;margin:0 0 20px;padding:9px 0;color:#506570;background:rgba(239,248,253,.96);font-size:12px;line-height:1.5;border-bottom:1px solid rgba(187,207,219,.45)}
+.period-summary{margin:14px 0 10px;max-width:85ch;color:#344c5c;font-size:14px;line-height:1.65}
+.version-details{display:grid;grid-template-columns:minmax(135px,auto) 1fr;gap:6px 18px;font-size:13px;line-height:1.6}
+.version-details dt{color:#5e7480}.version-details dd{margin:0;overflow-wrap:anywhere}
+@media(max-width:600px){.snapshot-status{font-size:11px;margin-bottom:16px}.version-details{grid-template-columns:1fr;gap:2px}.version-details dd{margin-bottom:8px}}

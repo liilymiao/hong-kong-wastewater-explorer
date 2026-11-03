@@ -7,3 +7,5 @@ Weekly surveillance, historical forecasts, model comparison, and anomaly explora
 The complete download includes source code, frozen data and analysis results, video, and subtitles.
 
 [Credits](CREDITS.txt) · [Data sources](source_manifest.json)
+
+[Release notes](RELEASE_NOTES.md)

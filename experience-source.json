@@ -80,8 +80,8 @@
     "source_snapshot": "2026-10-23",
     "display_scaling": "Clinical proportions multiplied by 100 once; saved errors already use percentage points."
   },
-  "renderer_sha256": "bac8857b5693fdb18f4d71c82bf95abc442d5082ef03e33ed001302f7fcd8f64",
-  "renderer_revision": "1.5.1",
+  "renderer_sha256": "be7833e168f5d0cd25e601dea592f30480a5aa2f65f54790c6b1db8147e1b770",
+  "renderer_revision": "1.5.2",
   "opening_camera": "Single-map continuous zoom with overlapping island-outline reveal; shared map and outline transform",
   "ui_theme": "Light water blue; white sidebar, neutral white glass controls, white data surfaces",
   "map_overlay_source": "Hong Kong Island polygon from Natural Earth 1:10m land",
@@ -89,12 +89,13 @@
   "glass": "Pale translucent background with fine white highlights",
   "query_transition": "Map and charts contract above the rising query bar, leaving 18px spacing",
   "subtitle_style": "White text on uniform black background",
-  "updated_at": "2026-11-03T16:32:28.099005+08:00",
+  "updated_at": "2026-11-03",
   "presentation_style": "Six labelled narrated interface pages with live query, comparison and export demonstrations",
   "media_sha256": {
-    "proposal.mp4": "c5d041f931fdd553ae025f7b2be8f85656a5a26cdafdf1873e3a1d3f2a125481",
-    "proposal-subtitled.mp4": "2e6e36a609ead68ca2c2ede0e3de0a1a89b04f00936f1a7d8832184b92ad0bc4",
-    "poster.jpg": "567619716e0012cdfd69629e9c1261cc9f5f556c78a97175fbbf73404616eba4"
+    "proposal.mp4": "ccf4c1bc7972702638544391df72571e10540ec36e08c65ea79558d3f9d86037",
+    "proposal-subtitled.mp4": "6a1e93fbf6c309e61bbc07da3a7c1d044d4a8529be361ab4e16ed9afa2a3c978",
+    "poster.jpg": "badd602addf6aeba862895edf57c45bc606b93ed16e8e72230ff48542d792e2d"
   },
-  "video_audio": "User-provided v3 MP3; same audio source, no voice regeneration in this revision"
+  "video_audio": "User-provided v3 MP3; same audio source, no voice regeneration in this revision",
+  "video_as_of_date": "2026-11-03"
 }

@@ -1,4 +1,4 @@
-Hong Kong Wastewater Explorer — v1.5.1
+Hong Kong Wastewater Explorer — v1.5.2
 
 Data
 Department of Health, Hong Kong SAR Government — COVID-19 Express.

@@ -1,17 +1,13 @@
-# v1.5.1 — research review and distribution update
+# v1.5.2
 
-The comparison view now places bounded and raw prediction performance together, with clipping counts, MAE/RMSE, block-length sensitivity, and downloadable evidence. New chronological-half and cumulative-gain charts describe the existing saved predictions; model parameters, frozen inputs, and scientific results remain unchanged.
+Model comparison keeps keyboard focus and expanded diagnostics when scoring, horizon, model visibility or language changes. A selection-specific period summary appears beside the overall scores. Every analysis page shows the observation cutoff and snapshot date; filtered monitoring cards identify the latest week within the selected period.
 
-The experience page exports the selected 2-, 4-, or 8-week interval consistently. Moving from the map to forecasts preserves the chosen week; a missing or unscored result remains explicit. Keyboard interactions, mobile navigation, and reduced-motion behavior have been updated.
+CSV downloads include software and analysis versions, source checksums, scoring settings, units and applicable interval methods. Evaluable-origin counts are distinguished from interval coverage. The interactive experience offers mobile controls outside the scrolling chart, an explicit Hong Kong entry, visible indicator selection, consistent saved-projection dates, low-value LOF context and a retained final demo state.
 
-The project introduction uses a newly drawn Natural Earth overview and the supplied narration, with eight selectable subtitle tracks and a separate English-caption video. Source records identify the map data and the available audio provenance. The original audio provider, creation date, and service terms remain unknown.
+The three-minute introduction has been re-rendered with the revised interface and period summary. The supplied v3 narration and eight subtitle translations are unchanged.
 
-The public distribution excludes copied course material, extra CHP report PDFs, old Google mosaics and their videos, and internal logs containing personal-machine paths. It includes the full Plotly.js 3.1.1 MIT license. The separate Python course package contains Python source, frozen CSV inputs, and CSV reference results.
+The Python report generator links to official sources and the included course summary. Course startup instructions consistently require generating outputs before launch. The Python application was rebuilt with the presentation-source changes: all numerical values in 26 reference CSVs match the previous results, while report files, integrity receipts and six saved-projection generation times reflect the new run. The original browser data remains byte-identical. Original browser-source files are preserved in `frozen-browser-source/` in the complete download.
 
-## Verification
+Verification: 31 experience integration groups; 16 main-page comparison states plus focus, disclosure and export checks; 123 applicable Python tests passed, one internal-source-archive test deselected. Real browser checks covered keyboard state, language changes, selected-period labels, mobile query/export and downloaded CSV metadata. Both video variants are 180 seconds; the selectable-subtitle version contains eight tracks.
 
-The course package was unpacked and its complete Python pipeline ran successfully using the existing matching locked environment. Numeric values in all 26 reference CSVs matched the regenerated outputs exactly. The packaged-scope tests completed with **123 passed and 1 deselected**. The omitted test requires the intentionally excluded supporting PDF/HTML source archive; the unchanged full-suite trial recorded **123 passed and 1 failed** for that missing-archive condition. No fresh dependency installation was performed.
-
-The experience interaction checks passed 25 cases, including all 12 horizon/scoring/block-length combinations. Science presentation checks passed 412 assertions in 16 states, and 2,052 independent arithmetic checks matched the saved CSVs. These automated JavaScript checks use a DOM harness and do not constitute visual browser inspection.
-
-The supplied course requirements still need the student's own narration or an explicit course ruling, confirmation of the animated-screen format, and an honest record of personal contributions. Full historical as-of evaluation, new sampling-regime confirmation, prospective warning validation, and real-user testing remain future work.
+Historical as-of evaluation, sampling-regime sensitivity, new-period validation and user research remain future work. Narration provenance and course-specific personal narration/format acceptance remain unconfirmed.
