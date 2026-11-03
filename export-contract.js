@@ -1,6 +1,6 @@
 /* Metadata added at download time. Frozen input rows are never mutated. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.ExportContract=api;})(typeof window==='undefined'?this:window,function(){'use strict';
-const softwareVersion='1.5.2';
+const softwareVersion='1.6.0';
 const present=x=>x!==undefined&&x!==null&&x!=='';
 const has=(r,k)=>Object.prototype.hasOwnProperty.call(r,k);
 const choose=(...values)=>values.find(present)??'';

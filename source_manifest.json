@@ -115,9 +115,10 @@
     "delay_sensitivity": 1552,
     "origins": 180
   },
-  "release_version": "1.5.2",
+  "release_version": "1.6.0",
   "map_source": "map-source.json",
   "review_diagnostics": "review-diagnostics.json",
   "third_party_notices": "THIRD_PARTY_NOTICES.md",
-  "source_scope": "Original frozen browser analysis. In the complete project package, these files are preserved under frozen-browser-source/. The rebuilt Python application has its own outputs/artifact_manifest.json; numerical values are equivalent, while reports, receipts and snapshot-end issue times reflect regeneration."
+  "source_scope": "Original frozen browser analysis. In the complete project package, these files are preserved under frozen-browser-source/. The rebuilt Python application has its own outputs/artifact_manifest.json; numerical values are equivalent, while reports, receipts and snapshot-end issue times reflect regeneration.",
+  "additional_datasets_manifest": "research-datasets.json"
 }

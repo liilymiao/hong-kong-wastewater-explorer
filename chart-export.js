@@ -1,0 +1,4 @@
+(function(root){'use strict';
+async function toPNG(svg){const markup=svg.includes('xmlns=')?svg:svg.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" '),url=URL.createObjectURL(new Blob([markup],{type:'image/svg+xml'}));try{const image=new Image();await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(Error('Chart image could not be rendered.'));image.src=url});const canvas=document.createElement('canvas');canvas.width=(image.naturalWidth||800)*2;canvas.height=(image.naturalHeight||250)*2;const ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,0,0,canvas.width,canvas.height);const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('Chart image export failed.');return new Uint8Array(await blob.arrayBuffer())}finally{URL.revokeObjectURL(url)}}
+root.ChartExport={toPNG};
+})(window);
