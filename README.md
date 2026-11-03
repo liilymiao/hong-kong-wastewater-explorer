@@ -9,3 +9,5 @@ The complete download includes source code, frozen data and analysis results, vi
 [Credits](CREDITS.txt) · [Data sources](source_manifest.json)
 
 [Release notes](RELEASE_NOTES.md)
+
+Project-owned source code and documentation are licensed under the [MIT License](LICENSE). Third-party data, libraries, fonts, maps and media retain their recorded terms; see [Third-party notices](THIRD_PARTY_NOTICES.md).

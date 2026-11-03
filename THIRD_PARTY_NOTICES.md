@@ -23,3 +23,7 @@ Narration was supplied by the user, who authorized its use and publication in th
 ## Package scope
 
 The public application and the Python course source package are separate artifacts. Sources and numerical results remain traceable to their frozen hashes. Historical internal logs and course full-text evidence are retained in the internal copy and excluded from public distribution. No license to third-party materials is implied by this notice.
+
+## Project-owned code
+
+The project-owned source code and documentation use the MIT License in `LICENSE`, as selected by the project owner on 3 November 2026. This grant does not replace the separate terms for third-party data, libraries, fonts, maps or media.
