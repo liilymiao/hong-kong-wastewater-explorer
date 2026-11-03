@@ -1,0 +1,12 @@
+Martiny, H.-M., Munk, P., Fuschi, A., & Aarestrup, F. (2025). Data for Global Sewage 3 (v1). Zenodo. https://doi.org/10.5281/zenodo.14652833
+
+CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+
+All reported cluster-count rows for the first 16 distinct complete_name identifiers in the fixed v1 counts_clusters.csv file. The entire source file is scanned and checksum-verified; this subset is not a representative global sample.
+
+The complete gs3.parquet was read and contains geography records without a sample key. Its locations are retained separately and are not assigned to count samples.
+The author notebook references metadata_fixed.csv, which is not among the Zenodo files; the checked repository-relative path returns HTTP 404. Country/date/accessions here come from the directly linked ENA run and sample records.
+Repeated tot_counts rows caused by bindCol are collapsed for run linkage; reported total_fragments are never summed across those duplicates.
+Unlisted sample/cluster combinations remain absent, not zero. No positivity threshold, risk score, copies/L or relative abundance is derived.
+panres_counts.csv, motus_counts.zip and the rest of the global count matrix are not served by the browser. Original file links and the adapter preserve the next-step retrieval path.

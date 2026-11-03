@@ -1,0 +1,6 @@
+Source: Department of Health, Hong Kong SAR Government; Drug Office annual licensed wholesaler survey.
+https://www.chp.gov.hk/en/statistics/data/10/100044/6960.html
+Source figures retain Government rights; no source open licence is inferred. The application MIT licence does not apply to source data.
+Original HTML and PDF are linked, not included in this public dataset directory. See meta.terms.
+Unit: DID. Human-use totals exclude veterinary surgeons and farmers. 2025 is provisional.
+Rebuild: python3 supply-adapter.py --fetch --out regenerated --source downloaded-source.html --retrieval downloaded-source.retrieval.json --report regenerated/validation.json

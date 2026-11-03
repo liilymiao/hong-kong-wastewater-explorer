@@ -1,0 +1,101 @@
+{
+  "dataset_id": "phlsb-outpatient",
+  "title": {
+    "en": "Hong Kong PHLSB outpatient antimicrobial resistance",
+    "zh": "香港 PHLSB 门诊细菌耐药统计"
+  },
+  "dataset_version": "2026-11-03-5bacaf540666",
+  "status": "loaded",
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "temporal_resolution": "annual",
+  "region": "Hong Kong",
+  "unit_of_observation": "Year × specimen type × organism × drug or resistance marker",
+  "record_count": 234,
+  "specimen_count": 5,
+  "organism_count": 12,
+  "drug_analyte_count": 11,
+  "marker_analyte_count": 5,
+  "reported_percent_count": 188,
+  "count_only_record_count": 36,
+  "not_reported_record_count": 10,
+  "source": {
+    "url": "https://www.chp.gov.hk/files/misc/bac_path_isolation_and_antimicrobial_resistance_en.csv",
+    "resource_url": "https://data.gov.hk/en-data/dataset/hk-dh-dh_phlsb-phlsb-bac-path-isolation-antimicrobial-resistance/resource/cc032b80-99f7-4116-8205-3e019829113b",
+    "detail_2025_url": "https://www.chp.gov.hk/en/statistics/data/10/641/697/7145.html",
+    "provider": "Department of Health, Hong Kong SAR Government; Public Health Laboratory Services Branch",
+    "retrieved_at_utc": "2026-11-03T14:33:01.777221+00:00",
+    "source_sha256": "5bacaf540666017338d27971a1bd8274aa0f1fd0bacfb1b80df471b5af1952fd",
+    "source_bytes": 4430,
+    "http_last_modified": "Thu, 16 Apr 2026 02:50:44 GMT",
+    "resource_last_updated": "2026-04-22",
+    "resource_update_frequency": "Quarterly",
+    "observation_frequency": "Annual"
+  },
+  "terms": {
+    "url": "https://data.gov.hk/en/terms-and-conditions",
+    "version": "1.2 (26 May 2025)",
+    "attribution": "Source: Department of Health, Hong Kong SAR Government, via DATA.GOV.HK. Source data remain the intellectual property of the Government and relevant organisations.",
+    "scope": "Data are redistributed and restructured with attribution under the DATA.GOV.HK Terms of Use; project MIT license applies to the parser and interface, not the source data."
+  },
+  "definitions": {
+    "R": "Resistant. The 2025 detailed PHLSB table reports R and I separately; these merged CSV drug values match the R rows.",
+    "I": "Intermediate. I is not present as separate rows in this merged CSV and is not added to R.",
+    "positive": "Marker-positive count. BL, ESBL, KPC, NDM and OXA-48-like are distinguished from drug resistance.",
+    "reported_total": "The source No. row for that organism, specimen and year. Retained as reported; it is not re-labelled as an independently verified drug-specific AST denominator.",
+    "reported_percent": "Official reported percentage, retained with its source precision. Percentages are never reconstructed for count-only cells.",
+    "not_reported": "A source dash or blank remains null; a missing result is not changed to zero.",
+    "question_mark": "The source CSV contains literal question marks in place of separators in names and numeric cells. The raw strings are retained; normalized labels use spaces and the numeric parser accepts only the observed count?(percent%) pattern.",
+    "source_rows": "1-based logical CSV row numbers; source_data_row holds the observation and source_total_row holds its No. row."
+  },
+  "normalization_rules": [
+    "Forward-fill organism only inside its specimen block.",
+    "Attach each block’s No. row by year; retain it separately as reported_total.",
+    "Preserve raw labels and cells, footnote symbols, cell coordinates and source digest.",
+    "Remove * and ^ from normalized organism labels while retaining their source footnotes.",
+    "Keep plus-labelled resistance markers separate from drug_resistance.",
+    "Do not create rows for intrinsic-resistance footnotes; no drug result cell exists for them.",
+    "Carry [MRSA] as an annotation to Oxacillin.",
+    "No clinical–wastewater pairing or predictive analysis is included."
+  ],
+  "source_footnotes": {
+    "73": "MRSA = methicillin-resistant?Staphylococcus aureus",
+    "74": "BL+ = beta-lactamase positive",
+    "75": "ESBL+ = extended-spectrum beta-lactamase positive",
+    "76": "*?Klebsiella pneumoniae?complex is 100% resistant to ampicillin.",
+    "77": "^?Proteus mirabilis?is 100% resistant to nitrofurantoin.",
+    "78": "#?one isolate was negative for the CPE genes tested."
+  },
+  "acceptance_example": {
+    "year": 2025,
+    "specimen": "Urine",
+    "organism": "Escherichia coli",
+    "analyte": "Levofloxacin",
+    "count": 3038,
+    "reported_total": 8171,
+    "reported_percent": 37.2,
+    "result_definition": "R",
+    "separate_2025_intermediate_count": 355,
+    "separate_2025_intermediate_percent": 4.3,
+    "intermediate_source": "https://www.chp.gov.hk/en/statistics/data/10/641/697/7145.html",
+    "intermediate_added_to_dataset": false
+  },
+  "source_sha256": "5bacaf540666017338d27971a1bd8274aa0f1fd0bacfb1b80df471b5af1952fd",
+  "retrieved_at_utc": "2026-11-03T14:33:01.777221+00:00",
+  "source_url": "https://www.chp.gov.hk/files/misc/bac_path_isolation_and_antimicrobial_resistance_en.csv",
+  "license_url": "https://data.gov.hk/en/terms-and-conditions",
+  "source_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

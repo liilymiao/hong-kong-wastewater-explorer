@@ -1,0 +1,215 @@
+{
+  "dataset_id": "antimicrobial-supply",
+  "title": "Hong Kong antimicrobial wholesale supply",
+  "provider": "Department of Health, Hong Kong SAR Government / Drug Office",
+  "region": "Hong Kong",
+  "study_type": "Annual licensed drug wholesaler survey",
+  "temporal_resolution": "annual",
+  "unit_of_observation": "Year × supply recipient sector × antimicrobial group",
+  "update_frequency": "Annual",
+  "source_url": "https://www.chp.gov.hk/en/statistics/data/10/100044/6960.html",
+  "source_sha256": "df38c54a3959ae805f894409612096a297db17e3e9f5b254c84490b8335c0231",
+  "source_version": "2026-05-15-df38c54a3959",
+  "dataset_version": "2026-05-15-df38c54a3959",
+  "retrieved_at_utc": "2026-11-03T15:00:17.854454+00:00",
+  "source_last_revision": "2026-05-15",
+  "status": "loaded",
+  "record_count": 444,
+  "source_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "provisional_years": [
+    2025
+  ],
+  "unit": "DID",
+  "terms": {
+    "url": "https://www.chp.gov.hk/en/static/24027.html",
+    "copyright": "Government of the Hong Kong Special Administrative Region",
+    "open_license": null,
+    "status": "No open data licence inferred from the checked CHP page",
+    "scope": "Factual numeric values are extracted with attribution; original HTML/PDF remain linked rather than redistributed. CHP copyright permission explicitly covers complete, unmodified copies for personal/internal use. Public reuse permission for the table compilation is not established. Source material is outside the application MIT licence."
+  },
+  "dictionary": {
+    "year": "Annual survey/statistical year; no artificial observation date is assigned.",
+    "sector": "Original supply recipient sector. Total is the published human-use aggregate; veterinary surgeons and farmers are excluded from this aggregate.",
+    "antimicrobial_group": "Original broad pharmacological group or All antimicrobials. Six selected classes are supplied per detailed sector table; their sum is not the full sector total.",
+    "measure": "Wholesale supply reported by licensed wholesalers; an indirect use indicator, not a dispensing, prescribing or consumption measurement.",
+    "value": "Original reported numeric value; no recomputation from rounded sector rows.",
+    "unit": "DID = defined daily doses per 1,000 inhabitants per day. DDD is a technical unit and does not equal a prescribed dose.",
+    "human_use_flag": "False for Veterinary surgeons. True for the six human sectors and the published human Total. Never sum human Total with its component sectors.",
+    "provisional": "True only for years explicitly marked provisional by the source footnotes.",
+    "raw_cell": "Source text retains its decimal precision; a printed 0.000 is a reported rounded value, not a missing value or proof of absence.",
+    "source_table/source_row/source_column": "1-based HTML table, row (including header), and column, respectively.",
+    "aggregation_level": "human_total, sector_total, or sector_drug_group. Totals and detail groups overlap and must not be added together.",
+    "value_status": "reported or not_reported. Missing tokens stay null and are never replaced by zero."
+  },
+  "notes": [
+    "This snapshot uses only the current HTML tables; historical report values are not spliced into it.",
+    "The December 2025 report gives 2024 total as 18.33 DID (PDF page 4); this HTML snapshot reports 18.34 DID. Keep the source version attached.",
+    "Quinolone antibacterials are a drug class. A comparison with PHLSB levofloxacin resistance is annual background comparison with different endpoints."
+  ],
+  "audit": {
+    "adapter_version": "1.0.0",
+    "tables": [
+      {
+        "source_table": 1,
+        "title": "Overall antimicrobial supply",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 7,
+        "observation_count": 84
+      },
+      {
+        "source_table": 2,
+        "title": "Private doctors",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 6,
+        "observation_count": 72
+      },
+      {
+        "source_table": 3,
+        "title": "Hospital Authority",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 6,
+        "observation_count": 72
+      },
+      {
+        "source_table": 4,
+        "title": "Community pharmacies",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 6,
+        "observation_count": 72
+      },
+      {
+        "source_table": 5,
+        "title": "Private hospitals",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 6,
+        "observation_count": 72
+      },
+      {
+        "source_table": 6,
+        "title": "Veterinary surgeons",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "measure_rows": 6,
+        "observation_count": 72
+      }
+    ],
+    "source_bytes": 51093,
+    "independent_sample_count": null,
+    "statistical_record_count": 444,
+    "human_use_records": 372,
+    "veterinary_records": 72,
+    "missing_records": 0,
+    "method_report_url": "https://www.chp.gov.hk/files/pdf/wholesale_result_2024.pdf",
+    "method_report_sha256": "bb1f3a5306d4271a72096e9629b2b27cb231346d05c67bd905f4ce0db10de219",
+    "method_pages": [
+      4,
+      26,
+      27
+    ],
+    "processing": "All six tables unpivoted without interpolation, normalization or imputation. Original decimal cells and table positions retained."
+  }
+}

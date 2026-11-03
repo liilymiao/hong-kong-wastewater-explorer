@@ -1,0 +1,10 @@
+BV-BRC experimental AST snapshot
+
+Data policy: https://www.bv-brc.org/docs/system_documentation/data_management_sharing.html
+BV-BRC states that public data are freely available without restriction on use. Retain BV-BRC and original-study provenance. Third-party records are separate from the application MIT licence.
+
+All candidate records remain queryable. Exclusion flags apply to the derived conservative cohort; original experiments are not deleted.
+Disk diffusion records reported in mg/L are flagged as method/unit conflicts and are not classified as MIC.
+Shared BioSample, SRA, or assembly accessions group genome versions. Genome-ID fallbacks are unresolved sample identities.
+Repeated measurements are retained; conflicting S/I/R labels are flagged and excluded from the default conservative cohort.
+The sequence manifest uses documented explicit-FTPS paths; genome sequence files have not been downloaded.

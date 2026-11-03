@@ -1,0 +1,158 @@
+{
+  "dataset_id": "hko-rainfall",
+  "title": "Hong Kong Observatory daily rainfall",
+  "provider": "Hong Kong Observatory",
+  "source_sha256": "5b6681c148ed5312d5c4b1c479a213263a744f0777737d14d18a94bd6c0d0d08",
+  "source_bytes": 811553,
+  "source_url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_RF_ALL.csv",
+  "source_version": "HKO-through-2026-09-30-5b6681c148ed",
+  "retrieved_at_utc": "2026-11-03T15:05:49.396472+00:00",
+  "source_last_modified": "Fri, 16 Oct 2026 09:36:26 GMT",
+  "status": "ready",
+  "terms": {
+    "name": "DATA.GOV.HK Terms of Use",
+    "url": "https://data.gov.hk/en/terms-and-conditions",
+    "attribution": "Source: Hong Kong Observatory, Hong Kong SAR Government, via DATA.GOV.HK."
+  },
+  "dictionary": {
+    "date": {
+      "label": "Observation date",
+      "unit": "date",
+      "description": "Daily date from the three source date columns."
+    },
+    "station": {
+      "label": "Station",
+      "unit": "station ID",
+      "description": "HKO: Hong Kong Observatory. This source is one station."
+    },
+    "rainfall_mm": {
+      "label": "Daily rainfall",
+      "unit": "mm",
+      "description": "Exact reported numerical amount. Trace and unavailable values remain null."
+    },
+    "raw_value": {
+      "label": "Original value",
+      "unit": "source text",
+      "description": "Unchanged Value column, including Trace and ***."
+    },
+    "quality_flag": {
+      "label": "Source completeness",
+      "unit": "source code",
+      "description": "C complete; # incomplete; empty unknown."
+    },
+    "quality_status": {
+      "label": "Completeness",
+      "unit": "category",
+      "description": "complete, incomplete or unknown; independent of trace/missing status."
+    },
+    "value_status": {
+      "label": "Measurement status",
+      "unit": "category",
+      "description": "observed, trace or unavailable."
+    },
+    "rainfall_lower_bound_mm": {
+      "label": "Rainfall lower bound",
+      "unit": "mm",
+      "description": "Observed value or 0 for Trace. Trace is not assigned an exact measured amount."
+    },
+    "rainfall_upper_bound_mm": {
+      "label": "Rainfall upper bound",
+      "unit": "mm",
+      "description": "Observed value or exclusive 0.05 mm for Trace, as stated in the source legend."
+    },
+    "upper_bound_inclusive": {
+      "label": "Upper bound included",
+      "unit": "boolean",
+      "description": "False for Trace; true for exact values; null if unavailable."
+    },
+    "source_row": {
+      "label": "Original CSV row",
+      "unit": "row number",
+      "description": "1-based row, including the two title rows and column header."
+    }
+  },
+  "numeric_fields": [
+    "rainfall_mm"
+  ],
+  "unit": "mm",
+  "region": "Hong Kong",
+  "station": "HKO",
+  "unit_of_observation": "One daily observation at the Hong Kong Observatory station",
+  "temporal_resolution": "daily",
+  "resource_update_frequency": "monthly",
+  "processing_version": "hko-daily-rainfall-1.0",
+  "resource_url": "https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-rainfall/resource/fe463867-cfe1-4566-aa3e-a7e60b5e3473",
+  "start_date": "2019-01-01",
+  "end_date": "2026-09-30",
+  "row_count": 2830,
+  "loaded_start_filter": "2019-01-01",
+  "value_status_counts": {
+    "trace": 441,
+    "observed": 2389
+  },
+  "quality_counts": {
+    "complete": 2830
+  },
+  "source_record_count": 49522,
+  "source_valid_date_count": 49521,
+  "source_excluded_record_count": 1,
+  "excluded_records": [
+    {
+      "source_row": 5847,
+      "raw_year": "1900",
+      "raw_month": "2",
+      "raw_day": "29",
+      "raw_value": "***",
+      "quality_flag": "",
+      "reason": "Invalid Gregorian calendar date in source; date is not corrected or imputed."
+    }
+  ],
+  "source_start_date": "1884-03-01",
+  "source_end_date": "2026-09-30",
+  "source_value_status_counts": {
+    "observed": 42588,
+    "trace": 6933
+  },
+  "source_quality_counts": {
+    "complete": 49521
+  },
+  "scope_note": "HKO station daily rainfall. Trace is below 0.05 mm and has no exact numeric value. The loaded period starts in 2019; the complete source starts in 1884. Weekly alignment is background context; catchment flow and historical publication availability have not been validated.",
+  "quality_rules": {
+    "Trace": "Keep null rainfall_mm and interval [0,0.05) mm",
+    "***": "Unavailable; null rainfall_mm",
+    "#": "Incomplete; preserve amount and flag",
+    "C": "Complete"
+  },
+  "data_availability": {
+    "daily_rainfall": true,
+    "station_metadata": true,
+    "historical_release_reconstruction": false,
+    "catchment_flow_correction": false
+  },
+  "ui": {
+    "filters": [
+      {
+        "field": "station",
+        "label": "Station"
+      },
+      {
+        "field": "quality_status",
+        "label": "Completeness"
+      },
+      {
+        "field": "value_status",
+        "label": "Value status"
+      }
+    ],
+    "columns": [
+      "date",
+      "station",
+      "rainfall_mm",
+      "raw_value",
+      "quality_status",
+      "value_status"
+    ]
+  },
+  "default_filters": {},
+  "raw_source_download_url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_RF_ALL.csv"
+}

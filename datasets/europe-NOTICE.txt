@@ -1,0 +1,35 @@
+EUROPEAN SEWAGE RESFINDER COUNTS — SOURCE AND TERMS
+
+Becsei A, Fuschi A, Otani S, et al. Nature Communications 15, 7551 (2024).
+DOI: 10.1038/s41467-024-51957-8
+Article: https://www.nature.com/articles/s41467-024-51957-8
+Supplementary workbook: 41467_2024_51957_MOESM4_ESM.xlsx
+Official supplementary-file archive:
+https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11364805/supplementaryFiles
+Sequencing project: https://www.ebi.ac.uk/ena/browser/view/PRJEB68319
+
+The article notice in the checked Europe PMC full-text XML identifies Creative
+Commons Attribution-NonCommercial-NoDerivatives 4.0 International:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+No separate data licence was found in the checked workbook or its article data-
+availability statement. This records the source notice; it is not an assertion
+of additional permission or a legal determination of rights in factual data.
+Third-party source materials are outside the application's MIT licence. Retain
+source attribution and terms when sharing the data. This research presentation
+is non-commercial. No article figures or article prose have been reproduced.
+
+The application extracts factual counts and sample fields from Supplementary
+Data 1 and 3. Column locations are indexed to the dictionary in Supplementary
+Data 5. Changes are limited to numeric parsing, ISO date formatting and an
+explicit key-based metadata connection. No count is normalized, imputed,
+averaged or otherwise numerically modified.
+
+235 matrix rows represent 235 distinct ENA biological samples. There are 554
+ResFinder gene columns and 130,190 count cells. The matrix keys match 235 metadata
+runs directly. Across those 235 biological samples, the complete metadata lists
+274 associated runs. All metadata contains 278 runs from 238 biological samples;
+three biological samples have no count row in this matrix. Associated runs are
+not assumed to have been individually included in a given matrix count.
+
+Unit: raw gene counts. The count is not copies/L, a clinical proportion or a
+normalized cross-sample abundance. Clinical susceptibility pairing is absent.

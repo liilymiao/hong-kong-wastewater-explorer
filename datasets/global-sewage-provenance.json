@@ -1,0 +1,488 @@
+{
+  "dataset_id": "global-sewage",
+  "title": "Global Sewage 3: verified 16-sample count subset",
+  "provider": "Martiny, Munk, Fuschi and Aarestrup / Zenodo",
+  "status": "connected",
+  "source_url": "https://zenodo.org/records/14652833",
+  "source_version": "10.5281/zenodo.14652833 (v1, 2025-01-21)",
+  "source_sha256": "a3ed77325d29147b9a2abf0039cb6316d89b6cd8a183f7e64f8fa88a9ea84029",
+  "checksum_scope": "SHA256 of canonical source-manifest JSON; complete Zenodo files also checked against repository MD5.",
+  "retrieved_at_utc": "2026-11-03T15:14:18.388551+00:00",
+  "adapter_version": "global-sewage-adapter-1.0.0",
+  "observation_unit": "One sample × PanRes gene-cluster × database-group reported count",
+  "scope_note": "All reported cluster-count rows for the first 16 distinct complete_name identifiers in the fixed v1 counts_clusters.csv file. The entire source file is scanned and checksum-verified; this subset is not a representative global sample.",
+  "scope": {
+    "sample_limit": 16,
+    "selected_complete_names": [
+      "DTU_2016_1012238_3_MG_ALB_17_2",
+      "DTU_2016_1012239_3_MG_AUS_18_2",
+      "DTU_2016_1012240_4_MG_AUS_18a_3",
+      "DTU_2016_1012241_3_MG_AUT_70_2",
+      "DTU_2016_1012242_4_MG_BGR_66_3",
+      "DTU_2016_1012243_2_MG_BRA_53_1",
+      "DTU_2016_1012244_3_MG_BRA_53a_2",
+      "DTU_2016_1012245_2_MG_BWA_19_1",
+      "DTU_2016_1012246_3_MG_CAN_22_2",
+      "DTU_2016_1012247_1_MG_CAN_22a",
+      "DTU_2016_1012248_3_MG_CAN_22b_2",
+      "DTU_2016_1012249_1_MG_CAN_22c",
+      "DTU_2016_1012250_7_MG_CHE_67_6",
+      "DTU_2016_1012251_1_MG_CHN_64",
+      "DTU_2016_1012252_3_MG_CIV_13_2",
+      "DTU_2016_1012254_2_MG_CZE_23_1"
+    ],
+    "selection_rule": "First distinct complete_name values in source-file row order; retain every matching row from the complete verified file."
+  },
+  "counts": {
+    "source_count_row_count": 1025616,
+    "source_complete_name_count": 1147,
+    "source_genepid_count": 1147,
+    "source_cluster_count": 4147,
+    "geography_row_count": 524,
+    "total_count_source_row_count": 2758,
+    "row_count": 17402,
+    "sample_count": 16,
+    "biological_accession_count": 16,
+    "run_count": 16,
+    "gene_cluster_count": 2638,
+    "country_count": 11,
+    "date_min": "2016-01-02",
+    "date_max": "2016-08-02"
+  },
+  "sources": [
+    {
+      "file": "gs3.parquet",
+      "url": "https://zenodo.org/api/records/14652833/files/gs3.parquet/content",
+      "sha256": "44a525c80e5eef8ea2fa37c762befacba39ccb166405c67957c45705a5631fcf",
+      "bytes": 1261464,
+      "retrieved_at_utc": "2026-11-03T15:01:34.209551+00:00",
+      "upstream_md5": "f561ce7ce44c3d7314a19ed3ced4f388"
+    },
+    {
+      "file": "tot_counts.csv",
+      "url": "https://zenodo.org/api/records/14652833/files/tot_counts.csv/content",
+      "sha256": "6f05aac49b01ceb8b34968f804353d712f05750689ed1f1d3e90b9e29f27b6d5",
+      "bytes": 334479,
+      "retrieved_at_utc": "2026-11-03T15:01:28.831068+00:00",
+      "upstream_md5": "3f19b0bc9bad915c31c33fab4a0734d7"
+    },
+    {
+      "file": "counts_clusters.csv",
+      "url": "https://zenodo.org/api/records/14652833/files/counts_clusters.csv/content",
+      "sha256": "998f9a7b2ca3c154065b9d8f159ba1dae43443834e842b1779db78376926c612",
+      "bytes": 124368330,
+      "retrieved_at_utc": "2026-11-03T15:14:18.388551+00:00",
+      "upstream_md5": "0b8d35daf47d261073a2c39b1835485e"
+    },
+    {
+      "file": "ERR2607372.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607372&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "8e7cd39a2c8ee3359cff6594867b6eb74132676d55072c4772a901ec361c19bd",
+      "bytes": 586,
+      "retrieved_at_utc": "2026-11-03T15:06:44.437980+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700693.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700693",
+      "sha256": "ee582969547bb2b958118d869922ded06e00f19c1ee70c357e51eef953eab538",
+      "bytes": 4425,
+      "retrieved_at_utc": "2026-11-03T15:11:02.827213+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607375.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607375&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "450ef4dcb9aa86cc7ea1dc633f69d93e7aa46035e7415b0a317785ba69c4117c",
+      "bytes": 585,
+      "retrieved_at_utc": "2026-11-03T15:06:44.433224+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700696.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700696",
+      "sha256": "479e45f6a0d306ea936d419400c6689afb1a13bdc360111fe8488747f84ed590",
+      "bytes": 4427,
+      "retrieved_at_utc": "2026-11-03T15:11:02.831165+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607380.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607380&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "0f065aaa867dd4ed132b22997d27e785d3b4aa49b4d0ffb6735e2797923aa75c",
+      "bytes": 590,
+      "retrieved_at_utc": "2026-11-03T15:06:44.433217+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700701.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700701",
+      "sha256": "685619337c80b123972e1fe1e68e60e4c82e74caeb0e054b0b1b9dbe81dd7e80",
+      "bytes": 4433,
+      "retrieved_at_utc": "2026-11-03T15:11:02.827213+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607385.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607385&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "d54ee99558f70e1b31ab1ccb2258ccc06adcc7816f59ba66455335459a12614a",
+      "bytes": 577,
+      "retrieved_at_utc": "2026-11-03T15:06:45.913044+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700706.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700706",
+      "sha256": "7669502043784ee01d936b8e24caeefd790fa4c41aedaa93ab0d615a78fee9d5",
+      "bytes": 4421,
+      "retrieved_at_utc": "2026-11-03T15:11:04.297942+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607390.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607390&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "388246bed92d4a90f7463f5cf4579167bdb4ce5616c612abbcf8dae2329650c3",
+      "bytes": 583,
+      "retrieved_at_utc": "2026-11-03T15:06:45.913044+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700711.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700711",
+      "sha256": "84e9108987094e2bc012dccb314d6cbe587056d91a850f9f7be947a607a084d9",
+      "bytes": 4424,
+      "retrieved_at_utc": "2026-11-03T15:11:04.297956+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607392.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607392&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "578e0fb2c2c34b4dbc6150cdbfe707567a2b7c267ae5a9f8d2548e05631c9f85",
+      "bytes": 585,
+      "retrieved_at_utc": "2026-11-03T15:06:45.914212+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700713.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700713",
+      "sha256": "104ae5c56d65bb9ddc107290cf6238a5f9decc5be080bde8b5690d6ead860d27",
+      "bytes": 4426,
+      "retrieved_at_utc": "2026-11-03T15:11:04.297939+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607395.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607395&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "0aae0af64324f418e52029f07c3d7f5557bddb3bda7e772a90c1cf20a2380430",
+      "bytes": 578,
+      "retrieved_at_utc": "2026-11-03T15:06:47.615981+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700716.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700716",
+      "sha256": "785af7d16f8fbe23de1b0f8a8d5f26f032ea074cd81857f264046425d1f5b609",
+      "bytes": 4425,
+      "retrieved_at_utc": "2026-11-03T15:11:05.652082+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607398.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607398&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "566aac5984fc390175a8e4154b5a139a85e276a2f8fb0407d654f537f00190b5",
+      "bytes": 586,
+      "retrieved_at_utc": "2026-11-03T15:06:47.615542+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700719.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700719",
+      "sha256": "4c920a353b1d37333560c946c8d7de1c9bc50d0ee17aceb52d892f6b9f9fcb45",
+      "bytes": 4427,
+      "retrieved_at_utc": "2026-11-03T15:11:05.651816+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607403.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607403&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "71eeb86c7bbdeb24f3f833235158c1eb110f87cb95d7706eeef8d1a081e61a41",
+      "bytes": 589,
+      "retrieved_at_utc": "2026-11-03T15:06:47.641346+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700724.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700724",
+      "sha256": "7742237690e93f97b684845ca22511813e3380215f04f618d9c44d787f98047d",
+      "bytes": 4426,
+      "retrieved_at_utc": "2026-11-03T15:11:05.658752+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607408.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607408&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "4eea32d9f8eebb64b8f0ae86c71ac19be4ed654157fb08c8f56cd49179ca0f43",
+      "bytes": 585,
+      "retrieved_at_utc": "2026-11-03T15:06:48.994236+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700729.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700729",
+      "sha256": "6b8e2335629b2923725b9336a33dd31ac52ee318efb6a26057b0009bca1142ee",
+      "bytes": 4426,
+      "retrieved_at_utc": "2026-11-03T15:11:07.392252+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607410.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607410&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "f461c18edb5248c8d84edb77aa637169d8a78398cf8f30452ab6b9ed0da9412d",
+      "bytes": 586,
+      "retrieved_at_utc": "2026-11-03T15:06:49.022271+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700731.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700731",
+      "sha256": "2c9c46d4ac919cf75db06b3c64c56e7502dc1f2af61460dff50b4861d25e6019",
+      "bytes": 4429,
+      "retrieved_at_utc": "2026-11-03T15:11:07.006596+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607414.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607414&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "90751d0f8cf597aa5075c25b0c97bd9297532c9680aa0d5e5b68e77e88517820",
+      "bytes": 586,
+      "retrieved_at_utc": "2026-11-03T15:06:49.365772+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700735.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700735",
+      "sha256": "7fbec678a3cebfbfeb5462606cb1dd2270c32b62d0fbd7241caf5c9d07b76b46",
+      "bytes": 4425,
+      "retrieved_at_utc": "2026-11-03T15:11:07.008973+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607421.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607421&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "9636d1e871ab73db4b81f6b0862e48eb0cea9f07be835f18dbc95c669fe65fcc",
+      "bytes": 582,
+      "retrieved_at_utc": "2026-11-03T15:06:51.442261+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700742.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700742",
+      "sha256": "39b7a717adc53cb52510352a010be25a881770377618c4c7edab4c7407009c87",
+      "bytes": 4425,
+      "retrieved_at_utc": "2026-11-03T15:11:08.520973+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607423.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607423&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "b6317d0f6fe9a937074c4eca405e2715eda59fa2064a8f2e7ba820959c63c243",
+      "bytes": 577,
+      "retrieved_at_utc": "2026-11-03T15:06:51.442238+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700744.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700744",
+      "sha256": "34a854a56c87a7198078cb737e8040338e646d7d0b741853ee8a6b617b5c5937",
+      "bytes": 4416,
+      "retrieved_at_utc": "2026-11-03T15:11:08.520973+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607425.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607425&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "156a777d061012cab883127ef9e00d65bd1d112235c5ab67b8ed4babcc16b702",
+      "bytes": 589,
+      "retrieved_at_utc": "2026-11-03T15:06:51.442522+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700746.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700746",
+      "sha256": "3df1852a08c9329b1b601211234cea0da2b61fc58e619989ecb994b8250c3816",
+      "bytes": 4430,
+      "retrieved_at_utc": "2026-11-03T15:11:08.785853+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "ERR2607428.json",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR2607428&result=read_run&fields=run_accession,sample_accession,sample_alias,study_accession,scientific_name,country,location,collection_date,lat,lon,fastq_ftp,fastq_md5,read_count,base_count&format=json",
+      "sha256": "d9eee484aba33936f81cae7df5e5085e1cbf78bcc7abf74708176f501b254efa",
+      "bytes": 593,
+      "retrieved_at_utc": "2026-11-03T15:06:53.010783+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "SAMEA4700749.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMEA4700749",
+      "sha256": "a9616133cb0450452c3b60554403de22b5e65a7b70915660d6df856aa27d2fcc",
+      "bytes": 4432,
+      "retrieved_at_utc": "2026-11-03T15:11:09.930810+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "record.json",
+      "url": "https://zenodo.org/api/records/14652833",
+      "sha256": "8c001b00197a88d1225986cee817e25e4c2cb2cb051e55aab50e5381539f3337",
+      "bytes": 5284,
+      "retrieved_at_utc": "2026-11-03T15:00:42.438532+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "code-README.md",
+      "url": "https://raw.githubusercontent.com/genomicepidemiology/gs3_acquired_vs_FG/main/README.md",
+      "sha256": "a3c5d0a364cebcd445603e0bf11b80f7d253831475b988ed0123576216d8916b",
+      "bytes": 2496,
+      "retrieved_at_utc": "2026-11-03T15:00:41.751436+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "Diversities_Abundances.ipynb",
+      "url": "https://raw.githubusercontent.com/genomicepidemiology/gs3_acquired_vs_FG/main/notebooks/Diversities_Abundances.ipynb",
+      "sha256": "6ea76e44a7a7984a8117c01e303bedb28a03c4db8ff3702f0171ae931eca2376",
+      "bytes": 5680359,
+      "retrieved_at_utc": "2026-11-03T15:03:26.000986+00:00",
+      "upstream_md5": null
+    },
+    {
+      "file": "PanRes-record.json",
+      "url": "https://zenodo.org/api/records/8055116",
+      "sha256": "aaf63d10ca6b508a6c355d260f9bcb0e648b4705ac8f99abb5345daad4f7e2b6",
+      "bytes": 8115,
+      "retrieved_at_utc": "2026-11-03T15:12:02.409628+00:00",
+      "upstream_md5": null
+    }
+  ],
+  "terms": {
+    "name": "Creative Commons Attribution 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "summary": "Zenodo record 14652833 declares CC BY 4.0. Credit the data creators and fixed version. ENA metadata/sequence records retain their original accession provenance."
+  },
+  "citation": "Martiny, H.-M., Munk, P., Fuschi, A., & Aarestrup, F. (2025). Data for Global Sewage 3 (v1). Zenodo. https://doi.org/10.5281/zenodo.14652833",
+  "methods": {
+    "pipeline": "ARGprofiler",
+    "mapper": "KMA 1.4.12a",
+    "database": "PanRes 1.0.0, Zenodo 8055116, linked by the author code README",
+    "clustering": "USEARCH 11.0.66, 98% nucleotide identity and query coverage as documented by author code",
+    "displayed_measure": "Original fragmentCountAln; no normalization performed"
+  },
+  "dictionary": {
+    "id": {
+      "label": "Id"
+    },
+    "sample_id": {
+      "label": "Source sample ID",
+      "definition": "Original genepid identifier, connected to one complete_name and one ENA sample accession within this subset."
+    },
+    "complete_name": {
+      "label": "Complete name"
+    },
+    "country": {
+      "label": "Country",
+      "definition": "Reported country from the matched ENA run."
+    },
+    "city": {
+      "label": "City",
+      "definition": "Unavailable in the matched run/sample metadata. The unlinked Parquet geography table is not used to infer a sample city."
+    },
+    "date": {
+      "label": "Collection date",
+      "definition": "ENA collection_date, independently checked against the ENA sample XML collection date."
+    },
+    "gene": {
+      "label": "PanRes 98% cluster",
+      "definition": "Original cluster_representative_98 identifier; no unverified gene-symbol mapping."
+    },
+    "cluster_representative_98": {
+      "label": "Cluster representative 98"
+    },
+    "group": {
+      "label": "Source database group",
+      "definition": "Original ResFinder/Functional group assignment."
+    },
+    "value": {
+      "label": "Raw fragment count",
+      "unit": "aligned fragments",
+      "definition": "Exact integer fragmentCountAln from the upstream cluster-count file; no normalization applied."
+    },
+    "unit": {
+      "label": "Unit"
+    },
+    "fragmentCountAln": {
+      "label": "Fragmentcountaln"
+    },
+    "raw_fragmentCountAln": {
+      "label": "Raw fragmentcountaln"
+    },
+    "fragmentCountAln_adj": {
+      "label": "Upstream adjusted count",
+      "definition": "Original decimal text retained. This field is not used as the query value or as a cross-study abundance metric."
+    },
+    "fragmentCountAln_adj_kb": {
+      "label": "Upstream adjusted count per kb",
+      "definition": "Original source field retained verbatim; no new normalization or denominator calculation is performed."
+    },
+    "resfinder": {
+      "label": "Resfinder"
+    },
+    "functional_amr": {
+      "label": "Functional amr"
+    },
+    "csabapal": {
+      "label": "Csabapal"
+    },
+    "run_accession": {
+      "label": "Run accession"
+    },
+    "sample_accession": {
+      "label": "Sample accession"
+    },
+    "source_file": {
+      "label": "Source file"
+    },
+    "source_row": {
+      "label": "Source row"
+    },
+    "total_fragments": {
+      "label": "Reported total fragments",
+      "definition": "tot_counts.csv total_fragments for the unique matched run after removing repeated bindCol joins. It is retained without a derived abundance calculation."
+    }
+  },
+  "notes": [
+    "The complete gs3.parquet was read and contains geography records without a sample key. Its locations are retained separately and are not assigned to count samples.",
+    "The author notebook references metadata_fixed.csv, which is not among the Zenodo files; the checked repository-relative path returns HTTP 404. Country/date/accessions here come from the directly linked ENA run and sample records.",
+    "Repeated tot_counts rows caused by bindCol are collapsed for run linkage; reported total_fragments are never summed across those duplicates.",
+    "Unlisted sample/cluster combinations remain absent, not zero. No positivity threshold, risk score, copies/L or relative abundance is derived.",
+    "panres_counts.csv, motus_counts.zip and the rest of the global count matrix are not served by the browser. Original file links and the adapter preserve the next-step retrieval path."
+  ],
+  "ui": {
+    "filters": [
+      "country",
+      "date",
+      "gene",
+      "group",
+      "sample_id"
+    ],
+    "columns": [
+      "sample_id",
+      "country",
+      "date",
+      "gene",
+      "group",
+      "value",
+      "unit",
+      "run_accession",
+      "source_row"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+Hospital Authority blood-culture antimicrobial non-susceptibility
+
+Source: Centre for Health Protection / Hospital Authority, Hong Kong SAR Government.
+Report release: 30 January 2026; tables generated December 2025.
+Original: https://www.chp.gov.hk/files/pdf/haamr_blood_key_findings2024.pdf
+Publication: https://www.chp.gov.hk/en/static/109746.html
+Rights notice: https://www.chp.gov.hk/en/static/24027.html
+
+The source rights remain with the Government and relevant owners. No general open
+licence for this adapted extract was identified in the checked CHP notice. That
+notice expressly describes personal/internal non-commercial copies in complete,
+unmodified form. The application MIT grant does not assign rights to source data.
+This package carries extracted factual statistics and source coordinates; it does
+not reproduce the PDF, figures, page layout or report prose.
+
+Scope: 175 annual records, 2020–2024, two organisms. E. coli hospital-onset: 60;
+K. pneumoniae community-onset: 55; K. pneumoniae hospital-onset: 60. The source
+file does not provide E. coli community-onset rows in these key-findings tables.
+Non-susceptibility remains the source metric; PHLSB R-only values are distinct.
+Rounded patient counts, suppressed numerators, coverage flags and CI inequality
+symbols are preserved. Percentages and CI are never recomputed from rounded counts.
+
+Reproduce from locally retained original PDF and its acquisition JSON:
+  python3 scripts/adapters/ha_blood.py
+Fetch and validate an update before replacing usable data:
+  python3 scripts/adapters/ha_blood.py --fetch
+Python dependency: pdfplumber. Parser version and source SHA256 are in metadata.

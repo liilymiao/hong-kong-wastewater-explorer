@@ -1,0 +1,348 @@
+{
+  "dataset_id": "flu-express",
+  "title": "Hong Kong Flu Express weekly surveillance",
+  "provider": "Department of Health, Hong Kong SAR Government",
+  "source_sha256": "a7cbed322488c5592209d3592d5ef48b97ca8c57a50b669498d93b8d4d3e89d4",
+  "source_bytes": 97444,
+  "source_url": "https://www.chp.gov.hk/files/misc/flux_data.csv",
+  "source_version": "Flu-through-2026W43-a7cbed322488",
+  "retrieved_at_utc": "2026-11-03T15:05:44.190965+00:00",
+  "source_last_modified": "Thu, 29 Oct 2026 08:54:44 GMT",
+  "status": "ready",
+  "terms": {
+    "name": "DATA.GOV.HK Terms of Use",
+    "url": "https://data.gov.hk/en/terms-and-conditions",
+    "attribution": "Source: Department of Health, Hong Kong SAR Government, via DATA.GOV.HK."
+  },
+  "dictionary": {
+    "Year": {
+      "label": "Surveillance year",
+      "unit": "year",
+      "description": "Source surveillance year; the first week can begin in December of the preceding year."
+    },
+    "Week": {
+      "label": "Surveillance week",
+      "unit": "week number",
+      "description": "Source week number retained."
+    },
+    "From": {
+      "label": "Week starts",
+      "unit": "date",
+      "description": "Original DD/MM/YYYY start date."
+    },
+    "To": {
+      "label": "Week ends",
+      "unit": "date",
+      "description": "Original DD/MM/YYYY end date."
+    },
+    "ILI_FMC": {
+      "label": "ILI: family medicine clinics",
+      "unit": "per 1,000 consultations",
+      "description": "ILI: family medicine clinics. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "ILI_PMP": {
+      "label": "ILI: private medical practitioners",
+      "unit": "per 1,000 consultations",
+      "description": "ILI: private medical practitioners. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "H1": {
+      "label": "Influenza A(H1) detections",
+      "unit": "positive detections",
+      "description": "Influenza A(H1) detections. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "H3": {
+      "label": "Influenza A(H3) detections",
+      "unit": "positive detections",
+      "description": "Influenza A(H3) detections. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "B": {
+      "label": "Influenza B detections",
+      "unit": "positive detections",
+      "description": "Influenza B detections. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "AandB": {
+      "label": "All influenza A/B detections",
+      "unit": "positive detections",
+      "description": "All influenza A/B detections. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "H1_proportion": {
+      "label": "Influenza A(H1) positivity",
+      "unit": "proportion (0–1)",
+      "denominator": "All respiratory specimens",
+      "description": "Influenza A(H1) positivity. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "H3_proportion": {
+      "label": "Influenza A(H3) positivity",
+      "unit": "proportion (0–1)",
+      "denominator": "All respiratory specimens",
+      "description": "Influenza A(H3) positivity. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "B_proportion": {
+      "label": "Influenza B positivity",
+      "unit": "proportion (0–1)",
+      "denominator": "All respiratory specimens",
+      "description": "Influenza B positivity. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "AandB_proportion": {
+      "label": "All influenza A/B positivity",
+      "unit": "proportion (0–1)",
+      "denominator": "All respiratory specimens",
+      "description": "All influenza A/B positivity. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "ILI_School": {
+      "label": "School ILI outbreaks",
+      "unit": "outbreaks",
+      "description": "School ILI outbreaks. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "ILI_NonSchool": {
+      "label": "Other institution ILI outbreaks",
+      "unit": "outbreaks",
+      "description": "Other institution ILI outbreaks. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_0_5": {
+      "label": "Influenza admission rate: 0–5",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_6_11": {
+      "label": "Influenza admission rate: 6–11",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_12_17": {
+      "label": "Influenza admission rate: 12–17",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_18_49": {
+      "label": "Influenza admission rate: 18–49",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_50_64": {
+      "label": "Influenza admission rate: 50–64",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_65_higher": {
+      "label": "Influenza admission rate: 65+",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Adm_All": {
+      "label": "Influenza admission rate: all ages",
+      "unit": "per 10,000 population",
+      "denominator": "Population of the corresponding age group",
+      "description": "Public hospital admission with principal diagnosis of influenza.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "ILI_AED": {
+      "label": "Public hospital emergency ILI syndrome",
+      "unit": "per 1,000 coded cases",
+      "description": "Public hospital emergency ILI syndrome. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Fever_CCCKG": {
+      "label": "Fever at child care/kindergarten",
+      "unit": "proportion (0–1)",
+      "denominator": "Children at sentinel child care centres/kindergartens",
+      "description": "Fever at child care/kindergarten. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "Fever_RCHE": {
+      "label": "Fever at elderly care homes",
+      "unit": "proportion (0–1)",
+      "denominator": "Residents at sentinel residential care homes for the elderly",
+      "description": "Fever at elderly care homes. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "ILI_CMP": {
+      "label": "ILI: Chinese medicine practitioners",
+      "unit": "per 1,000 consultations",
+      "description": "ILI: Chinese medicine practitioners. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "SevereCase_0_17": {
+      "label": "Severe influenza cases: 0–17",
+      "unit": "cases",
+      "description": "Severe influenza cases: 0–17. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "SevereCase_18_49": {
+      "label": "Severe influenza cases: 18–49",
+      "unit": "cases",
+      "description": "Severe influenza cases: 18–49. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "SevereCase_50_64": {
+      "label": "Severe influenza cases: 50–64",
+      "unit": "cases",
+      "description": "Severe influenza cases: 50–64. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    },
+    "SevereCase_65_higher": {
+      "label": "Severe influenza cases: 65+",
+      "unit": "cases",
+      "description": "Severe influenza cases: 65+. Values retain the units stated in the official dictionary.",
+      "missing": "Empty source cell remains null; not assigned zero."
+    }
+  },
+  "dictionary_url": "https://www.chp.gov.hk/files/pdf/flux_spec_en.pdf",
+  "dictionary_sha256": "b2fde8698d95413345e61d2b72b098d023678eb1f9e73155d6749798c71375cf",
+  "numeric_fields": [
+    "ILI_FMC",
+    "ILI_PMP",
+    "H1",
+    "H3",
+    "B",
+    "AandB",
+    "H1_proportion",
+    "H3_proportion",
+    "B_proportion",
+    "AandB_proportion",
+    "ILI_School",
+    "ILI_NonSchool",
+    "Adm_0_5",
+    "Adm_6_11",
+    "Adm_12_17",
+    "Adm_18_49",
+    "Adm_50_64",
+    "Adm_65_higher",
+    "Adm_All",
+    "ILI_AED",
+    "Fever_CCCKG",
+    "Fever_RCHE",
+    "ILI_CMP",
+    "SevereCase_0_17",
+    "SevereCase_18_49",
+    "SevereCase_50_64",
+    "SevereCase_65_higher"
+  ],
+  "source_field_count": 31,
+  "source_fields": [
+    "Year",
+    "Week",
+    "From",
+    "To",
+    "ILI_FMC",
+    "ILI_PMP",
+    "H1",
+    "H3",
+    "B",
+    "AandB",
+    "H1_proportion",
+    "H3_proportion",
+    "B_proportion",
+    "AandB_proportion",
+    "ILI_School",
+    "ILI_NonSchool",
+    "Adm_0_5",
+    "Adm_6_11",
+    "Adm_12_17",
+    "Adm_18_49",
+    "Adm_50_64",
+    "Adm_65_higher",
+    "Adm_All",
+    "ILI_AED",
+    "Fever_CCCKG",
+    "Fever_RCHE",
+    "ILI_CMP",
+    "SevereCase_0_17",
+    "SevereCase_18_49",
+    "SevereCase_50_64",
+    "SevereCase_65_higher"
+  ],
+  "unit": "Indicator-specific; see dictionary",
+  "region": "Hong Kong",
+  "unit_of_observation": "One surveillance week across 27 influenza/ILI indicators",
+  "temporal_resolution": "weekly",
+  "resource_update_frequency": "weekly",
+  "processing_version": "flu-express-dictionary-1.0",
+  "resource_url": "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-flu-express",
+  "start_date": "2013-12-29",
+  "end_date": "2026-10-24",
+  "first_week": "2014W01",
+  "last_week": "2026W43",
+  "row_count": 669,
+  "missing_by_field": {
+    "ILI_FMC": 261,
+    "ILI_PMP": 0,
+    "H1": 0,
+    "H3": 0,
+    "B": 0,
+    "AandB": 0,
+    "H1_proportion": 0,
+    "H3_proportion": 0,
+    "B_proportion": 0,
+    "AandB_proportion": 0,
+    "ILI_School": 154,
+    "ILI_NonSchool": 154,
+    "Adm_0_5": 0,
+    "Adm_6_11": 0,
+    "Adm_12_17": 0,
+    "Adm_18_49": 0,
+    "Adm_50_64": 0,
+    "Adm_65_higher": 0,
+    "Adm_All": 0,
+    "ILI_AED": 0,
+    "Fever_CCCKG": 148,
+    "Fever_RCHE": 0,
+    "ILI_CMP": 0,
+    "SevereCase_0_17": 109,
+    "SevereCase_18_49": 109,
+    "SevereCase_50_64": 122,
+    "SevereCase_65_higher": 109
+  },
+  "scope_note": "Weekly influenza clinical surveillance. Ratios stay on their original 0–1 scale; consultation and admission rates retain their source denominators. No wastewater field or influenza wastewater model is included.",
+  "normalization": "No rescaling, imputation or cross-indicator aggregation.",
+  "data_availability": {
+    "weekly_clinical_surveillance": true,
+    "original_31_fields": true,
+    "wastewater_measurements": false,
+    "clinical_wastewater_pairing": false,
+    "historical_release_reconstruction": false
+  },
+  "ui": {
+    "filters": [
+      {
+        "field": "year",
+        "label": "Surveillance year"
+      }
+    ],
+    "columns": [
+      "week_key",
+      "period_start",
+      "period_end",
+      "AandB_proportion",
+      "ILI_FMC",
+      "ILI_PMP",
+      "Adm_All"
+    ]
+  },
+  "default_filters": {},
+  "raw_source_download_url": "https://www.chp.gov.hk/files/misc/flux_data.csv"
+}

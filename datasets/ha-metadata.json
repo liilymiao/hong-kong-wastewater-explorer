@@ -1,0 +1,239 @@
+{
+  "dataset_id": "ha-amr",
+  "title": "Hospital Authority blood-culture non-susceptibility",
+  "provider": "Centre for Health Protection / Hospital Authority, Hong Kong SAR Government",
+  "region": "Hong Kong",
+  "research_type": "Clinical surveillance aggregate",
+  "citation": "Centre for Health Protection. Hospital Authority AMR Data (2024): Blood key findings. Released 30 January 2026.",
+  "update_frequency": "Annual report; file revisions possible",
+  "data_level": "Clinical aggregate",
+  "available_fields": [
+    "record_id",
+    "source_id",
+    "year",
+    "specimen_type",
+    "organism",
+    "antimicrobial",
+    "onset_setting",
+    "metric_definition",
+    "unit",
+    "reported_percentage",
+    "reported_percentage_operator",
+    "ci_lower",
+    "ci_lower_operator",
+    "ci_upper",
+    "ci_upper_operator",
+    "ci_method",
+    "reported_numerator",
+    "reported_denominator",
+    "reported_numerator_text",
+    "reported_denominator_text",
+    "reported_total_headcount",
+    "count_rounding",
+    "count_suppression",
+    "ast_coverage_flag",
+    "value_status",
+    "breakpoint_note",
+    "trend_raw",
+    "raw_cell",
+    "raw_antimicrobial",
+    "source_url",
+    "source_page",
+    "source_row",
+    "source_column",
+    "source_bbox",
+    "footnote_pages",
+    "source_version",
+    "source_sha256"
+  ],
+  "observation_grain": "Year × organism × antimicrobial × onset setting, blood culture",
+  "temporal_resolution": "annual",
+  "source_url": "https://www.chp.gov.hk/files/pdf/haamr_blood_key_findings2024.pdf",
+  "publication_url": "https://www.chp.gov.hk/en/static/109746.html",
+  "release_date": "2026-01-30",
+  "report_generated": "2025-12",
+  "source_version": "2024-generated-2025-12-800c3b2f2bdf",
+  "source_sha256": "800c3b2f2bdf733200531a542e319c4fed93bc5d569f2859407eb61f3d635302",
+  "source_bytes": 571011,
+  "retrieved_at_utc": "2026-11-03T15:00:28.990807+00:00",
+  "http_last_modified": "Tue, 10 Feb 2026 07:46:02 GMT",
+  "status": "connected",
+  "record_count": 175,
+  "source_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "unit": "percent",
+  "terms": {
+    "status": "source_rights_retained_no_open_licence_inferred",
+    "url": "https://www.chp.gov.hk/en/static/24027.html",
+    "attribution": "Source: Centre for Health Protection / Hospital Authority, Hong Kong SAR Government. Source rights remain with the Government and other owners.",
+    "distribution_scope": "Structured factual statistics and provenance are extracted. The source PDF, figures, layout and explanatory prose are not redistributed; the application MIT licence does not cover source material.",
+    "notice_scope": "The CHP notice permits complete unmodified copies for personal/internal non-commercial use. It does not establish a general open-data licence for this adapted extract."
+  },
+  "license_url": "https://www.chp.gov.hk/en/static/24027.html",
+  "dictionary": {
+    "record_id": "Stable record key within this source layout: physical page, antimicrobial row and year.",
+    "source_id": "ha-amr dataset identifier.",
+    "unit": "Percentage units, 0–100.",
+    "ci_method": "Wilson confidence interval, 95%.",
+    "value_status": "reported or reported_with_suppressed_count; the percentage can remain reported while its count is suppressed.",
+    "trend_raw": "Original row-level trend direction and p-value label; source Cochran-Armitage test, no new trend test performed.",
+    "source_url": "Official source PDF URL.",
+    "footnote_pages": "Physical PDF pages containing the shared notes.",
+    "year": "Surveillance year; annual precision.",
+    "specimen_type": "Blood culture.",
+    "organism": "Organism heading in the source PDF.",
+    "antimicrobial": "Source antimicrobial label with line-break hyphens joined; no drug-class-to-molecule substitutions.",
+    "onset_setting": "Literal source stratum: Community or Hospital.",
+    "metric_definition": "Official non-susceptibility percentage; retained separately from PHLSB R-only resistance.",
+    "reported_percentage": "Source percentage (0–100), not recomputed.",
+    "reported_percentage_operator": "= for a reported number; <, >, ≤ or ≥ if shown.",
+    "ci_lower": "Source lower 95% CI boundary in percentage points; read with ci_lower_operator.",
+    "ci_upper": "Source upper 95% CI boundary in percentage points; read with ci_upper_operator.",
+    "ci_lower_operator": "Inequality symbol retained for a censored lower limit; = otherwise.",
+    "ci_upper_operator": "Inequality symbol for upper boundary; = otherwise.",
+    "reported_numerator": "Rounded reported patient numerator, or null when § suppressed.",
+    "reported_denominator": "Rounded reported AST denominator, or null when § suppressed.",
+    "reported_numerator_text": "Literal numerator, including §.",
+    "reported_denominator_text": "Literal denominator.",
+    "reported_total_headcount": "Separate organism-specific annual total in the table header. This is not the AST denominator.",
+    "count_rounding": "nearest_100 for this source.",
+    "count_suppression": "none, numerator_gt0_lt50, denominator_gt0_lt50 or both_gt0_lt50.",
+    "ast_coverage_flag": "lt70pct when †† is printed; not_flagged otherwise.",
+    "breakpoint_note": "Source breakpoint-change context; no retrospective reinterpretation.",
+    "source_page": "1-based physical PDF page.",
+    "source_row": "1-based antimicrobial row within the page.",
+    "source_column": "1-based surveillance-year column (excluding label and onset columns).",
+    "source_bbox": "PDF cell bounding box (x0, top, x1, bottom), coordinates in points, stored as JSON text.",
+    "raw_cell": "Three source text lines: percentage, CI and numerator/denominator.",
+    "raw_antimicrobial": "Source antimicrobial text retaining line breaks.",
+    "source_sha256": "SHA256 of the complete source PDF.",
+    "source_version": "Report year, generation month and PDF SHA prefix."
+  },
+  "notes": {
+    "rounding": "Patient headcounts are rounded to the nearest 100. Percentages and confidence limits are retained at source precision; they are not recalculated from rounded counts.",
+    "suppression": "The source symbol § identifies a positive patient count below 50; its numeric field is null and its literal symbol is retained.",
+    "coverage": "A †† suffix marks AST coverage below 70%. Absence of the suffix is stored as not_flagged, without estimating an exact testing percentage.",
+    "deduplication": "The source de-duplicates with location of onset considered. A patient can contribute an isolate to each onset group when available.",
+    "confidence_intervals": "The source reports Wilson 95% confidence intervals. An inequality at a confidence bound is stored separately from the numeric boundary.",
+    "small_denominator": "The report excludes non-susceptibility percentages based on fewer than 10 de-duplicated isolates. No result rows are invented for absent cells.",
+    "metric": "The metric remains the official non-susceptibility percentage. The checked key-findings PDF does not separately enumerate R and I categories; no R-only or I+R relabelling is imposed.",
+    "scope": "This PDF supplies E. coli hospital-onset records and K. pneumoniae community- and hospital-onset records. E. coli community-onset rows are not present in this file."
+  },
+  "processing_version": "ha-blood-coordinate-parser-1.0",
+  "audit": {
+    "pages": [
+      {
+        "page": 3,
+        "organism": "Escherichia coli",
+        "onset_settings": [
+          "Hospital"
+        ],
+        "antimicrobial_rows": 10,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 50
+      },
+      {
+        "page": 4,
+        "organism": "Escherichia coli",
+        "onset_settings": [
+          "Hospital"
+        ],
+        "antimicrobial_rows": 2,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 10
+      },
+      {
+        "page": 5,
+        "organism": "Klebsiella pneumoniae",
+        "onset_settings": [
+          "Community"
+        ],
+        "antimicrobial_rows": 10,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 50
+      },
+      {
+        "page": 6,
+        "organism": "Klebsiella pneumoniae",
+        "onset_settings": [
+          "Community"
+        ],
+        "antimicrobial_rows": 1,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 5
+      },
+      {
+        "page": 7,
+        "organism": "Klebsiella pneumoniae",
+        "onset_settings": [
+          "Hospital"
+        ],
+        "antimicrobial_rows": 10,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 50
+      },
+      {
+        "page": 8,
+        "organism": "Klebsiella pneumoniae",
+        "onset_settings": [
+          "Hospital"
+        ],
+        "antimicrobial_rows": 2,
+        "year_columns": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "records": 10
+      }
+    ],
+    "rows": 175,
+    "groups": {
+      "Escherichia coli | Hospital": 60,
+      "Klebsiella pneumoniae | Community": 55,
+      "Klebsiella pneumoniae | Hospital": 60
+    },
+    "coverage_flagged_rows": 24,
+    "suppressed_numerator_rows": 44,
+    "inequality_ci_rows": 1,
+    "pdf_page_count": 8,
+    "excluded_scope": "Pages 1–2 contain culture sampling/positivity statistics, not antimicrobial non-susceptibility. No rows added for groups not printed."
+  }
+}

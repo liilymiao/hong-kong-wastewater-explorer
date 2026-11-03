@@ -1,0 +1,18 @@
+Hong Kong Flu Express surveillance
+
+Source: Department of Health, Hong Kong SAR Government, via DATA.GOV.HK.
+CSV: https://www.chp.gov.hk/files/misc/flux_data.csv
+Dictionary: https://www.chp.gov.hk/files/pdf/flux_spec_en.pdf
+Terms: https://data.gov.hk/en/terms-and-conditions
+Original ownership remains with the Government and relevant organisations.
+The application parser is project-owned MIT code; source data retain these terms.
+
+This snapshot contains 669 weeks, 2014W1 to 2026W43, and all 31 source columns.
+The first 2014 reporting week begins on 2013-12-29. The 27 indicator columns
+retain their original units: counts, proportions on a 0–1 scale, consultation
+or emergency rates per 1,000, and admission rates per 10,000 population.
+Blank cells remain missing. No wastewater fields are present in this CSV.
+
+The original CSV and dictionary remain at their official sources. Their hashes,
+field definitions, units and processing version are in flu-metadata.json.
+A dictionary revision requires review before the adapter replaces the snapshot.

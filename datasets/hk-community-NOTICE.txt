@@ -1,0 +1,37 @@
+Hong Kong community sewage QC and sample index
+
+Ding J and coauthors (2026). Highly Resolved Community Sewage Metagenomics
+Unveiling Landscape and Transmission Patterns of Antibiotic Resistome in Hong
+Kong Populations. Advanced Science 13(20), e08389.
+https://doi.org/10.1002/advs.202508389
+
+The original Supporting Information II workbook contains Tables S1 and S2.
+Copyright 2026 The Authors. Published by Wiley-VCH GmbH.
+License: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: the two public QC tables were parsed into a browser dataset and CSV.
+The original cell text remains in the dataset raw_rows. Normalized values use
+null for the source marker '/'. Seasons are read from the literal Sample ID
+prefix. The original XLSX is provided unchanged.
+
+Each QC table contains 189 identifiers. The paper separately reports 190
+collected samples at 95 sites in 18 districts, and 185 samples in Figure 1.
+Four QC identifiers have no Illumina metrics. No sample-level ARG abundance,
+clinical AST counts or clinical pairing matrix is included in these QC tables.
+
+The independently downloaded PRJNA1207805 ENA index contains 406 run records.
+It has not been joined to the workbook identifiers: no verified crosswalk
+was obtained, and archive dates extend beyond the paper's two campaigns.
+ENA records are provided under the INSDC free and unrestricted data-record
+access and redistribution policy, with appropriate citation.
+https://www.ebi.ac.uk/ena/browser/view/PRJNA1207805
+https://ena-browser-docs.readthedocs.io/en/latest/about/policies.html
+
+The author's processing repository is linked for provenance:
+https://github.com/dingjiahui123/Sewage_ARG
+Commit: cd16f411b900cf2b44028bef73cb0580d8ac7684
+The repository has no explicit license file. Its code is not redistributed.
+
+These data sources retain their respective terms. The application's MIT
+license applies to the application's own code, not these source materials.

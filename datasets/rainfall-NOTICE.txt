@@ -1,0 +1,23 @@
+Hong Kong Observatory daily rainfall
+
+Source: Hong Kong Observatory, Hong Kong SAR Government, via DATA.GOV.HK.
+https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_RF_ALL.csv
+Terms: https://data.gov.hk/en/terms-and-conditions
+Original ownership remains with the Government and relevant organisations.
+The application parser is project-owned MIT code; source data retain these terms.
+
+The browser snapshot includes 2,830 daily records from 2019-01-01 to 2026-09-30.
+The complete source covers 1884-03-01 to 2026-09-30 with 49,522 date-labelled
+rows. One source row is the invalid date 1900-02-29 with unavailable value ***;
+it remains an explicit exclusion. No replacement date is invented.
+
+Trace means less than 0.05 mm. The numeric rainfall field remains empty for
+Trace, with the interval [0,0.05) mm stored separately. C means complete;
+# marks incomplete data. A reported zero remains zero.
+
+This is one HKO station. Weekly summaries provide weather context and retain
+valid, trace and missing-day counts. Flow/catchment dilution corrections and
+historical release availability have not been established.
+
+The original CSV remains at its official source. Source hashes, dates, units
+and processing version are in rainfall-metadata.json.

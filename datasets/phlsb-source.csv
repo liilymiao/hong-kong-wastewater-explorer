@@ -1,0 +1,78 @@
+"Bacterial pathogen isolation and percentage of antimicrobial resistance, out-patient setting",,,,,,,
+The presented figures refer to specimens received during the designated year.,,,,,,,
+Throat swab specimens,,,,,,,
+Organism,Drugs,2020,2021,2022,2023,2024,2025
+"Beta-haemolytic streptococci of Lancefield Group A, C & G",Penicillin,0 (0.0%),0 (0.0%),0 (0.0%),0 (0.0%),0 (0.0%),0 (0.0%)
+,Erythromycin,10 (55.6%),3 (50.0%),1 (33.3%),2 (100.0%),15 (53.6%),10 (55.6%)
+,No.,18,6,3,2,28,18
+,,,,,,,
+Sputum specimens,,,,,,,
+Organism,Drugs /,2020,2021,2022,2023,2024,2025
+,Resistance phenotype,,,,,,
+Streptococcus pneumoniae,Penicillin,13 (21.7%),5 (21.7%),1 (12.5%),5?(23.8%),7?(29.2%),21 (25.3%)
+,Erythromycin,53?(88.3%),18?(78.3%),7 (87.5%),15?(71.4%),18?(75.0%),66 (79.5%)
+,Levofloxacin,1?(1.7%),0?(0.0%),0?(0.0%),0?(0.0%),1?(4.2%),1 (1.2%)
+,No.,60,23,8,21,24,83
+Haemophilus influenzae,Ampicillin,162?(48.6%),91?(51.4%),44 (67.7%),221?(58.9%),893?(65.9%),468?(63.9%)
+,Amoxicillin + clavulanic acid,56?(16.8%),27?(15.3%),23?(35.4%),83?(22.1%),351?(25.9%),165?(22.5%)
+,No.,333,177,65,375,1355,732
+Moraxella catarrhalis,BL+,224?(100.0%),36?(97.3%),12?(100.0%),217?(98.6%),759?(99.7%),1088?(99.7%)
+,No.,224,37,12,220,761,1091
+,,,,,,,
+Urine specimens,,,,,,,
+Organism,Drugs /,2020,2021,2022,2023,2024,2025
+,Resistance phenotype,,,,,,
+Escherichia coli,Ampicillin,4134?(64.2%),4818?(63.8%),3812?(63.0%),5321?(62.4%),5764?(67.2%),5406?(66.2%)
+,Amoxicillin + clavulanic acid,359?(5.6%),432?(5.7%),374?(6.2%),555?(6.5%),491?(5.7%),492?(6.0%)
+,Nitrofurantoin,68?(1.1%),70?(0.9%),65?(1.1%),67?(0.8%),53?(0.6%),51?(0.6%)
+,Co-trimoxazole,2036?(31.6%),2291?(30.3%),1795?(29.7%),2463?(28.9%),2763?(32.2%),2573?(31.5%)
+,Levofloxacin,2218?(34.4%),2689?(35.6%),2121?(35.0%),3084?(36.1%),3165?(36.9%),3038?(37.2%)
+,ESBL+,1093?(17.0%),1283?(17.0%),1002?(16.6%),1121?(13.1%),1445?(16.9%),1442?(17.6%)
+,Imipenem,6?(0.09%),14?(0.19%)#,10?(0.17%),22?(0.26%),33?(0.38%),35?(0.43%)
+,KPC+,0,0,0,0,0,0
+,NDM+,6,12,9,22,33,34
+,OXA-48-like+,0,1,1,0,0,1
+,No.,6444,7550,6053,8533,8575,8171
+Klebsiella pneumoniae complex*,Amoxicillin + clavulanic acid,109 (8.3%),131?(9.2%),82?(6.6%),140?(6.6%),132?(8.1%),104?(6.9%)
+,Nitrofurantoin,339?(25.9%),446?(31.2%),331?(26.6%),436?(20.6%),257?(15.7%),124?(8.2%)
+,Co-trimoxazole,225?(17.2%),234?(16.4%),169?(13.6%),247?(11.7%),248?(15.2%),235?(15.6%)
+,Levofloxacin,134?(10.3%),179?(12.5%),110?(8.8%),147?(6.9%),174?(10.6%),120?(8.0%)
+,ESBL+,94?(7.2%),143?(10.0%),134?(10.8%),109?(5.1%),148?(9.1%),120?(8.0%)
+,Imipenem,1?(0.08%),1?(0.07%),2?(0.16%),2?(0.09%),6?(0.37%),3?(0.20%)
+,KPC+,0,0,0,0,1,0
+,NDM+,1,1,2,1,2,2
+,OXA-48-like+,0,0,0,1,3,1
+,No.,1307,1429,1244,2118,1635,1508
+Proteus mirabilis^,Ampicillin,294?(38.9%),324?(38.9%),320?(43.8%),464?(42.3%),556?(41.5%),644?(45.6%)
+,Amoxicillin + clavulanic acid,86?(11.4%),101?(12.1%),102?(14.0%),117?(10.7%),135?(10.1%),193?(13.7%)
+,Co-trimoxazole,294?(38.9%),328?(39.4%),297?(40.6%),383?(34.9%),482?(36.0%),582?(41.2%)
+,Levofloxacin,129?(17.1%),157?(18.9%),173?(23.7%),184?(16.8%),301?(22.5%),290?(20.6%)
+,No.,755,832,731,1098,1339,1411
+,,,,,,,
+Enteric specimens,,,,,,,
+Organism,Drugs,2020,2021,2022,2023,2024,2025
+Campylobacter?spp.,Erythromycin,4?(13.8%),13?(37.1%),6?(33.3%),3?(11.1%),5?(17.2%),5?(16.1%)
+,No.,29,35,18,27,29,31
+Salmonella?spp.,Ampicillin,51?(67.1%),36?(56.3%),24?(53.3%),22?(44.0%),40?(58.0%),48?(66.7%)
+,Co-trimoxazole,19?(25.0%),12?(18.8%),11?(24.4%),12?(24.0%),10?(14.5%),14?(19.4%)
+,Ciprofloxacin,6?(7.9%),0?(0.0%),1?(2.2%),1?(2.0%),4?(5.8%),3?(4.2%)
+,No.,76,64,45,50,69,72
+Shigella?spp.,Ampicillin,-,-,-,-,1?(33.3%),-
+,Ciprofloxacin,-,-,-,-,0?(0.0%),-
+,No.,0,0,0,0,3,0
+Vibrio?spp.,Tetracycline,0?(0.0%),2?(4.4%),2?(5.4%),1?(3.7%),0?(0.0%),0?(0.0%)
+,No.,53,45,37,27,10,12
+,,,,,,,
+Soft tissue specimens,,,,,,,
+Organism,Drugs,2020,2021,2022,2023,2024,2025
+Staphylococcus aureus,Oxacillin,304?(29.4%),223?(25.5%),159?(24.1%),175?(26.8%),180?(24.0%),247?(26.8%)
+,[MRSA],,,,,,
+,No.,1033,875,661,652,750,920
+,,,,,,,
+Abbreviations:,,,,,,,
+MRSA = methicillin-resistant?Staphylococcus aureus,,,,,,,
+BL+ = beta-lactamase positive,,,,,,,
+ESBL+ = extended-spectrum beta-lactamase positive,,,,,,,
+*?Klebsiella pneumoniae?complex is 100% resistant to ampicillin.,,,,,,,
+^?Proteus mirabilis?is 100% resistant to nitrofurantoin.,,,,,,,
+#?one isolate was negative for the CPE genes tested.,,,,,,,
