@@ -1,0 +1,18 @@
+{
+  "provider": "Natural Earth",
+  "dataset": "1:10m land",
+  "download_url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_land.zip",
+  "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "license": "Public domain",
+  "download_sha256": "e547d749445eaa0964aba76738090ec88f5e63c4585122170f98c67a7ea922dc",
+  "bbox": [
+    113.6,
+    22.05,
+    114.95,
+    22.57
+  ],
+  "usage": "Regional geographic orientation only. No station, district risk, street or catchment claims.",
+  "outline_source": "Hong Kong Island polygon from this same Natural Earth dataset",
+  "science_data_sha256_before_after": "71b222ac16253ababb56688bea4a5f753ca7b090114515263ce3ad4d8ae11331",
+  "reviewed_date": "2026-11-03"
+}

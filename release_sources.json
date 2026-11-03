@@ -1,0 +1,99 @@
+{
+  "checked_date": "2026-11-03",
+  "dataset_url": "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express",
+  "data_provider": "Department of Health, Government of the Hong Kong Special Administrative Region",
+  "portal_terms_url": "https://data.gov.hk/en/terms-and-conditions",
+  "dictionary_is_explicitly_listed_on_dataset_page": true,
+  "materials_excluded": [
+    {
+      "path": "data/covidx_spec_en.pdf",
+      "bytes": 292482,
+      "sha256": "ef4cc09c098bdd8a57a8c9c038c4786366bb1d24e21151087d77971532209226",
+      "source_url": "https://www.chp.gov.hk/files/pdf/covidx_spec_en.pdf",
+      "release_action": "link_and_hash_only",
+      "reason": "Supplementary source document; original retained in internal evidence copy."
+    },
+    {
+      "path": "data/covid_flux_week42_22_10_2026_eng.pdf",
+      "bytes": 2207039,
+      "sha256": "ba91118518aa4840dd3815003bd248b10c453406754910f68015e7c734fd655f",
+      "source_url": "https://www.chp.gov.hk/files/pdf/covid_flux_week42_22_10_2026_eng.pdf",
+      "release_action": "link_and_hash_only",
+      "reason": "Supplementary source document; original retained in internal evidence copy."
+    },
+    {
+      "path": "data/archive_api_spec.html",
+      "bytes": 85340,
+      "sha256": "caa2c32d655390b8287addb1cec9b4e51859fcfd64cd164ca554d8a8769e88d9",
+      "source_url": "https://data.gov.hk/en/help/api-spec",
+      "release_action": "link_and_hash_only",
+      "reason": "Supplementary source document; original retained in internal evidence copy."
+    },
+    {
+      "path": "data/dataset_portal.html",
+      "bytes": 82503,
+      "sha256": "21ecb886697ef7361e183b90cadc667d894565fa89632940d50d20f7f05a716c",
+      "source_url": "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express",
+      "release_action": "link_and_hash_only",
+      "reason": "Supplementary source document; original retained in internal evidence copy."
+    },
+    {
+      "path": "data/covid_flux_week6_12_2_2026_eng.pdf",
+      "bytes": 1925374,
+      "sha256": "cb96beea828ce7820206db8f374580daaa74940b42f8be3cf278b3f357228cc6",
+      "source_url": "https://www.chp.gov.hk/files/pdf/covid_flux_week6_12_2_2026_eng.pdf",
+      "release_action": "link_and_hash_only",
+      "reason": "Supplementary source document; original retained in internal evidence copy."
+    },
+    {
+      "path": "sources/course/2013673_MATH7005_1_2026_T1_Assignment.txt",
+      "bytes": 612,
+      "sha256": "432f8d79e7815d0e82da8496154eecc3b2a33818ec62434551e06f09188dccb1",
+      "source_url": "https://buelearning.hkbu.edu.hk/mod/assign/view.php?id=2013673",
+      "release_action": "summary_link_and_hash_only",
+      "reason": "Course PDF or Moodle full-text snapshot; origin supplied by user; no redistribution permission recorded."
+    },
+    {
+      "path": "sources/course/2013674_MATH7005_1_2026_T1_Project.txt",
+      "bytes": 460,
+      "sha256": "a3e90d9de2bb098ffa9a8cebaad79741b6d327849bbf0b5cdc98e40af17b5ccd",
+      "source_url": "https://buelearning.hkbu.edu.hk/mod/assign/view.php?id=2013674",
+      "release_action": "summary_link_and_hash_only",
+      "reason": "Course PDF or Moodle full-text snapshot; origin supplied by user; no redistribution permission recorded."
+    },
+    {
+      "path": "sources/course/MATH7005_project_2026.pdf",
+      "bytes": 126548,
+      "sha256": "0b402fbd443fb0dcb5c7a856e0511f66a01b50cb3fc70562b46e55b254ece8ae",
+      "source_url": null,
+      "release_action": "summary_link_and_hash_only",
+      "reason": "Course PDF or Moodle full-text snapshot; origin supplied by user; no redistribution permission recorded."
+    },
+    {
+      "path": "sources/course/course_overview.txt",
+      "bytes": 5673,
+      "sha256": "ac60758fe9e8d8061c1eb02afc30284222277265b4f05c71095e54c6a8b4f4bd",
+      "source_url": null,
+      "release_action": "summary_link_and_hash_only",
+      "reason": "Course PDF or Moodle full-text snapshot; origin supplied by user; no redistribution permission recorded."
+    }
+  ],
+  "narration": {
+    "provided_by": "user",
+    "reference_filename": "proposal_纽约口音_v3_3分钟.mp3",
+    "provider_or_generator": null,
+    "creation_date": null,
+    "redistribution_terms": null,
+    "personal_narration_confirmed": false,
+    "course_exception_confirmed": false,
+    "release_action": "include_user_supplied_recording_in_new_render_with_provenance_unknowns_disclosed",
+    "user_authorized_project_use_and_publication": true
+  },
+  "unperformed": [
+    "full historical as-of evaluation",
+    "sampling-regime sensitivity with a fresh confirmation period",
+    "real-user task testing",
+    "personal re-recording",
+    "prospective warning validation"
+  ]
+}

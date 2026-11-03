@@ -1,20 +1,25 @@
-Hong Kong Wastewater Explorer
+Hong Kong Wastewater Explorer — v1.5.1
 
 Data
 Department of Health, Hong Kong SAR Government — COVID-19 Express.
 Frozen snapshot: 23 October 2026.
 https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express
+The original frozen numerical data and model outputs are retained.
+
+Map
+Natural Earth, 1:10m land, public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+Regional orientation only; monitoring values represent Hong Kong citywide.
+The overview and Hong Kong Island outline use this same dataset.
+Source, download hash and extent: map-source.json.
 
 Project introduction
-Interface and animation: project source in experience-renderer.js.
-The video uses the project's saved results. Geographic scope: Hong Kong citywide.
+Interface and animation: experience-renderer.js.
+Three-minute video using saved model outputs and the user-provided v3 narration.
+Eight subtitle languages. Media and renderer hashes: experience-source.json.
+Voice service, original generation date and service terms were not supplied.
 
-Map imagery
-Google Maps, standard road map. Map data ©2026 Google.
-Native 2x map tiles assembled on 26 October 2026 at 3270×1347 without resampling.
-Google Maps wordmark and copyright notice are displayed in the video.
-The Hong Kong Island outline is traced from the matching map for geographic focus.
-https://www.google.com/maps/@22.28,114.12,12z?hl=en
-Usage guidelines: https://about.google/brand-resource-center/products-and-services/geo-guidelines/
-
-Plotly.js is distributed under the MIT licence; its notice is included in plotly.min.js.
+Plotly.js 3.1.1
+Copyright 2012–2025, Plotly, Inc. MIT license.
+Full upstream notice: LICENSE-Plotly.txt.
+Further distribution records: THIRD_PARTY_NOTICES.md and release_sources.json.
