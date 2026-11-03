@@ -25,146 +25,146 @@ alone? The focus is measurable added predictive
 value for this particular monitoring task.
 
 6
-00:00:31.458 --> 00:00:36.608
+00:00:31.470 --> 00:00:36.410
 The intended users are public health researchers
 and research assistants in Hong Kong.
 
 7
-00:00:37.195 --> 00:00:40.368
+00:00:36.870 --> 00:00:40.110
 They need to compare signals, examine unusual weeks,
 
 8
-00:00:40.638 --> 00:00:43.188
+00:00:40.290 --> 00:00:43.000
 and explain how reliable a forecast is.
 
 9
-00:00:43.718 --> 00:00:46.168
+00:00:43.540 --> 00:00:46.080
 The tool brings these steps into one workflow:
 
 10
-00:00:46.698 --> 00:00:50.648
+00:00:46.310 --> 00:00:50.650
 choose a historical week, compare
 predictions, inspect the evidence,
 
 11
-00:00:50.758 --> 00:00:51.988
+00:00:50.770 --> 00:00:52.180
 and export the results.
 
 12
-00:00:52.598 --> 00:00:57.068
+00:00:52.640 --> 00:00:57.210
 This supports transparent review without
 rebuilding the analysis each time.
 
 13
-00:00:59.540 --> 00:01:04.495
+00:00:59.540 --> 00:01:04.190
 The main source is the Department
 of Health's COVID-19 Express dataset on
 
 14
-00:01:04.515 --> 00:01:10.415
+00:01:04.210 --> 00:01:10.290
 data.gov.hk. The current snapshot contains
 one hundred and ninety-four weekly
 
 15
-00:01:10.435 --> 00:01:13.630
+00:01:10.310 --> 00:01:13.560
 records from 2023 to 2026.
 
 16
-00:01:14.200 --> 00:01:19.070
+00:01:13.970 --> 00:01:18.940
 It combines clinical specimen positivity
 with the official wastewater indicator.
 
 17
-00:01:19.640 --> 00:01:22.450
+00:01:19.480 --> 00:01:22.740
 Two wastewater weeks are missing and remain missing.
 
 18
-00:01:23.021 --> 00:01:27.370
+00:01:23.190 --> 00:01:27.650
 The prediction target is the proportion
 of tested specimens that are positive.
 
 19
-00:01:29.980 --> 00:01:33.530
+00:01:29.970 --> 00:01:33.750
 A working Python prototype already provides trend charts,
 
 20
-00:01:33.860 --> 00:01:38.450
+00:01:34.010 --> 00:01:38.850
 historical replay, model comparison,
 and unusual-pattern exploration.
 
 21
-00:01:39.069 --> 00:01:43.750
+00:01:39.410 --> 00:01:43.780
 Ridge regression compares clinical history
 with the same history plus wastewater.
 
 22
-00:01:44.355 --> 00:01:51.135
+00:01:44.330 --> 00:01:50.850
 K-means groups similar signal combinations, while Local
 Outlier Factor highlights unusual observations for
 
 23
-00:01:51.155 --> 00:01:56.750
+00:01:50.870 --> 00:01:56.700
 review. These methods are implemented with NumPy,
 so their calculations can be examined,
 
 24
-00:01:57.040 --> 00:01:59.670
+00:01:56.990 --> 00:01:59.890
 explained and reproduced from saved inputs.
 
 25
-00:02:02.243 --> 00:02:06.638
+00:02:02.240 --> 00:02:06.780
 The primary forecast is two monitoring
 weeks after the latest observed week,
 
 26
-00:02:06.658 --> 00:02:08.893
+00:02:07.030 --> 00:02:09.150
 with actual target dates displayed.
 
 27
-00:02:09.521 --> 00:02:11.478
+00:02:09.610 --> 00:02:12.000
 Models are compared on the same test weeks,
 
 28
-00:02:11.498 --> 00:02:13.553
+00:02:12.210 --> 00:02:14.080
 with settings selected earlier.
 
 29
-00:02:14.043 --> 00:02:18.053
+00:02:14.660 --> 00:02:18.830
 The current retrospective evaluation uses a frozen snapshot.
 
 30
-00:02:18.696 --> 00:02:22.693
+00:02:19.230 --> 00:02:23.420
 Initial gains depend on prediction
 bounds, and uncertainty remains.
 
 31
-00:02:23.303 --> 00:02:29.173
+00:02:23.870 --> 00:02:29.530
 The next evaluation will reconstruct historical
 data availability and examine revisions.
 
 32
-00:02:31.870 --> 00:02:38.165
+00:02:31.880 --> 00:02:37.510
 The intended impact is a more transparent way to assess
 the value of Hong Kong's wastewater monitoring
 
 33
-00:02:38.185 --> 00:02:44.285
+00:02:37.530 --> 00:02:43.790
 data. Researchers could use the tool
 to identify questions worth investigating and
 
 34
-00:02:44.305 --> 00:02:46.500
+00:02:43.810 --> 00:02:46.040
 judge when an extra signal helps.
 
 35
-00:02:47.080 --> 00:02:50.480
+00:02:46.550 --> 00:02:50.590
 Next steps include user feedback and clearer explanations.
 
 36
-00:02:51.090 --> 00:02:55.280
+00:02:51.060 --> 00:02:55.290
 A useful outcome is also learning
 when wastewater adds little value,
 
 37
-00:02:55.310 --> 00:02:57.780
+00:02:55.570 --> 00:02:58.060
 with the evidence available for inspection.

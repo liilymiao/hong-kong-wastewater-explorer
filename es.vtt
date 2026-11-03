@@ -25,150 +25,150 @@ frente al historial clínico solo? El foco es medir
 ese valor predictivo añadido para esta tarea de vigilancia.
 
 6
-00:00:31.458 --> 00:00:36.608
+00:00:31.470 --> 00:00:36.410
 El producto se dirige a investigadores de salud pública
 y asistentes de investigación de Hong Kong.
 
 7
-00:00:37.195 --> 00:00:40.368
+00:00:36.870 --> 00:00:40.110
 Necesitan comparar señales y examinar semanas atípicas,
 
 8
-00:00:40.638 --> 00:00:43.188
+00:00:40.290 --> 00:00:43.000
 y explicar la fiabilidad de una predicción.
 
 9
-00:00:43.718 --> 00:00:46.168
+00:00:43.540 --> 00:00:46.080
 La herramienta reúne estos pasos en un mismo flujo:
 
 10
-00:00:46.698 --> 00:00:50.648
+00:00:46.310 --> 00:00:50.650
 elegir una semana histórica, comparar predicciones
 y examinar la evidencia,
 
 11
-00:00:50.758 --> 00:00:51.988
+00:00:50.770 --> 00:00:52.180
 y exportar resultados.
 
 12
-00:00:52.598 --> 00:00:57.068
+00:00:52.640 --> 00:00:57.210
 Así se facilita una revisión transparente,
 sin rehacer el análisis cada vez.
 
 13
-00:00:59.540 --> 00:01:04.495
+00:00:59.540 --> 00:01:04.190
 La fuente principal es COVID-19 Express,
 del Departamento de Salud de Hong Kong,
 
 14
-00:01:04.515 --> 00:01:10.415
+00:01:04.210 --> 00:01:10.290
 en data.gov.hk. Esta instantánea contiene
 194 registros semanales,
 
 15
-00:01:10.435 --> 00:01:13.630
+00:01:10.310 --> 00:01:13.560
 que abarcan de 2023 a 2026.
 
 16
-00:01:14.200 --> 00:01:19.070
+00:01:13.970 --> 00:01:18.940
 Combina la positividad de las muestras clínicas
 con el indicador oficial de aguas residuales.
 
 17
-00:01:19.640 --> 00:01:22.450
+00:01:19.480 --> 00:01:22.740
 Las dos semanas sin datos de aguas residuales
 siguen sin datos.
 
 18
-00:01:23.021 --> 00:01:27.370
+00:01:23.190 --> 00:01:27.650
 Predecimos la proporción de muestras analizadas
 que dan positivo.
 
 19
-00:01:29.980 --> 00:01:33.530
+00:01:29.970 --> 00:01:33.750
 El prototipo Python ya ofrece gráficos de tendencias,
 
 20
-00:01:33.860 --> 00:01:38.450
+00:01:34.010 --> 00:01:38.850
 revisión histórica, comparación de modelos
 y exploración de patrones atípicos.
 
 21
-00:01:39.069 --> 00:01:43.750
+00:01:39.410 --> 00:01:43.780
 Ridge compara modelos con historial clínico,
 con y sin aguas residuales.
 
 22
-00:01:44.355 --> 00:01:51.135
+00:01:44.330 --> 00:01:50.850
 K-means agrupa combinaciones de señales similares.
 Local Outlier Factor señala observaciones atípicas
 
 23
-00:01:51.155 --> 00:01:56.750
+00:01:50.870 --> 00:01:56.700
 para su revisión. Se implementan con NumPy,
 lo que permite examinar los cálculos,
 
 24
-00:01:57.040 --> 00:01:59.670
+00:01:56.990 --> 00:01:59.890
 explicarlos y reproducirlos
 con las entradas guardadas.
 
 25
-00:02:02.243 --> 00:02:06.638
+00:02:02.240 --> 00:02:06.780
 Previsión principal: dos semanas de vigilancia
 tras la última semana observada,
 
 26
-00:02:06.658 --> 00:02:08.893
+00:02:07.030 --> 00:02:09.150
 con las fechas objetivo visibles.
 
 27
-00:02:09.521 --> 00:02:11.478
+00:02:09.610 --> 00:02:12.000
 Se evalúan en las mismas semanas de prueba,
 
 28
-00:02:11.498 --> 00:02:13.553
+00:02:12.210 --> 00:02:14.080
 con ajustes elegidos previamente.
 
 29
-00:02:14.043 --> 00:02:18.053
+00:02:14.660 --> 00:02:18.830
 La evaluación retrospectiva actual utiliza
 una instantánea fija de los datos.
 
 30
-00:02:18.696 --> 00:02:22.693
+00:02:19.230 --> 00:02:23.420
 La mejora inicial varía con los límites de predicción
 y aún es incierta.
 
 31
-00:02:23.303 --> 00:02:29.173
+00:02:23.870 --> 00:02:29.530
 La próxima evaluación reconstruirá la disponibilidad pasada
 de los datos y examinará sus revisiones.
 
 32
-00:02:31.870 --> 00:02:38.165
+00:02:31.880 --> 00:02:37.510
 Buscamos evaluar con más transparencia
 el valor de los datos de aguas residuales de Hong Kong.
 
 33
-00:02:38.185 --> 00:02:44.285
+00:02:37.530 --> 00:02:43.790
 Los investigadores podrán usar la herramienta
 para identificar preguntas que merecen estudiarse,
 
 34
-00:02:44.305 --> 00:02:46.500
+00:02:43.810 --> 00:02:46.040
 y juzgar cuándo ayuda una señal adicional.
 
 35
-00:02:47.080 --> 00:02:50.480
+00:02:46.550 --> 00:02:50.590
 Los próximos pasos incluyen opiniones de usuarios
 y explicaciones más claras.
 
 36
-00:02:51.090 --> 00:02:55.280
+00:02:51.060 --> 00:02:55.290
 Saber cuándo las aguas residuales aportan poco
 también es un resultado útil,
 
 37
-00:02:55.310 --> 00:02:57.780
+00:02:55.570 --> 00:02:58.060
 con la evidencia disponible para su revisión.

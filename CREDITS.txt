@@ -10,11 +10,11 @@ Interface and animation: project source in experience-renderer.js.
 The video uses the project's saved results. Geographic scope: Hong Kong citywide.
 
 Map imagery
-Google Maps, Terrain view. Map data ©2026.
-Captured in Safari on 26 October 2026 for the educational project demonstration.
-Original map colours, Google Maps attribution, copyright notice and scale are retained.
-https://www.google.com/maps/@22.52,114.12,10z/data=!5m1!1e4?hl=en
-https://www.google.com/maps/@22.4108903,114.2108782,11z/data=!5m1!1e4?hl=en
+Google Maps, standard road map. Map data ©2026 Google.
+Native 2x map tiles assembled on 26 October 2026 at 3270×1347 without resampling.
+Google Maps wordmark and copyright notice are displayed in the video.
+The Hong Kong Island outline is traced from the matching map for geographic focus.
+https://www.google.com/maps/@22.28,114.12,12z?hl=en
 Usage guidelines: https://about.google/brand-resource-center/products-and-services/geo-guidelines/
 
 Plotly.js is distributed under the MIT licence; its notice is included in plotly.min.js.
