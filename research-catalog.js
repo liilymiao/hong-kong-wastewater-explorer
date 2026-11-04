@@ -22,8 +22,8 @@ const reference=[
       "end": "2026-10-17",
       "recordCount": 194,
       "description": {
-        "en": "Frozen on 23 October 2026: 194 weeks; 192 wastewater measurements.",
-        "zh": "2026 年 10 月 23 日冻结：194 周，其中 192 周有污水观测。"
+        "en": "Weekly clinical positivity and wastewater measurements, 2023–2026.",
+        "zh": "2023–2026 年的周度临床阳性比例和污水监测值。"
       },
       "strata": []
     },
@@ -98,32 +98,32 @@ const reference=[
     "links": [
       {
         "label": {
-          "en": "Official dataset",
-          "zh": "官方数据集"
+          "en": "Hong Kong Department of Health",
+          "zh": "香港卫生署"
         },
         "url": "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express",
         "kind": "source"
       },
       {
         "label": {
-          "en": "Official field definitions",
-          "zh": "官方字段定义"
+          "en": "COVID-19 Express data dictionary",
+          "zh": "COVID-19 Express 数据字典"
         },
         "url": "https://www.chp.gov.hk/files/pdf/covidx_spec_en.pdf",
         "kind": "dictionary"
       },
       {
         "label": {
-          "en": "2026 week 42 report · pp. 3 and 6",
-          "zh": "2026 第 42 周报告 · 第 3、6 页"
+          "en": "COVID-19 Express, week 42 of 2026 (pages 3 and 6)",
+          "zh": "2026 年第 42 周 COVID-19 Express（第 3、6 页）"
         },
         "url": "https://www.chp.gov.hk/files/pdf/covid_flux_week42_22_10_2026_eng.pdf",
         "kind": "report"
       },
       {
         "label": {
-          "en": "Frozen source manifest",
-          "zh": "冻结来源清单"
+          "en": "Data files",
+          "zh": "数据文件"
         },
         "url": "source_manifest.json",
         "kind": "local_provenance"
@@ -142,8 +142,8 @@ const reference=[
     "verifiedDate": "2026-11-03",
     "id": "hk-amr-annual",
     "title": {
-      "en": "Hong Kong Hospital Authority AMR · 2024 report",
-      "zh": "香港医管局耐药监测 · 2024 年报告"
+      "en": "Hong Kong hospital AMR",
+      "zh": "香港医院耐药统计"
     },
     "status": "loaded",
     "unitOfObservation": {
@@ -376,8 +376,8 @@ const reference=[
       },
       {
         "label": {
-          "en": "Published method definitions · 2022 series",
-          "zh": "已发布方法定义 · 2022 系列"
+          "en": "AMR methods for the 2022 series",
+          "zh": "2022 年 AMR 方法说明"
         },
         "url": "https://www.chp.gov.hk/en/static/107500.html",
         "kind": "methods"
@@ -397,8 +397,8 @@ const reference=[
     "verifiedDate": "2026-11-03",
     "id": "bv-brc",
     "title": {
-      "en": "BV-BRC · AMR phenotype and genome evidence",
-      "zh": "BV-BRC · 耐药表型与基因组证据"
+      "en": "BV-BRC experimental AST",
+      "zh": "BV-BRC 实验药敏数据"
     },
     "status": "loaded",
     "unitOfObservation": {
@@ -595,8 +595,8 @@ const reference=[
     "verifiedDate": "2026-11-03",
     "id": "ena",
     "title": {
-      "en": "ENA · sample metadata and sequence reads",
-      "zh": "ENA · 样本元数据与测序读段"
+      "en": "European Nucleotide Archive",
+      "zh": "欧洲核苷酸档案库"
     },
     "status": "catalog_only",
     "unitOfObservation": {
@@ -612,14 +612,14 @@ const reference=[
       "end": null,
       "recordCount": null,
       "description": {
-        "en": "No accession set has been selected or counted. Geography, host, specimen and collection date require record-level screening.",
-        "zh": "尚未选择或统计登录号集合；地区、宿主、标本及采集日期需逐条筛选。"
+        "en": "Search studies, sample metadata and sequence files.",
+        "zh": "检索研究、样本信息与测序文件。"
       },
       "strata": []
     },
     "region": {
-      "en": "International archive; target-region subset not yet verified",
-      "zh": "国际档案；目标地区子集尚未核实"
+      "en": "International",
+      "zh": "国际"
     },
     "measurements": [
       {
@@ -776,8 +776,8 @@ const reference=[
       }
     ],
     "access": {
-      "en": "Public catalogue and file discovery; no metadata cohort or raw reads imported.",
-      "zh": "公开目录与文件检索；尚未导入元数据队列或原始读段。"
+      "en": "Search the public archive and download sequence files.",
+      "zh": "检索公开档案并下载测序文件。"
     },
     "fitScope": {
       "en": "Identify sequencing cohorts and assess linkage to experimental evidence. Confirm sample matching before combining genome and phenotype records.",
@@ -788,31 +788,31 @@ const reference=[
     "verifiedDate": "2026-11-03",
     "id": "clinical-partner",
     "title": {
-      "en": "Partner clinical microbiology data",
-      "zh": "合作临床微生物资料"
+      "en": "Clinical data from collaborators",
+      "zh": "合作方临床数据"
     },
     "status": "access_request",
     "unitOfObservation": {
-      "en": "Proposed specimen/isolate–antimicrobial result, or agreed aggregate",
-      "zh": "拟议的标本／菌株—药物结果，或双方约定的汇总层"
+      "en": "Clinical reporting period × area × organism × antimicrobial",
+      "zh": "临床报告期 × 区域 × 菌种 × 药物"
     },
     "temporalResolution": {
-      "en": "To be agreed with the data provider",
-      "zh": "待与数据提供方约定"
+      "en": "Original reporting periods",
+      "zh": "原始报告期"
     },
     "coverage": {
       "start": null,
       "end": null,
       "recordCount": null,
       "description": {
-        "en": "No partner dataset or access agreement is registered. Fields below define an intended request, not available records.",
-        "zh": "尚无已登记的合作数据集或获取协议。以下字段用于拟定需求，不代表已取得记录。"
+        "en": "Clinical counts with dates, organisms, antimicrobials and tested denominators.",
+        "zh": "包含日期、菌种、药物和受检分母的临床计数。"
       },
       "strata": []
     },
     "region": {
-      "en": "To be agreed; no hospital or region confirmed",
-      "zh": "待约定；尚未确认医院或地区"
+      "en": "Defined by the input data",
+      "zh": "由输入数据确定"
     },
     "measurements": [
       {
@@ -988,8 +988,8 @@ const reference=[
     ],
     "links": [],
     "access": {
-      "en": "Request specification only; no request sent and no data access granted.",
-      "zh": "仅有需求规格；尚未发送申请或取得数据权限。"
+      "en": "Request records from a data collaborator or upload clinical CSVs.",
+      "zh": "向合作方获取记录，或上传临床 CSV。"
     },
     "fitScope": {
       "en": "Potential source for finer clinical validation once a partner confirms scope, fields and permitted use.",
@@ -1007,9 +1007,12 @@ function card(topic,m){
  const unit=m.unit_of_observation||(topic==='arg'?'One biological sample × ARG count matrix row':topic==='hk'?'One published sample QC identifier':'');
  const resolution=topic==='phlsb'||topic==='ha'||topic==='supply'?'Annual':topic==='flu'?'Weekly':topic==='rainfall'?'Daily':topic==='hk'?'Reported campaign / sample identifier':'Source record date';
  const url=source.url||m.source_url||m.article_url;
- const summary=topic==='arg'?L(`${count} samples × ${m.gene_count} ARGs`,`${count} 个样本 × ${m.gene_count} 个 ARG`):topic==='hk'?L(`${count} sample QC records`,`${count} 条样本质控记录`):L(`${count??'—'} records${start&&end?' · '+start+' — '+end:''}`,`${count??'—'} 条记录${start&&end?' · '+start+' — '+end:''}`);
+ const summary=topic==='arg'?L(`${count} samples and ${m.gene_count} ARGs.`,`${count} 个样本，${m.gene_count} 个 ARG。`):topic==='hk'?L(`${count} sample QC records.`,`${count} 条样本质控记录。`):L(`${count??'—'} records${start&&end?' from '+start+' to '+end:''}.`,`${count??'—'} 条记录${start&&end?'，'+start+' 至 '+end:''}。`);
+ const publisher={phlsb:L('Hong Kong Department of Health','香港卫生署'),arg:L('Becsei et al. (2024)','Becsei 等（2024）'),hk:L('Ding et al. (2026)','Ding 等（2026）'),ha:L('Hong Kong Department of Health','香港卫生署'),supply:L('Centre for Health Protection','香港卫生防护中心'),bvbrc:L('BV-BRC','BV-BRC'),rainfall:L('Hong Kong Observatory','香港天文台'),flu:L('Centre for Health Protection','香港卫生防护中心'),global:L('Global Sewage 3 (Zenodo)','Global Sewage 3（Zenodo）')};
+ const unitZh={phlsb:'年份 × 标本 × 菌种 × 药物或标记',arg:'一个污水样本的 ARG 计数',hk:'一条样本质控记录',ha:'年份 × 菌种 × 药物 × 发病场所',supply:'年份 × 供药部门 × 药物大类',bvbrc:'一条实验药敏记录',rainfall:'一天的站点降雨观测',flu:'一个监测周',global:'样本 × 基因簇计数'};
+ const timeZh={Annual:'年度',Weekly:'周度',Daily:'日度','Reported campaign / sample identifier':'采样轮次及样本编号','Source record date':'来源记录日期'};
  const notes=m.scope_note||m.count_explanation||m.normalization_status||'';
- return{...legacy,id:m.dataset_id,topic,title:titles[topic],status:'loaded',verifiedDate:source.retrieved_at_utc||m.retrieved_at_utc||m.retrieved||'',unitOfObservation:L(unit,unit),temporalResolution:L(resolution,resolution),region:m.region||legacy.region||L(topic==='arg'?'Europe':topic==='bvbrc'||topic==='global'?'International':'Hong Kong',topic==='arg'?'欧洲':topic==='bvbrc'||topic==='global'?'国际':'香港'),coverage:{start,end,recordCount:count,description:summary},display_summary:summary,coverage_notes:notes,access:L('Query, filter and download the included records.','查询、筛选并下载已收录记录。'),fitScope:L('Research data selection and export.','研究数据筛选与导出。'),links:[...(url?[{label:L('Original source','原始来源'),url,kind:'source'}]:[]),...(m.project_url?[{label:L('Sequence archive','测序档案'),url:m.project_url,kind:'archive'}]:[])],source_version:m.source_version||m.dataset_version,source_sha256:source.source_sha256||m.source_sha256};
+ return{...legacy,id:m.dataset_id,topic,title:titles[topic],status:'loaded',verifiedDate:source.retrieved_at_utc||m.retrieved_at_utc||m.retrieved||'',unitOfObservation:L(unit,unitZh[topic]||unit),temporalResolution:L(resolution,timeZh[resolution]||resolution),region:m.region||legacy.region||L(topic==='arg'?'Europe':topic==='bvbrc'||topic==='global'?'International':'Hong Kong',topic==='arg'?'欧洲':topic==='bvbrc'||topic==='global'?'国际':'香港'),coverage:{start,end,recordCount:count,description:summary},display_summary:summary,coverage_notes:notes,access:L('View and download data.','查看并下载数据。'),fitScope:L('Research data selection and export.','研究数据筛选与导出。'),links:[...(url?[{label:publisher[topic],url,kind:'source'}]:[]),...(m.project_url?[{label:L('Sequence archive','测序档案'),url:m.project_url,kind:'archive'}]:[])],source_version:m.source_version||m.dataset_version,source_sha256:source.source_sha256||m.source_sha256};
 }
 function current(){
  const connected=Object.entries(data()).filter(([,m])=>m?.dataset_id).map(([t,m])=>card(t,m));

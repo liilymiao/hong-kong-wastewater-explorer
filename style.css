@@ -188,3 +188,8 @@ input[type=number],input[type=search],input[type=text],input[type=date]{min-widt
 .research-results-header .dataset-export,.results-heading .result-actions,.result-heading .result-actions{margin:0}
 .dataset-export{margin:12px 0}.query-summary{margin:8px 0 12px}
 @media(min-width:1080px){.research-task-nav{display:inline-flex;width:34%;vertical-align:top;margin:0 2% 12px 0}.research-task-nav .research-field{width:100%}.research-task-nav+.dataset-heading,.research-task-nav+.research-question.compact{display:inline-block;vertical-align:top;width:63%;margin:0 0 12px}.dataset-source-select{max-width:none;margin:0}.research-form-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.research-task-nav+.research-workspace{display:block}}
+
+/* Concise bilingual results and one readable source description. */
+.coverage-links p{margin:6px 0}.coverage-links a{display:inline-block;margin-right:18px}.coverage-description{font-size:13px;line-height:1.75;color:#526a79;max-width:960px}.coverage-description p{margin:8px 0}.coverage-metadata>summary{font-size:13px}.coverage-metadata pre{max-height:320px;overflow:auto}.coverage-item+.coverage-item{margin-top:8px}.query-context{font-size:13px;color:#637684;margin:6px 0 12px}.result-heading h2{overflow-wrap:anywhere}.stats .stat strong{overflow-wrap:anywhere}
+
+.stats.two{grid-template-columns:repeat(2,minmax(0,1fr))}

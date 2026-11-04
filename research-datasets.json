@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_version": "1.6.1",
+  "release_version": "1.6.2",
   "scope": "Additional public research datasets with independent source identities and terms. They do not alter the frozen COVID-19 scientific configuration 1.1 or its forecasts.",
   "frozen_covid_manifest": "source_manifest.json",
   "dataset_count": 9,
