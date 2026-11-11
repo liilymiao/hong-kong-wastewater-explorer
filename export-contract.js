@@ -1,6 +1,6 @@
 /* Metadata added at download time. Frozen input rows are never mutated. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.ExportContract=api;})(typeof window==='undefined'?this:window,function(){'use strict';
-const softwareVersion='1.6.2';
+const softwareVersion='1.6.3';
 const present=x=>x!==undefined&&x!==null&&x!=='';
 const has=(r,k)=>Object.prototype.hasOwnProperty.call(r,k);
 const choose=(...values)=>values.find(present)??'';
@@ -19,7 +19,7 @@ function enrichRows(rows,context={},dataset={}){
    else if(['Sewage_viralload','w_center','w'].includes(k))units[k]='copy/L';
    else if(k.includes('log1p_w'))units[k]='natural_log(1 + wastewater_copy_per_L)';
   }
-  Object.assign(r,{software_version:softwareVersion,analysis_version:choose(meta.project_version,config.project?.version),snapshot_date:choose(meta.snapshot_date,config.project?.snapshot_date_hkt),source_data_sha256:choose(config.data?.sha256),source_url:choose(meta.source_url),source_generated_at_utc:choose(meta.generated_at_utc),exported_at_utc:timestamp,export_kind:choose(context.kind),post_hoc_diagnostic:context.posthoc===true||r.analysis_type==='post_hoc_descriptive',horizon,score_mode:score,split,paired_set_id:choose(r.paired_set_id,paired?.paired_set_id),prediction_unit:predictionFields.some(k=>has(r,k))?'proportion (1 = 100%)':'',observed_unit:observationFields.some(k=>has(r,k))?'proportion (1 = 100%)':'',error_unit:Object.values(units).includes('percentage_points')?'percentage_points':'',field_units:JSON.stringify(units)});
+  Object.assign(r,{software_version:softwareVersion,analysis_version:choose(meta.project_version,config.project?.version),snapshot_date:choose(meta.snapshot_date,config.project?.snapshot_date_hkt),source_data_sha256:choose(config.data?.sha256),source_url:choose(meta.source_url),source_generated_at_utc:choose(meta.generated_at_utc),exported_at_utc:timestamp,export_kind:choose(context.kind),post_hoc_diagnostic:context.posthoc===true||r.analysis_type==='post_hoc_descriptive',horizon,score_mode:score,split,paired_set_id:has(row,'paired_set_id')?row.paired_set_id:choose(paired?.paired_set_id),prediction_unit:predictionFields.some(k=>has(r,k))?'proportion (1 = 100%)':'',observed_unit:observationFields.some(k=>has(r,k))?'proportion (1 = 100%)':'',error_unit:Object.values(units).includes('percentage_points')?'percentage_points':'',field_units:JSON.stringify(units)});
   if(interval){r.block_weeks=choose(row.block_weeks,context.blockWeeks,evaluation.bootstrap_block_weeks);r.bootstrap_resamples=choose(row.bootstrap_resamples,evaluation.bootstrap_repeats);r.bootstrap_confidence_level=choose(row.bootstrap_confidence_level,row.confidence_level,evaluation.bootstrap_confidence_level);r.interval_quantity=choose(row.interval_quantity,'mean_paired_MAE_difference_clinical_minus_combined');r.interval_unit='percentage_points';}
   else{for(const k of ['block_weeks','bootstrap_resamples','bootstrap_confidence_level','interval_quantity','interval_unit'])if(!has(r,k))r[k]='';}
   if(has(row,'coverage')){r.coverage_kind='evaluable_origins';r.n_evaluable_origins=choose(row.n_origins);r.n_candidate_origins=Number(row.coverage)>0&&present(row.n_origins)?Math.round(Number(row.n_origins)/Number(row.coverage)):'';}

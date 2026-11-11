@@ -1,14 +1,13 @@
-# v1.6.2
+# v1.6.3
 
-Shorter navigation, task names and controls put the selected data and results first. Data explorer, Past forecasts and Patterns and anomalies use consistent English and Chinese labels.
+Course workflow and numerical boundary fixes, 11 November 2026.
 
-- Results identify the organism, drug, specimen, period and unit in titles and fields. Decorative separators are removed from summaries, tables, tooltips and figure captions.
-- Download CSV, Download package, Download figure and Load query use the same wording across tasks.
-- Each page ends with one collapsed **Data coverage & sources** section. A compact description accompanies source links; versions, hashes, fields and full metadata are nested under **Technical details**.
-- Match my data shows concise import results beside each file. File and query version messages appear once beside the relevant action. Date controls appear when clinical records provide an actual period.
-- Chinese labels retain the distinctions between percentages and percentage points, R and I+R, raw counts and abundance, samples and AST records.
-- The interactive project demonstration uses the same simpler display style.
+- Python 1.5.3 adds a course entry, a real historical prediction trace, an English report and an isolated reproduction command.
+- The course UI keeps the selected horizon, prediction scoring and 2/4/8-week interval setting consistent with exported results.
+- Mixed ISO date values reload correctly from exported CSVs.
+- The website rejects blank and Boolean numeric inputs and retains missing metrics for empty paired comparisons.
+- Empty historical prediction tables display an empty state.
 
-This release changes interface text and presentation. The nine research-data snapshots, query and calculation rules, Python **1.5.2**, scientific configuration **1.1**, frozen COVID-19 results, video and eight subtitle tracks remain unchanged.
+The final extracted course package passed 157 tests, with one test requiring omitted internal source archives explicitly deselected. A fresh reconstruction matched all numerical values across 26 reference CSVs (8,173 rows). The seven-page English report was rendered and inspected. Python network-blocked pipeline and backend checks passed; this does not assert real-browser offline or visual acceptance.
 
-[Data sources](DATA_SOURCES.md) | [Previous release: v1.6.1](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/tag/v1.6.1)
+Scientific configuration 1.1, original input CSVs, reference values, dataset snapshots, video and subtitles remain unchanged. The archived course package retains its pre-publication acceptance record.

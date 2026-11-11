@@ -18,7 +18,13 @@ Explore monitoring data and download tables, matrices and experimental susceptib
 
 Download CSVs, figures or complete packages with query settings, source records and checksums. Save a query or copy its link to reopen the same selection. Source definitions and processing details are available in **Data coverage & sources**.
 
-Website **1.6.2**. The complete download includes Python **1.5.2**, scientific configuration **1.1**, frozen results, video and eight subtitle tracks.
+Software 1.6.3 retains the unchanged dataset snapshot metadata from 1.6.2.
+
+Version **1.6.3** includes Python **1.5.3**, scientific configuration **1.1**, frozen results, video and eight subtitle tracks.
+
+[Python course package](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/latest/download/course-python.zip) | [English report](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/latest/download/report.pdf)
+
+The Python course entry follows the research question, a reproducible historical prediction, model comparison, patterns and export. The package includes a ten-minute demonstration outline and implementation-to-test mapping.
 
 [Data sources](DATA_SOURCES.md) | [Release notes](RELEASE_NOTES.md) | [Dataset manifest](research-datasets.json) | [Credits](CREDITS.txt)
 
