@@ -1,0 +1,31 @@
+{
+  "version": "1.6.3",
+  "commit": "7a1e8f9d673aa89c72d731bca16806bcbe25e253",
+  "assets": {
+    "project.zip": {
+      "bytes": 130580457,
+      "sha256": "191d4247d2491cda278ad98731e43afc51308fac9b962c8cba316e36b1b8b9a6"
+    },
+    "course-python.zip": {
+      "bytes": 9746184,
+      "sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6"
+    },
+    "report.pdf": {
+      "bytes": 34945,
+      "sha256": "19ddaf35a4737f8daa98cfc190940bb5f4868747fa53c10e0971ae0eed5eff6c"
+    },
+    "proposal-english.mp4": {
+      "bytes": 8657847,
+      "sha256": "a32e8498d693a24da82141c97b186e954ab61cdc47773329e7d01896172c28ec"
+    },
+    "proposal-subtitled.mp4": {
+      "bytes": 8135901,
+      "sha256": "6a1e93fbf6c309e61bbc07da3a7c1d044d4a8529be361ab4e16ed9afa2a3c978"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 415,
+      "sha256": "1253f4e4a44139d1b7fb14602d36f4460b1fa8fd46fcb2af6a24b6c4f5e136f0"
+    }
+  },
+  "tag": "v1.6.3"
+}
