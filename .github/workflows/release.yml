@@ -29,7 +29,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Check comparison integrity
-        run: node tests/comparison-fingerprint.cjs
+        run: |
+          mkdir -p ../qa
+          node tests/comparison-fingerprint.cjs
       - name: Check reviewed release metadata
         id: reviewed
         run: |
