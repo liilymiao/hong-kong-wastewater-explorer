@@ -554,8 +554,8 @@
     },
     {
       "path": "release-preflight/README.md",
-      "bytes": 1349,
-      "sha256": "4b496c08b6e73399e0c752cb4c89c417a22b02b92c29b89e11e917d868b58a44"
+      "bytes": 1745,
+      "sha256": "2727d7126699485d0159492beccc0e56d9bae940a1584b5446865df02335246f"
     },
     {
       "path": "release-preflight/course-release-execution.json",
@@ -581,6 +581,16 @@
       "path": "release-preflight/portable-evidence-manifest.json",
       "bytes": 1564,
       "sha256": "b2a666757f249a9adc3f282d5b91a0ade4c2d99089ccba8a51494ee50fc48a2e"
+    },
+    {
+      "path": "release-preflight/website-export-version-execution.json",
+      "bytes": 4086,
+      "sha256": "fac6e9c4daacd2b27213ab8b2cf4b790807a8e6b6fbb0a927b10210ba8ecb28b"
+    },
+    {
+      "path": "release-preflight/website-export-version-tests.log",
+      "bytes": 2281,
+      "sha256": "b535e49255378cda72400e1e25be388401652c233dba4d34fcfbdfcd3c385a0c"
     },
     {
       "path": "release-preflight/website-release-execution.json",

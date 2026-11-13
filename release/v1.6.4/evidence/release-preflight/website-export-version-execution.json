@@ -1,0 +1,127 @@
+{
+  "reason": "Live release QA identified export metadata still using software version 1.6.3. Export and research-query version constants and their index cache keys were updated to 1.6.4. Scientific records and the comparison algorithm are unchanged.",
+  "command": [
+    "node",
+    "tests/comparison-fingerprint.cjs"
+  ],
+  "cwd": "${RELEASE_ROOT}/repo",
+  "stdout": "website-export-version-tests.log",
+  "returncode": 0,
+  "exit_evidence": "Parent agent observed the follow-up command exit 0. No start time or duration inferred.",
+  "bound_utc": "2026-11-13T15:45:15.036638+00:00",
+  "result": {
+    "status": "passed",
+    "assertions": 11349,
+    "verified_original_scopes": 8,
+    "retained_test_interval_states": 12,
+    "unchanged_export_rows": 3952,
+    "mutation_cases": [
+      {
+        "name": "same_count_prediction",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_raw_prediction",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_observation",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_origin",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_target",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "evaluation_version",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_version",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "configuration",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "frozen_decision",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_metadata",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_values",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_metrics",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_paired",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_bootstrap",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_stage",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      }
+    ],
+    "sha256_verified_against_node_crypto": true,
+    "data_js_sha256": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342",
+    "scope": "Actual app functions and comparison render/export in a Node VM with a parsed DOM; not a real-browser claim"
+  },
+  "sha256": {
+    "export-contract.js": "2fac6d65370edb125cbc88461b30b2c458b27af1c9c8f0400dcf96bcfc1b4572",
+    "research-query.js": "d5fbcc4e8a6ff77957fe3e4646b8ce5325e434302781b20aa2728da7eee6c2e3",
+    "index.html": "13ee56c69a4a24366bc039525758eaeb93e475ef4a5ee7154064ead346f80388",
+    "app.js": "929169999668c26b2ca11d4ebe573420a1e6341dd151c0bd52ab7a751ff80fd7",
+    "comparison-fingerprint.js": "eae5b97e7b18b16c7e12edd99ed7dbba678edf972793e00098c405d8663d7def",
+    "comparison-manifest.js": "13d6bced7a3a811b7af7789003fdd34e3dd6337e39a2d3835ae9bbad14f28d16",
+    "tests/comparison-fingerprint.cjs": "430abbd269b3b41b77ae9ecb27907b6c0541d2c20ea3b9ca306bfee8a02cd078",
+    "data.js": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342"
+  },
+  "log_sha256": "b535e49255378cda72400e1e25be388401652c233dba4d34fcfbdfcd3c385a0c",
+  "previous_record_retained": "website-release-execution.json",
+  "scope": "Actual render/export functions in Node DOM; live-browser evidence is separate."
+}
