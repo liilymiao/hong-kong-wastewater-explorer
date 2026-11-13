@@ -1,0 +1,35 @@
+{
+  "version": "1.6.4",
+  "commit": "089faac87f8783c61244367066fcf3735eaaa845",
+  "assets": {
+    "project.zip": {
+      "bytes": 130666537,
+      "sha256": "fd5e6fc6f5cbf17bc41168f385b5f8bcef8f38abf21933917bf844453954c037"
+    },
+    "course-python.zip": {
+      "bytes": 31002329,
+      "sha256": "bb2c345cfff9a47f7492ab2187e3de84132415cc2221b5358ec5c3243513ce6b"
+    },
+    "report.pdf": {
+      "bytes": 34945,
+      "sha256": "19ddaf35a4737f8daa98cfc190940bb5f4868747fa53c10e0971ae0eed5eff6c"
+    },
+    "proposal-english.mp4": {
+      "bytes": 8657847,
+      "sha256": "a32e8498d693a24da82141c97b186e954ab61cdc47773329e7d01896172c28ec"
+    },
+    "proposal-subtitled.mp4": {
+      "bytes": 8135901,
+      "sha256": "6a1e93fbf6c309e61bbc07da3a7c1d044d4a8529be361ab4e16ed9afa2a3c978"
+    },
+    "acceptance.zip": {
+      "bytes": 860437,
+      "sha256": "4c2b534d3855b2e5c6d3a16967a857899d9162a1d0a16d7f66929c7f427466d7"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 496,
+      "sha256": "c187f7d386a37558b8e7b934e34503fb64d84f69686125c1102155db95a2779e"
+    }
+  },
+  "tag": "v1.6.4"
+}
