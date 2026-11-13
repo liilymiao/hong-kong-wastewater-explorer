@@ -1,0 +1,35 @@
+{
+  "normalization": "Host-directory prefixes and XML/JSON hostname only; command arguments, outcomes and scientific values retained.",
+  "files": [
+    {
+      "path": "course-release-execution.json",
+      "original_sha256": "0c74cb713a5ca2757b5ed77b97479963cec0b0e970bb96062a8801eb5752744d",
+      "distributed_sha256": "f76d349aa1745b50d7ad914b176390441275cee7d403f9c84620f7c309d6af49",
+      "host_path_normalized": true
+    },
+    {
+      "path": "course-release-protected.json",
+      "original_sha256": "54c478ac465e0cb7fcc9ad73a53e4d9535c82fc67bc032c6915db0aac369dec5",
+      "distributed_sha256": "54c478ac465e0cb7fcc9ad73a53e4d9535c82fc67bc032c6915db0aac369dec5",
+      "host_path_normalized": false
+    },
+    {
+      "path": "course-release-pytest.log",
+      "original_sha256": "1e266958c5e60ef8145c2b37f270efa183f7d307fb90d9cb5ed55a6113f5b6ae",
+      "distributed_sha256": "7ba14c9ce60c259e5a73a0bb2df47a3fc1807311931b72c2a664c48607a03600",
+      "host_path_normalized": true
+    },
+    {
+      "path": "course-release-pytest.xml",
+      "original_sha256": "dbfec81588a94089415ac4d7e79784ddf437d411338a6d3a2c5316e7123836df",
+      "distributed_sha256": "1dc9509b67fca44f934084c617323b866dc9cda05dd3e5000411b5e20453e3fe",
+      "host_path_normalized": true
+    },
+    {
+      "path": "website-release-tests.log",
+      "original_sha256": "b535e49255378cda72400e1e25be388401652c233dba4d34fcfbdfcd3c385a0c",
+      "distributed_sha256": "b535e49255378cda72400e1e25be388401652c233dba4d34fcfbdfcd3c385a0c",
+      "host_path_normalized": false
+    }
+  ]
+}

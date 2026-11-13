@@ -7,16 +7,16 @@ import re
 import subprocess
 import time
 
-TAG = 'v1.6.3'
+TAG = 'v1.6.4'
 REPO = os.environ['GH_REPO']
 metadata = json.loads(Path(f'release/{TAG}/release.json').read_text())
 COMMIT = metadata['commit']
 if metadata['tag'] != TAG or not re.fullmatch(r'[0-9a-f]{40}', COMMIT):
     raise RuntimeError('Invalid reviewed release identity')
 NAMES = {'project.zip', 'course-python.zip', 'report.pdf', 'proposal-english.mp4',
-         'proposal-subtitled.mp4', 'SHA256SUMS.txt'}
+         'proposal-subtitled.mp4', 'acceptance.zip', 'SHA256SUMS.txt'}
 if set(metadata['assets']) != NAMES:
-    raise RuntimeError('Expected exactly six reviewed release assets')
+    raise RuntimeError('Expected exactly seven reviewed release assets')
 
 
 def gh(*args):
@@ -75,7 +75,7 @@ release = find_release()
 if release is None:
     try:
         gh('release', 'create', TAG, '--draft', '--verify-tag', '--target', COMMIT,
-           '--title', 'v1.6.3 — Course workflow and reproducibility',
+           '--title', 'v1.6.4 — Verified comparisons and final acceptance',
            '--notes-file', f'release/{TAG}/notes.md')
     except subprocess.CalledProcessError:
         # A previously created draft may become visible after the first lookup.

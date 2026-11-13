@@ -5,13 +5,14 @@ on:
     paths:
       - '.github/workflows/release.yml'
       - '.github/scripts/build_release.py'
+      - '.github/scripts/build_course.py'
       - '.github/scripts/publish_release.py'
-      - 'release/v1.6.3/**'
+      - 'release/v1.6.4/**'
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: release-v1.6.3
+  group: release-v1.6.4
   cancel-in-progress: false
 jobs:
   publish:
@@ -27,12 +28,30 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+      - name: Check comparison integrity
+        run: node tests/comparison-fingerprint.cjs
+      - name: Check reviewed release metadata
+        id: reviewed
+        run: |
+          if test -f release/v1.6.4/release.json; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Release metadata is not present; publication is deferred."
+          fi
       - name: Download preserved release inputs
+        if: steps.reviewed.outputs.ready == 'true'
         run: |
           mkdir previous
-          gh release download v1.6.2 --dir previous --pattern project.zip --pattern proposal-english.mp4 --pattern proposal-subtitled.mp4
-      - name: Build and verify release assets
+          gh release download v1.6.3 --dir previous --pattern project.zip --pattern course-python.zip --pattern proposal-english.mp4 --pattern proposal-subtitled.mp4
+      - name: Reconstruct the tested Python archive
+        if: steps.reviewed.outputs.ready == 'true'
         run: |
-          python .github/scripts/build_release.py --repo . --course-zip release/v1.6.3/course-python.zip --previous-project previous/project.zip --previous-video-dir previous --out release-out
+          python .github/scripts/build_course.py --repo . --previous-course previous/course-python.zip --out course-python.zip
+      - name: Build and verify release assets
+        if: steps.reviewed.outputs.ready == 'true'
+        run: |
+          python .github/scripts/build_release.py --repo . --course-zip course-python.zip --previous-project previous/project.zip --previous-video-dir previous --out release-out
       - name: Publish verified assets
+        if: steps.reviewed.outputs.ready == 'true'
         run: python .github/scripts/publish_release.py

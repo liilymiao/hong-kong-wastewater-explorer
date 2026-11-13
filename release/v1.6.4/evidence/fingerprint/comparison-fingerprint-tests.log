@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "assertions": 11349,
+  "verified_original_scopes": 8,
+  "retained_test_interval_states": 12,
+  "unchanged_export_rows": 3952,
+  "mutation_cases": [
+    {
+      "name": "same_count_prediction",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "same_count_raw_prediction",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "same_count_observation",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "same_count_origin",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "same_count_target",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "evaluation_version",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "source_version",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "configuration",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "frozen_decision",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "source_metadata",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "source_values",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "saved_metrics",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "saved_paired",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "saved_bootstrap",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    },
+    {
+      "name": "saved_stage",
+      "n_origins": 40,
+      "saved_match": false,
+      "interval_rows": 0
+    }
+  ],
+  "sha256_verified_against_node_crypto": true,
+  "data_js_sha256": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342",
+  "scope": "Actual app functions and comparison render/export in a Node VM with a parsed DOM; not a real-browser claim"
+}

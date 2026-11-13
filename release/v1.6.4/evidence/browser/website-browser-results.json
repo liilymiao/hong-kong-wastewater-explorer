@@ -1,0 +1,208 @@
+[
+  {
+    "mode": "public",
+    "url": "https://liilymiao.github.io/hong-kong-wastewater-explorer/",
+    "checks": [
+      {
+        "name": "English research/PHLSB default",
+        "passed": true
+      },
+      {
+        "name": "Actual PHLSB 37.2% shown",
+        "passed": true
+      },
+      {
+        "name": "PHLSB downloaded six yearly rows with reported 37.2",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match clipped h1",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered clipped h1",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match clipped h2",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered clipped h2",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match raw h1",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered raw h1",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match raw h2",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered raw h2",
+        "passed": true
+      },
+      {
+        "name": "Patterns rendered",
+        "passed": true
+      },
+      {
+        "name": "Return preserves h2 raw",
+        "passed": true
+      },
+      {
+        "name": "Chinese comparison renders",
+        "passed": true
+      },
+      {
+        "name": "No page JavaScript errors",
+        "passed": true
+      }
+    ],
+    "downloads": [
+      {
+        "name": "public-phlsb__selected-phlsb-outpatient.csv",
+        "rows": 6
+      },
+      {
+        "name": "public-metrics-clipped-h1__metrics_test_h1_clipped-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "public-metrics-clipped-h2__metrics_test_h2_clipped-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "public-metrics-raw-h1__metrics_test_h1_raw-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "public-metrics-raw-h2__metrics_test_h2_raw-2026-11-11.csv",
+        "rows": 3
+      }
+    ],
+    "console_errors": [],
+    "page_errors": [],
+    "status": "passed"
+  },
+  {
+    "mode": "candidate",
+    "url": "http://127.0.0.1:8549/",
+    "checks": [
+      {
+        "name": "English research/PHLSB default",
+        "passed": true
+      },
+      {
+        "name": "Actual PHLSB 37.2% shown",
+        "passed": true
+      },
+      {
+        "name": "PHLSB downloaded six yearly rows with reported 37.2",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match clipped h1",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered clipped h1",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match clipped h2",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered clipped h2",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match raw h1",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered raw h1",
+        "passed": true
+      },
+      {
+        "name": "Saved metrics match raw h2",
+        "passed": true
+      },
+      {
+        "name": "Plot rendered raw h2",
+        "passed": true
+      },
+      {
+        "name": "Patterns rendered",
+        "passed": true
+      },
+      {
+        "name": "Return preserves h2 raw",
+        "passed": true
+      },
+      {
+        "name": "Chinese comparison renders",
+        "passed": true
+      },
+      {
+        "name": "Synthetic same count retains count",
+        "passed": true
+      },
+      {
+        "name": "Synthetic same count recalculates MAE",
+        "passed": true
+      },
+      {
+        "name": "Synthetic changed prediction rejects old interval",
+        "passed": true
+      },
+      {
+        "name": "Synthetic mismatch export has content fingerprint",
+        "passed": true
+      },
+      {
+        "name": "Synthetic mismatch visible in page",
+        "passed": true
+      },
+      {
+        "name": "No page JavaScript errors",
+        "passed": true
+      }
+    ],
+    "downloads": [
+      {
+        "name": "candidate-phlsb__selected-phlsb-outpatient.csv",
+        "rows": 6
+      },
+      {
+        "name": "candidate-metrics-clipped-h1__metrics_test_h1_clipped-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "candidate-metrics-clipped-h2__metrics_test_h2_clipped-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "candidate-metrics-raw-h1__metrics_test_h1_raw-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "candidate-metrics-raw-h2__metrics_test_h2_raw-2026-11-11.csv",
+        "rows": 3
+      },
+      {
+        "name": "candidate-synthetic-same-count-mismatch__metrics_test_h2_raw-2026-11-11.csv",
+        "rows": 3
+      }
+    ],
+    "console_errors": [],
+    "page_errors": [],
+    "status": "passed"
+  }
+]

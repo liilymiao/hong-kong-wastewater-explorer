@@ -1,0 +1,35 @@
+{
+  "command": [
+    "AUDIT_ROOT/qa/clean-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-k",
+    "not test_frozen_source_bytes_match_independent_catalogue",
+    "--junitxml",
+    "AUDIT_ROOT/qa/python-candidate-full.xml"
+  ],
+  "cwd": "AUDIT_ROOT/course-candidate",
+  "started_utc": "2026-11-11T15:18:31.275253+00:00",
+  "finished_utc": "2026-11-11T15:19:11.856837+00:00",
+  "seconds": 40.582,
+  "returncode": 0,
+  "source_package_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "changed_files_sha256": {
+    "app.py": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358",
+    "tests/test_course_demo.py": "0b0cd7ad6967d9fd007c1497e6e4504e9f5283249fe574ee75ac91a75365cf64"
+  },
+  "log": "python-candidate-full.log",
+  "junit": {
+    "file": "python-candidate-full.xml",
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 39.967,
+    "sha256": "69d6dcdb0c9436dff2d8138cacf00c148098fdf7dc97b403d81303a5167e3c48"
+  },
+  "deselected_nodeids": [
+    "tests/test_acceptance.py::test_frozen_source_bytes_match_independent_catalogue"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": "1.5.4",
+  "release_version": "1.6.4",
+  "base_release": "v1.6.3",
+  "base_asset": "course-python.zip",
+  "base_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "prefix": "MATH7005 Course/",
+  "zip_method": "ZIP_STORED",
+  "zip_timestamp": [
+    2026,
+    11,
+    13,
+    0,
+    0,
+    0
+  ],
+  "zip_create_system": 3,
+  "zip_external_attr": 2175008768,
+  "overlay_directory": "python-overlay",
+  "overlay_files": [
+    {
+      "path": "AI使用声明.md",
+      "bytes": 2639,
+      "sha256": "1314af5b4c54b39de59f1df2786431db470a6cf8bd3e30a84bb853e26982eae0"
+    },
+    {
+      "path": "PACKAGE_VERIFICATION.json",
+      "bytes": 1399,
+      "sha256": "7dc1d54cede78b661adf8dbc9cb7636a7ff2413b7478eb99a8f58fd20e893cce"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3704,
+      "sha256": "f84541e112b28c620dc8f46de35fb14c7c228ee576b93aa7469a871d2a49a0c1"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 1077,
+      "sha256": "9108973dc53d4ec018623ebc7fc19d9ce0205e149e8b55b5f130dbc0a5d3247e"
+    },
+    {
+      "path": "RELEASE_README.txt",
+      "bytes": 1080,
+      "sha256": "a28b44cb3f2ad49d3d819ad47192f4ca37b54d7919ef99f8602df12367bdac9e"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2599,
+      "sha256": "780d17556c0add19c4770dde35ceb6899e3543eb15b0714fcf7f1daa7122ec04"
+    },
+    {
+      "path": "app.py",
+      "bytes": 55193,
+      "sha256": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358"
+    },
+    {
+      "path": "release_manifest.json",
+      "bytes": 22369,
+      "sha256": "3650adddcc004f05f5a548a96dc81521f56a7648ce73da00fc402b8b417808d5"
+    },
+    {
+      "path": "tests/test_course_demo.py",
+      "bytes": 9557,
+      "sha256": "0b0cd7ad6967d9fd007c1497e6e4504e9f5283249fe574ee75ac91a75365cf64"
+    }
+  ],
+  "expected_archive": {
+    "name": "course-python.zip",
+    "bytes": 31002329,
+    "sha256": "bb2c345cfff9a47f7492ab2187e3de84132415cc2221b5358ec5c3243513ce6b"
+  },
+  "accepted_code_sha256": {
+    "app.py": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358",
+    "tests/test_course_demo.py": "0b0cd7ad6967d9fd007c1497e6e4504e9f5283249fe574ee75ac91a75365cf64"
+  },
+  "unchanged_protected_files": 78,
+  "baseline_zip_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "course_zip_sha256": "bb2c345cfff9a47f7492ab2187e3de84132415cc2221b5358ec5c3243513ce6b",
+  "course_zip_bytes": 31002329,
+  "archive_prefix": "MATH7005 Course/",
+  "timestamp": [
+    2026,
+    11,
+    13,
+    0,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "status": "passed",
+  "applicable_locked_dependencies": 42,
+  "fresh_venv": true,
+  "cached_wheels_reused": true,
+  "requirements": [
+    {
+      "package": "altair",
+      "installed": "5.5.0",
+      "requirement": "==5.5.0",
+      "match": true
+    },
+    {
+      "package": "attrs",
+      "installed": "26.1.0",
+      "requirement": "==26.1.0",
+      "match": true
+    },
+    {
+      "package": "blinker",
+      "installed": "1.9.0",
+      "requirement": "==1.9.0",
+      "match": true
+    },
+    {
+      "package": "cachetools",
+      "installed": "6.2.6",
+      "requirement": "==6.2.6",
+      "match": true
+    },
+    {
+      "package": "certifi",
+      "installed": "2026.10.23",
+      "requirement": "==2026.10.23",
+      "match": true
+    },
+    {
+      "package": "charset-normalizer",
+      "installed": "3.5.2",
+      "requirement": "==3.5.2",
+      "match": true
+    },
+    {
+      "package": "click",
+      "installed": "8.5.0",
+      "requirement": "==8.5.0",
+      "match": true
+    },
+    {
+      "package": "gitdb",
+      "installed": "4.0.12",
+      "requirement": "==4.0.12",
+      "match": true
+    },
+    {
+      "package": "GitPython",
+      "installed": "3.2.1",
+      "requirement": "==3.2.1",
+      "match": true
+    },
+    {
+      "package": "idna",
+      "installed": "3.20",
+      "requirement": "==3.20",
+      "match": true
+    },
+    {
+      "package": "iniconfig",
+      "installed": "2.3.1",
+      "requirement": "==2.3.1",
+      "match": true
+    },
+    {
+      "package": "Jinja2",
+      "installed": "3.1.6",
+      "requirement": "==3.1.6",
+      "match": true
+    },
+    {
+      "package": "jsonschema",
+      "installed": "4.26.0",
+      "requirement": "==4.26.0",
+      "match": true
+    },
+    {
+      "package": "jsonschema-specifications",
+      "installed": "2025.9.1",
+      "requirement": "==2025.9.1",
+      "match": true
+    },
+    {
+      "package": "MarkupSafe",
+      "installed": "3.0.4",
+      "requirement": "==3.0.4",
+      "match": true
+    },
+    {
+      "package": "narwhals",
+      "installed": "2.27.1",
+      "requirement": "==2.27.1",
+      "match": true
+    },
+    {
+      "package": "numpy",
+      "installed": "2.3.5",
+      "requirement": "==2.3.5",
+      "match": true
+    },
+    {
+      "package": "packaging",
+      "installed": "25.0",
+      "requirement": "==25.0",
+      "match": true
+    },
+    {
+      "package": "pandas",
+      "installed": "2.2.3",
+      "requirement": "==2.2.3",
+      "match": true
+    },
+    {
+      "package": "pillow",
+      "installed": "11.3.0",
+      "requirement": "==11.3.0",
+      "match": true
+    },
+    {
+      "package": "plotly",
+      "installed": "6.3.1",
+      "requirement": "==6.3.1",
+      "match": true
+    },
+    {
+      "package": "pluggy",
+      "installed": "1.7.0",
+      "requirement": "==1.7.0",
+      "match": true
+    },
+    {
+      "package": "protobuf",
+      "installed": "6.33.6",
+      "requirement": "==6.33.6",
+      "match": true
+    },
+    {
+      "package": "pyarrow",
+      "installed": "26.0.0",
+      "requirement": "==26.0.0",
+      "match": true
+    },
+    {
+      "package": "pydeck",
+      "installed": "0.9.3",
+      "requirement": "==0.9.3",
+      "match": true
+    },
+    {
+      "package": "Pygments",
+      "installed": "2.21.0",
+      "requirement": "==2.21.0",
+      "match": true
+    },
+    {
+      "package": "pytest",
+      "installed": "8.4.2",
+      "requirement": "==8.4.2",
+      "match": true
+    },
+    {
+      "package": "python-dateutil",
+      "installed": "3.0.0",
+      "requirement": "==3.0.0",
+      "match": true
+    },
+    {
+      "package": "pytz",
+      "installed": "2026.5",
+      "requirement": "==2026.5",
+      "match": true
+    },
+    {
+      "package": "PyYAML",
+      "installed": "6.0.3",
+      "requirement": "==6.0.3",
+      "match": true
+    },
+    {
+      "package": "referencing",
+      "installed": "0.37.0",
+      "requirement": "==0.37.0",
+      "match": true
+    },
+    {
+      "package": "requests",
+      "installed": "2.34.2",
+      "requirement": "==2.34.2",
+      "match": true
+    },
+    {
+      "package": "rpds-py",
+      "installed": "2026.9.1",
+      "requirement": "==2026.9.1",
+      "match": true
+    },
+    {
+      "package": "six",
+      "installed": "1.17.0",
+      "requirement": "==1.17.0",
+      "match": true
+    },
+    {
+      "package": "smmap",
+      "installed": "5.0.3",
+      "requirement": "==5.0.3",
+      "match": true
+    },
+    {
+      "package": "streamlit",
+      "installed": "1.50.0",
+      "requirement": "==1.50.0",
+      "match": true
+    },
+    {
+      "package": "tenacity",
+      "installed": "9.2.1",
+      "requirement": "==9.2.1",
+      "match": true
+    },
+    {
+      "package": "toml",
+      "installed": "0.10.2",
+      "requirement": "==0.10.2",
+      "match": true
+    },
+    {
+      "package": "tornado",
+      "installed": "6.6",
+      "requirement": "==6.6",
+      "match": true
+    },
+    {
+      "package": "typing_extensions",
+      "installed": "4.16.0",
+      "requirement": "==4.16.0",
+      "match": true
+    },
+    {
+      "package": "tzdata",
+      "installed": "2026.5",
+      "requirement": "==2026.5",
+      "match": true
+    },
+    {
+      "package": "urllib3",
+      "installed": "2.8.0",
+      "requirement": "==2.8.0",
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "tested_package": {
+    "url": "https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/download/v1.6.3/course-python.zip",
+    "downloaded_utc": "2026-11-11T15:11:19.503893+00:00",
+    "sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+    "bytes": 9746184,
+    "zip_entries": 138,
+    "manifest_files": 137,
+    "status": "passed"
+  },
+  "execution_record": "python-execution.json",
+  "environment": "python-environment.log",
+  "locked_dependencies": 42,
+  "full_pytest": {
+    "tests": 157,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 38.456,
+    "sha256": "ff533ae3b94bd6d8c16105764f5fb48a770585bb19c12f3957a710e938f4e4b8",
+    "file": "python-pytest.xml"
+  },
+  "deselected_nodeids": [
+    "tests/test_acceptance.py::test_frozen_source_bytes_match_independent_catalogue"
+  ],
+  "deselection_reason": "This test requires original supporting source PDF/HTML archives intentionally omitted from the distributed course package. Included CSV identity and temporal/numerical tests remain active.",
+  "apptest_separate_run": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 16.881,
+    "sha256": "04906d8943128d494bb1a82ad98db84c535367e7a84fd000849366edf2830087",
+    "file": "python-apptest.xml"
+  },
+  "reference_csv_comparison": {
+    "file": "python-reference-comparison.json",
+    "files": 26,
+    "rows": 8173,
+    "numeric_cells": 108164,
+    "numeric_changed_cells": 0
+  },
+  "published_csv_comparison": {
+    "file": "python-published-output-comparison.json",
+    "files": 26,
+    "rows": 8173,
+    "numeric_cells": 108164,
+    "numeric_changed_cells": 0
+  },
+  "package_files_unchanged": "python-original-package-unchanged.json",
+  "browser_scope": "No real-browser claim is made by these Python/AppTest records. Real-browser acceptance is recorded separately."
+}

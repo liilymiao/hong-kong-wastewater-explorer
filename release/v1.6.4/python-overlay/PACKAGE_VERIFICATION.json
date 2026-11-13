@@ -1,0 +1,39 @@
+{
+  "status": "release_build_from_accepted_source",
+  "base_python_version": "1.5.3",
+  "science_version": "1.1",
+  "base_release": "v1.6.3",
+  "base_course_zip_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "published_package_tests": {
+    "passed": 157,
+    "deselected": 1,
+    "version": "1.5.3"
+  },
+  "candidate_tests": {
+    "passed": 158,
+    "deselected": 1,
+    "seconds": 39.97,
+    "scope": "Accepted 11 November candidate; executable files unchanged in this release build."
+  },
+  "candidate_ui_tests": {
+    "passed": 39
+  },
+  "excluded_nodeid": "tests/test_acceptance.py::test_frozen_source_bytes_match_independent_catalogue",
+  "unchanged_protected_files": 78,
+  "reproduction": {
+    "csv_files": 26,
+    "rows": 8173,
+    "numeric_cells": 108164,
+    "numeric_changes": 0
+  },
+  "browser_evidence": "See accompanying acceptance/browser evidence; real WebKit distinct from AppTest and Node DOM.",
+  "candidate_code_sha256": {
+    "app.py": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358",
+    "tests/test_course_demo.py": "0b0cd7ad6967d9fd007c1497e6e4504e9f5283249fe574ee75ac91a75365cf64"
+  },
+  "software_version": "1.5.4",
+  "release_version": "1.6.4",
+  "prepared_date": "2026-11-13",
+  "acceptance_date": "2026-11-11",
+  "release_build_changes": "Distribution metadata and documentation only beyond the accepted candidate."
+}

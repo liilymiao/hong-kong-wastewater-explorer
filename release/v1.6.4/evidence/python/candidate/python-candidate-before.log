@@ -1,0 +1,46 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_replay_anchor_state_has_one_default_and_survives_navigation _______
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b149a90>
+
+    def test_replay_anchor_state_has_one_default_and_survives_navigation(monkeypatch):
+        """The course link and restored selections must not compete with a widget default."""
+        from streamlit.elements.lib import policies
+    
+        app = AppTest.from_file(str(ROOT / "course_demo.py"), default_timeout=30)
+    
+        def checked_run(action=None):
+            # Streamlit normally displays this warning only once per process. Reset
+            # its test-visible flag so each navigation step is checked independently.
+            monkeypatch.setattr(policies, "_shown_default_value_warning", False)
+            (action if action is not None else app).run()
+            assert not app.exception and not app.error
+            assert not [w.value for w in app.warning if "Session State API" in w.value]
+    
+        checked_run()
+        checked_run(app.selectbox(key="course_horizon").set_value(1))
+        checked_run(app.radio(key="course_score").set_value("raw"))
+>       checked_run(app.button(key="course_open_历史回放").click())
+
+tests/test_course_demo.py:156: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+action = Button(key='course_open_历史回放', _value=True, label='Trace a forecast')
+
+    def checked_run(action=None):
+        # Streamlit normally displays this warning only once per process. Reset
+        # its test-visible flag so each navigation step is checked independently.
+        monkeypatch.setattr(policies, "_shown_default_value_warning", False)
+        (action if action is not None else app).run()
+        assert not app.exception and not app.error
+>       assert not [w.value for w in app.warning if "Session State API" in w.value]
+E       assert not ['The widget with key "replay_anchor" was created with a default value but also had its value set via the Session State API.']
+
+tests/test_course_demo.py:151: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-11 23:16:34.148 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+- generated xml file: AUDIT_ROOT/qa/python-candidate-before.xml -
+=========================== short test summary info ============================
+FAILED tests/test_course_demo.py::test_replay_anchor_state_has_one_default_and_survives_navigation
+1 failed in 1.34s

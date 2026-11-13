@@ -1,0 +1,137 @@
+{
+  "tested_package_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "files": [
+    {
+      "file": "python-prior-evidence-index.json",
+      "raw_sha256": "f4f6cb4c66a81f6afe55af2b70083ba735aaba680d1e145003ae326566755400",
+      "portable_sha256": "f4f6cb4c66a81f6afe55af2b70083ba735aaba680d1e145003ae326566755400",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-pytest.xml",
+      "raw_sha256": "ff533ae3b94bd6d8c16105764f5fb48a770585bb19c12f3957a710e938f4e4b8",
+      "portable_sha256": "296c082acbe721f961fea7777e35ba2a5de3a2c496697a3b01a30fd36f806c72",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-apptest.xml",
+      "raw_sha256": "04906d8943128d494bb1a82ad98db84c535367e7a84fd000849366edf2830087",
+      "portable_sha256": "c1c4d683a0b252f3fd06abe617ebbca4f27b271a323c4a849295694bc27e1b6f",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-package-integrity.json",
+      "raw_sha256": "ec56e11acb10d88231b367537b2a87eb57da7a463f979de6cc0512cfc171c6ef",
+      "portable_sha256": "ec56e11acb10d88231b367537b2a87eb57da7a463f979de6cc0512cfc171c6ef",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-report-links.log",
+      "raw_sha256": "2653f0024fab877b86185040e619319a3e4eae6442447d57418b99ea3cfd6997",
+      "portable_sha256": "2653f0024fab877b86185040e619319a3e4eae6442447d57418b99ea3cfd6997",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-acceptance.md",
+      "raw_sha256": "6874b37f3187d8f21ce0146808600aa908aedcbf8d9f5ec65a0506e0ce0535b4",
+      "portable_sha256": "6874b37f3187d8f21ce0146808600aa908aedcbf8d9f5ec65a0506e0ce0535b4",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-file-comparison.csv",
+      "raw_sha256": "80913259b707c20beaf61c50b953f53f2e6a96892771e0c798d93ff509f27b04",
+      "portable_sha256": "de7cf68cfd81b9903302e351df7c4b37f856a29ff8b6d413da01aebf04d13eaa",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-original-package-unchanged.json",
+      "raw_sha256": "82650a0883fe5c3de407744640a565890dcae26ebca0482c886fe34d5dad3d86",
+      "portable_sha256": "82650a0883fe5c3de407744640a565890dcae26ebca0482c886fe34d5dad3d86",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-reference-comparison.json",
+      "raw_sha256": "36c3bf3dcf54a21fd4296a1ec4644105b7c5db0ac6fa749f17b0bba7a5879cb8",
+      "portable_sha256": "36c3bf3dcf54a21fd4296a1ec4644105b7c5db0ac6fa749f17b0bba7a5879cb8",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-execution.json",
+      "raw_sha256": "43d494ee8de40393ddabbfb12b27dc916c69d79bb8686e2a32f7446694a04fd1",
+      "portable_sha256": "602297c11fd5ae8fe66dbf5b0309191ae55f15c89da67c7a26593164e3c2e6d3",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-pip-check.log",
+      "raw_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "portable_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-published-output-comparison.json",
+      "raw_sha256": "36c3bf3dcf54a21fd4296a1ec4644105b7c5db0ac6fa749f17b0bba7a5879cb8",
+      "portable_sha256": "36c3bf3dcf54a21fd4296a1ec4644105b7c5db0ac6fa749f17b0bba7a5879cb8",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-lock-check.json",
+      "raw_sha256": "b485d040a9661e8f13fd519157b5cd6938494018613d7b2a865dc1f3d4fb4e93",
+      "portable_sha256": "b485d040a9661e8f13fd519157b5cd6938494018613d7b2a865dc1f3d4fb4e93",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-browser-ready.json",
+      "raw_sha256": "4d16d057ba64f823da308147d727a14237a25e5b537103963527674cf9b2c2f0",
+      "portable_sha256": "bd8853200b47c72081a9837e18d13406ec9906345b1a02b2f726107a2aeffd4d",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-collection.log",
+      "raw_sha256": "b0f06b09e01bce9cb6d13a331030b29ee0a38dfcda222e18196aa03185a3a4e6",
+      "portable_sha256": "b0f06b09e01bce9cb6d13a331030b29ee0a38dfcda222e18196aa03185a3a4e6",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-evidence-binding.json",
+      "raw_sha256": "802e3ee5ed0735bc037f6e3948ef5b277fda2a1555e17daf10da7f422f174089",
+      "portable_sha256": "802e3ee5ed0735bc037f6e3948ef5b277fda2a1555e17daf10da7f422f174089",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-environment.log",
+      "raw_sha256": "89d74be11128cd43df78df8624f4f3b8feacf8df44acdd703d6d055dd0512f77",
+      "portable_sha256": "8d1b9cc615b3c224da55196ad59f7e0ab22accf10ac7460ae25ec14afaf8e4ff",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-pytest.log",
+      "raw_sha256": "496aae50b2aaa9a43224a716558f8097f2c799e617bb719c70e434bfeabc6f39",
+      "portable_sha256": "cc4ecf6f38f90a6e5f1f2ad983fc78884499acb7ae6fe3d1b3cff91d07cae87f",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-reproduction.log",
+      "raw_sha256": "e9d1a9190ffddbb141abd56777466abedf3c8cfc9dc814399fd5a2c42b9b748f",
+      "portable_sha256": "a5748fff1ca9ea0d60e157917b45f89262822b20725f9afc1680b97573534136",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-apptest.log",
+      "raw_sha256": "e14481b76845aadb9a05019a9c2952b3db413d177acda207a7bd75e7325650ff",
+      "portable_sha256": "239b759203732a35e76769418f39d602009a742d512b28ceb676608096e8c422",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-install.log",
+      "raw_sha256": "a5d638220b130c1208b2f0f0819ea8fd9d32435df4cc54e28b9fe32edf1b3592",
+      "portable_sha256": "bb6cd3f11bc5f58709ac9bbfb172e488139b2b0ba3520e16a80e950c4082140a",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    },
+    {
+      "file": "python-create-venv.log",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "portable_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "Host directory prefixes and XML hostname only; scientific content/test counts unchanged."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-11-13T15:11:35.491225+00:00",
+  "finished_utc": "2026-11-13T15:12:05.381854+00:00",
+  "seconds": 29.877,
+  "command": [
+    "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-k",
+    "not test_frozen_source_bytes_match_independent_catalogue",
+    "--junitxml",
+    "${RELEASE_ROOT}/qa/course-release-pytest.xml"
+  ],
+  "cwd": "${RELEASE_ROOT}/qa/course-package-test/MATH7005 Course",
+  "returncode": 0,
+  "archive_sha256": "bb2c345cfff9a47f7492ab2187e3de84132415cc2221b5358ec5c3243513ce6b",
+  "manifest_files_verified": 137,
+  "deselected_nodeids": [
+    "tests/test_acceptance.py::test_frozen_source_bytes_match_independent_catalogue"
+  ],
+  "environment_reused": "Clean Python 3.12.14 environment installed and verified in acceptance on 11 November 2026; no fresh installation claimed in this publication run.",
+  "changed_code_sha256": {
+    "app.py": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358",
+    "tests/test_course_demo.py": "0b0cd7ad6967d9fd007c1497e6e4504e9f5283249fe574ee75ac91a75365cf64"
+  },
+  "junit": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "158",
+    "time": "29.463",
+    "timestamp": "2026-11-13T22:11:35.668372+07:00",
+    "hostname": "acceptance-host",
+    "sha256": "dbfec81588a94089415ac4d7e79784ddf437d411338a6d3a2c5316e7123836df"
+  },
+  "original_packaged_files_unchanged_after_tests": true
+}

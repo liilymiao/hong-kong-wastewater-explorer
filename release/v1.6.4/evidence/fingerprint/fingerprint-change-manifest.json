@@ -1,0 +1,44 @@
+{
+  "changed_files": [
+    {
+      "path": "app.js",
+      "sha256": "46e1b2fd8f1540c63f8f6622211dfcceda4be74e1fc9c0e2695ad6f60bc957b6"
+    },
+    {
+      "path": "index.html",
+      "sha256": "669c6fb14d10b03af1451cff7990c422f152ca381d91d99c6fa67b95f31a3a55"
+    },
+    {
+      "path": "comparison-fingerprint.js",
+      "sha256": "eae5b97e7b18b16c7e12edd99ed7dbba678edf972793e00098c405d8663d7def"
+    },
+    {
+      "path": "comparison-manifest.js",
+      "sha256": "13d6bced7a3a811b7af7789003fdd34e3dd6337e39a2d3835ae9bbad14f28d16"
+    },
+    {
+      "path": "scripts/build-comparison-manifest.cjs",
+      "sha256": "02eedc942efc8b379ea0047c4e7f51f9353c3a107dda3c3c975c665e30daad9f"
+    },
+    {
+      "path": "tests/comparison-fingerprint.cjs",
+      "sha256": "430abbd269b3b41b77ae9ecb27907b6c0541d2c20ea3b9ca306bfee8a02cd078"
+    },
+    {
+      "path": "tests/fixtures/app-v1.6.3.js",
+      "sha256": "9803e4dc716564ed005475b1fdbd92eea5691b57c3e50ebb235df49d6b66ea47"
+    },
+    {
+      "path": "COMPARISON_INTEGRITY.md",
+      "sha256": "8d3168c70c4e9dcac1f6e65ddf68e2ca13bcd41c7c64f3b340df18b32908739d"
+    }
+  ],
+  "data_js_byte_identical": true,
+  "data_js_sha256": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342",
+  "test_assertions": 11349,
+  "test_mutation_cases": 15,
+  "numeric_export_rows_unchanged": 3952,
+  "main_or_release_modified": false,
+  "baseline_commit": "880ce2e8e9e9c558cd1d857e348c5d06f50612e8",
+  "recorded_utc": "2026-11-11T15:22:27.139692+00:00"
+}

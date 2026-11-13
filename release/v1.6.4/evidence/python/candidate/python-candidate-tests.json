@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "source_package_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "scope": "Two-file local candidate UI patch; original published course untouched. Expected before-fix failure records the reproduced warning.",
+  "checks": [
+    {
+      "name": "published-behavior-reproduction",
+      "command": "../qa/clean-venv/bin/python -m pytest tests/test_course_demo.py::test_replay_anchor_state_has_one_default_and_survives_navigation -q --junitxml=../qa/python-candidate-before.xml",
+      "cwd": "AUDIT_ROOT/course-candidate",
+      "exit_code": 1,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "junit_timestamp_local": "2026-11-11T23:16:33.316050+08:00",
+      "junit_seconds": 1.341,
+      "junit_file": "python-candidate-before.xml",
+      "junit_sha256": "88142584f0117d48511a7e9031b430caf7c3a572415211347f871bbde3b6b7d4",
+      "log": "python-candidate-before.log"
+    },
+    {
+      "name": "fixed-regression",
+      "command": "../qa/clean-venv/bin/python -m pytest tests/test_course_demo.py::test_replay_anchor_state_has_one_default_and_survives_navigation -q --junitxml=../qa/python-candidate-after.xml",
+      "cwd": "AUDIT_ROOT/course-candidate",
+      "exit_code": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit_timestamp_local": "2026-11-11T23:16:55.965109+08:00",
+      "junit_seconds": 2.102,
+      "junit_file": "python-candidate-after.xml",
+      "junit_sha256": "a6d0d01cce9d23806084a57065af29f05fcaeca8efeef5913818399bc7d83a99",
+      "log": "python-candidate-after.log"
+    },
+    {
+      "name": "candidate-ui-subset",
+      "command": "../qa/clean-venv/bin/python -m pytest tests/test_app.py tests/test_app_review.py tests/test_i18n.py tests/test_course_demo.py -q --junitxml=../qa/python-candidate-ui.xml",
+      "cwd": "AUDIT_ROOT/course-candidate",
+      "exit_code": 0,
+      "tests": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit_timestamp_local": "2026-11-11T23:17:12.605272+08:00",
+      "junit_seconds": 17.82,
+      "junit_file": "python-candidate-ui.xml",
+      "junit_sha256": "219a384db6c15378d7d6eb2f217acec7b0daaee7eccac0cd94ab1cfdc198006a",
+      "log": "python-candidate-ui.log"
+    }
+  ]
+}

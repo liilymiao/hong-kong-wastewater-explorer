@@ -1,13 +1,11 @@
-# v1.6.3
+# v1.6.4
 
-Course workflow and numerical boundary fixes, 11 November 2026.
+Comparison integrity and final course acceptance, 13 November 2026.
 
-- Python 1.5.3 adds a course entry, a real historical prediction trace, an English report and an isolated reproduction command.
-- The course UI keeps the selected horizon, prediction scoring and 2/4/8-week interval setting consistent with exported results.
-- Mixed ISO date values reload correctly from exported CSVs.
-- The website rejects blank and Boolean numeric inputs and retains missing metrics for empty paired comparisons.
-- Empty historical prediction tables display an empty state.
+- Model comparison binds saved metrics, paired errors, stages and intervals to the identities and values of the current predictions and observations. A mismatch recalculates descriptive results and leaves saved intervals unavailable; charts and CSVs use the same validated result.
+- Python 1.5.4 removes the replay-week default warning and retains a valid selection across navigation and language changes.
+- The release includes downloadable acceptance records: package hashes, actual commands, JUnit XML, numerical comparisons and browser checks.
 
-The final extracted course package passed 157 tests, with one test requiring omitted internal source archives explicitly deselected. A fresh reconstruction matched all numerical values across 26 reference CSVs (8,173 rows). The seven-page English report was rendered and inspected. Python network-blocked pipeline and backend checks passed; this does not assert real-browser offline or visual acceptance.
+The exact rebuilt Python course ZIP passed 158 tests, with one test requiring undistributed internal source archives explicitly deselected. The 11 November independent reproduction of its unchanged scientific code and inputs reproduced 26 CSVs, 8,173 rows and 108,164 numeric cells without numerical differences. Fingerprint tests passed 11,349 assertions. Background WebKit checks covered actual charts, CSV downloads, course navigation and external-network-restricted local use; those records identify their precise tested files and scope.
 
-Scientific configuration 1.1, original input CSVs, reference values, dataset snapshots, video and subtitles remain unchanged. The archived course package retains its pre-publication acceptance record.
+Scientific configuration 1.1, frozen numerical results, research datasets, report, video and subtitles are unchanged. The original v1.6.3 release remains available.

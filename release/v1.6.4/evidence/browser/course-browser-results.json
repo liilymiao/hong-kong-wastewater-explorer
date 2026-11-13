@@ -1,0 +1,309 @@
+{
+  "engine": "WebKit",
+  "playwright": "1.62.1",
+  "headless": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "published_course_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "checks": [
+    {
+      "name": "English default",
+      "passed": true
+    },
+    {
+      "name": "Course target and units visible",
+      "passed": true
+    },
+    {
+      "name": "Real replay chart rendered",
+      "passed": true
+    },
+    {
+      "name": "Real replay target W42 visible",
+      "passed": true
+    },
+    {
+      "name": "Real historical origin recomputation matches saved",
+      "passed": true
+    },
+    {
+      "name": "h1 raw replay CSV matches actual target and value",
+      "passed": true
+    },
+    {
+      "name": "h1 target displayed W41",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h1 block2",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h1 block2",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h1 block2",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h1 block4",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h1 block4",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h1 block4",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h1 block8",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h1 block8",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h1 block8",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h2 block2",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h2 block2",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h2 block2",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h2 block4",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h2 block4",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h2 block4",
+      "passed": true
+    },
+    {
+      "name": "CSV clipped h2 block8",
+      "passed": true
+    },
+    {
+      "name": "Screen table clipped h2 block8",
+      "passed": true
+    },
+    {
+      "name": "Charts clipped h2 block8",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h1 block2",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h1 block2",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h1 block2",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h1 block4",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h1 block4",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h1 block4",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h1 block8",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h1 block8",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h1 block8",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h2 block2",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h2 block2",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h2 block2",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h2 block4",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h2 block4",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h2 block4",
+      "passed": true
+    },
+    {
+      "name": "CSV raw h2 block8",
+      "passed": true
+    },
+    {
+      "name": "Screen table raw h2 block8",
+      "passed": true
+    },
+    {
+      "name": "Charts raw h2 block8",
+      "passed": true
+    },
+    {
+      "name": "Stage CSV values match saved results",
+      "passed": true
+    },
+    {
+      "name": "Pattern charts rendered",
+      "passed": true
+    },
+    {
+      "name": "Comparison state preserved after return",
+      "passed": true
+    },
+    {
+      "name": "Chinese toggle preserves comparison",
+      "passed": true
+    },
+    {
+      "name": "Classroom width has no document overflow",
+      "passed": true
+    },
+    {
+      "name": "Offline browser reload, chart, recomputation and download",
+      "passed": true
+    },
+    {
+      "name": "Offline model comparison renders",
+      "passed": true
+    },
+    {
+      "name": "No page JavaScript errors",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "01-course-entry.png",
+    "02-replay-baseline.png",
+    "03-recomputed-origin.png",
+    "04-compare-clipped.png",
+    "04-compare-raw.png",
+    "05-stage-and-bootstrap.png",
+    "06-patterns.png",
+    "07-chinese-comparison.png",
+    "08-classroom-width.png",
+    "09-offline-comparison.png"
+  ],
+  "downloads": [
+    {
+      "name": "recomputed__origin_reproduction_2026W40_h2.csv",
+      "rows": 3
+    },
+    {
+      "name": "replay-h1-raw__replay_2026W40_h1_raw_delay5.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h1-b2__metrics_test_h1_clipped_block2.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h1-b4__metrics_test_h1_clipped_block4.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h1-b8__metrics_test_h1_clipped_block8.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h2-b2__metrics_test_h2_clipped_block2.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h2-b4__metrics_test_h2_clipped_block4.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-clipped-h2-b8__metrics_test_h2_clipped_block8.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h1-b2__metrics_test_h1_raw_block2.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h1-b4__metrics_test_h1_raw_block4.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h1-b8__metrics_test_h1_raw_block8.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h2-b2__metrics_test_h2_raw_block2.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h2-b4__metrics_test_h2_raw_block4.csv",
+      "rows": 3
+    },
+    {
+      "name": "metrics-raw-h2-b8__metrics_test_h2_raw_block8.csv",
+      "rows": 3
+    },
+    {
+      "name": "stages-raw-h2__stages_test_h2_raw.csv",
+      "rows": 2
+    },
+    {
+      "name": "offline-recomputed__origin_reproduction_2026W40_h2.csv",
+      "rows": 3
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "external_requests": [],
+  "offline_external_blocked": [],
+  "version": "26.5",
+  "baseline_warning": false,
+  "status": "passed",
+  "offline_scope": "External browser requests rejected; localhost HTTP/WebSocket retained. Server Python external socket/DNS calls blocked. OS network left unchanged.",
+  "published_warning_observed_in_initial_probe": true,
+  "published_warning_evidence": [
+    "inspect2.log",
+    "replay.png"
+  ],
+  "warning_scope": "Streamlit default/session-state warning appears once per server process; later clean sessions do not demonstrate its absence.",
+  "python_external_network_attempts": 0
+}

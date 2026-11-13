@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "reports": {
+    "项目报告.md": [
+      "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express",
+      "https://www.chp.gov.hk/files/pdf/covidx_spec_en.pdf",
+      "https://www.chp.gov.hk/files/pdf/covid_flux_week42_22_10_2026_eng.pdf",
+      "https://www.chp.gov.hk/files/pdf/covid_flux_week6_12_2_2026_eng.pdf",
+      "https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html",
+      "https://otexts.com/fpp3/toolbox.html#time-series-cross-validation",
+      "https://scikit-learn.org/stable/common_pitfalls.html",
+      "predictions.csv",
+      "metrics.csv",
+      "raw_metrics.csv",
+      "bootstrap_sensitivity.csv",
+      "raw_bootstrap_sensitivity.csv",
+      "../data/source_catalog.json",
+      "../Course.md",
+      "../STATUS.md",
+      "../AI使用声明.md"
+    ],
+    "项目报告.html": [
+      "https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-covid-express",
+      "https://www.chp.gov.hk/files/pdf/covidx_spec_en.pdf",
+      "https://www.chp.gov.hk/files/pdf/covid_flux_week42_22_10_2026_eng.pdf",
+      "https://www.chp.gov.hk/files/pdf/covid_flux_week6_12_2_2026_eng.pdf",
+      "https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html",
+      "https://otexts.com/fpp3/toolbox.html#time-series-cross-validation",
+      "https://scikit-learn.org/stable/common_pitfalls.html",
+      "predictions.csv",
+      "metrics.csv",
+      "raw_metrics.csv",
+      "bootstrap_sensitivity.csv",
+      "raw_bootstrap_sensitivity.csv",
+      "../data/source_catalog.json",
+      "../Course.md",
+      "../STATUS.md",
+      "../AI使用声明.md"
+    ]
+  },
+  "errors": [],
+  "network_checked": false,
+  "scope": "Packaged relative targets, official-source URL identity, and course-source scope"
+}

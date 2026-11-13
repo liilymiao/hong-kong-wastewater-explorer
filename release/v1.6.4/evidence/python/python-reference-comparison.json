@@ -1,0 +1,400 @@
+{
+  "status": "passed",
+  "files": 26,
+  "rows": 8173,
+  "numeric_cells": 108164,
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "numeric_changed_cells": 0,
+  "checks": [
+    {
+      "file": "bootstrap_sensitivity.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "block_weeks"
+      ],
+      "rows": 12,
+      "numeric_columns": 10,
+      "numeric_cells": 120,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "coverage.csv",
+      "key": [
+        "split",
+        "horizon",
+        "system"
+      ],
+      "rows": 12,
+      "numeric_columns": 5,
+      "numeric_cells": 60,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "delay_sensitivity.csv",
+      "key": [
+        "anchor_year",
+        "anchor_week",
+        "horizon",
+        "delay_days"
+      ],
+      "rows": 1552,
+      "numeric_columns": 7,
+      "numeric_cells": 10864,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "model_id"
+      ],
+      "rows": 12,
+      "numeric_columns": 16,
+      "numeric_cells": 192,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "origins.csv",
+      "key": [
+        "split",
+        "anchor_year",
+        "anchor_week",
+        "horizon"
+      ],
+      "rows": 180,
+      "numeric_columns": 7,
+      "numeric_cells": 1260,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "paired_errors.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "anchor_from",
+        "target_from"
+      ],
+      "rows": 180,
+      "numeric_columns": 8,
+      "numeric_cells": 1440,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "pattern_centers.csv",
+      "key": [
+        "query_week_key",
+        "cluster_id"
+      ],
+      "rows": 188,
+      "numeric_columns": 12,
+      "numeric_cells": 2256,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "pattern_neighbors.csv",
+      "key": [
+        "query_week_key",
+        "lof_k",
+        "neighbor_rank"
+      ],
+      "rows": 2820,
+      "numeric_columns": 17,
+      "numeric_cells": 47940,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "pattern_selection.csv",
+      "key": [
+        "cluster_k"
+      ],
+      "rows": 3,
+      "numeric_columns": 6,
+      "numeric_cells": 18,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "pattern_sensitivity.csv",
+      "key": [
+        "week_key",
+        "lof_k"
+      ],
+      "rows": 282,
+      "numeric_columns": 7,
+      "numeric_cells": 1974,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "pattern_sensitivity_summary.csv",
+      "key": [
+        "period",
+        "lof_k"
+      ],
+      "rows": 12,
+      "numeric_columns": 6,
+      "numeric_cells": 72,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "patterns.csv",
+      "key": [
+        "week_key"
+      ],
+      "rows": 194,
+      "numeric_columns": 30,
+      "numeric_cells": 5820,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "predictions.csv",
+      "key": [
+        "split",
+        "anchor_from",
+        "target_from",
+        "horizon",
+        "model_id"
+      ],
+      "rows": 546,
+      "numeric_columns": 14,
+      "numeric_cells": 7644,
+      "numeric_changes": [],
+      "metadata_changes": [
+        {
+          "column": "issue_at",
+          "changed_rows": 6,
+          "reason": "Unscored future projections record this run actual generation time."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "file": "raw_bootstrap_sensitivity.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "block_weeks"
+      ],
+      "rows": 12,
+      "numeric_columns": 10,
+      "numeric_cells": 120,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "raw_metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "model_id"
+      ],
+      "rows": 12,
+      "numeric_columns": 16,
+      "numeric_cells": 192,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "raw_paired_errors.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "anchor_from",
+        "target_from"
+      ],
+      "rows": 180,
+      "numeric_columns": 8,
+      "numeric_cells": 1440,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "raw_stage_metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "stage_label"
+      ],
+      "rows": 8,
+      "numeric_columns": 5,
+      "numeric_cells": 40,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "shared_lambda_bootstrap_sensitivity.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "block_weeks"
+      ],
+      "rows": 6,
+      "numeric_columns": 10,
+      "numeric_cells": 60,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "shared_lambda_metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "model_id"
+      ],
+      "rows": 6,
+      "numeric_columns": 16,
+      "numeric_cells": 96,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "shared_lambda_paired_errors.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "anchor_from",
+        "target_from"
+      ],
+      "rows": 80,
+      "numeric_columns": 8,
+      "numeric_cells": 640,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "shared_lambda_predictions.csv",
+      "key": [
+        "split",
+        "anchor_from",
+        "target_from",
+        "horizon",
+        "model_id"
+      ],
+      "rows": 240,
+      "numeric_columns": 14,
+      "numeric_cells": 3360,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "shared_lambda_stage_metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "stage_label"
+      ],
+      "rows": 4,
+      "numeric_columns": 5,
+      "numeric_cells": 20,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "stage_metrics.csv",
+      "key": [
+        "split",
+        "horizon",
+        "score_mode",
+        "stage_label"
+      ],
+      "rows": 8,
+      "numeric_columns": 5,
+      "numeric_cells": 40,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "validation_candidates.csv",
+      "key": [
+        "split",
+        "anchor_from",
+        "target_from",
+        "horizon",
+        "model_id",
+        "lambda"
+      ],
+      "rows": 1300,
+      "numeric_columns": 14,
+      "numeric_cells": 18200,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "validation_predictions.csv",
+      "key": [
+        "split",
+        "anchor_from",
+        "target_from",
+        "horizon",
+        "model_id"
+      ],
+      "rows": 300,
+      "numeric_columns": 14,
+      "numeric_cells": 4200,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    },
+    {
+      "file": "validation_scores.csv",
+      "key": [
+        "model_id",
+        "horizon",
+        "lambda"
+      ],
+      "rows": 24,
+      "numeric_columns": 4,
+      "numeric_cells": 96,
+      "numeric_changes": [],
+      "metadata_changes": [],
+      "passed": true
+    }
+  ]
+}

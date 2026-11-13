@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "browser": "WebKit26.5",
+  "fresh_server": true,
+  "checks": [
+    {
+      "name": "No competing session/default warning on fresh server",
+      "passed": true
+    },
+    {
+      "name": "Course h1/raw follows task route",
+      "passed": true
+    },
+    {
+      "name": "Default historical origin W40",
+      "passed": true
+    },
+    {
+      "name": "Selected W20 retained after page return",
+      "passed": true
+    },
+    {
+      "name": "W20 retained through Chinese toggle",
+      "passed": true
+    },
+    {
+      "name": "Candidate selected-origin recomputation matches saved",
+      "passed": true
+    },
+    {
+      "name": "No warning after interaction route",
+      "passed": true
+    }
+  ]
+}

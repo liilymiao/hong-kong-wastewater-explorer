@@ -1,0 +1,21 @@
+{
+  "scope": "Prior local pre-publication validation; distinct from the newly downloaded public archive run",
+  "files": {
+    "package-integrity.json": {
+      "sha256": "11bd67eda88b7b2f0c79d01463499072cb43dce624af299e7434b704dd24f360",
+      "bytes": 566
+    },
+    "package-execution.json": {
+      "sha256": "4839e85101baee7bac8f17c8e1a31177d564bf018c8003218e1781dfef0ecf58",
+      "bytes": 2202
+    },
+    "package-pytest.xml": {
+      "sha256": "35b3e1158f00a41025f4ae2c6aaf9b89e651d4b68793cd73d10c67d5efb21544",
+      "bytes": 21330
+    },
+    "package-reproduction/reproduction.json": {
+      "sha256": "090215ed89dd51bf230de99594e1932327c0836e186a28166e3b7b0a587971e8",
+      "bytes": 9712
+    }
+  }
+}

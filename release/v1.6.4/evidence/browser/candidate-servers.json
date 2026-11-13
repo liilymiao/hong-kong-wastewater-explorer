@@ -1,0 +1,13 @@
+[
+  {
+    "pid": 50516,
+    "port": 8548,
+    "kind": "candidate-course",
+    "fresh_final_retest": true
+  },
+  {
+    "pid": 48744,
+    "port": 8549,
+    "kind": "candidate-site"
+  }
+]

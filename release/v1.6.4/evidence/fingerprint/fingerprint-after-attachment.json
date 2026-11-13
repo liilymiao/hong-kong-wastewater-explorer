@@ -1,0 +1,127 @@
+{
+  "reviewed_commit": "880ce2e8e9e9c558cd1d857e348c5d06f50612e8",
+  "node": "v24.22.1",
+  "scope": "functions_extracted_from_supplied_app_js",
+  "not_performed": [
+    "full website execution",
+    "real browser rendering",
+    "Python archive execution",
+    "analysis of actual frozen values"
+  ],
+  "checks": [
+    {
+      "name": "reject null",
+      "status": "pass"
+    },
+    {
+      "name": "reject undefined",
+      "status": "pass"
+    },
+    {
+      "name": "reject empty",
+      "status": "pass"
+    },
+    {
+      "name": "reject spaces",
+      "status": "pass"
+    },
+    {
+      "name": "reject false",
+      "status": "pass"
+    },
+    {
+      "name": "reject true",
+      "status": "pass"
+    },
+    {
+      "name": "reject empty array",
+      "status": "pass"
+    },
+    {
+      "name": "reject zero array",
+      "status": "pass"
+    },
+    {
+      "name": "reject object",
+      "status": "pass"
+    },
+    {
+      "name": "reject NaN",
+      "status": "pass"
+    },
+    {
+      "name": "reject Infinity",
+      "status": "pass"
+    },
+    {
+      "name": "reject hexadecimal",
+      "status": "pass"
+    },
+    {
+      "name": "reject nondecimal",
+      "status": "pass"
+    },
+    {
+      "name": "accept zero",
+      "status": "pass"
+    },
+    {
+      "name": "accept zero text",
+      "status": "pass"
+    },
+    {
+      "name": "accept decimal",
+      "status": "pass"
+    },
+    {
+      "name": "accept scientific",
+      "status": "pass"
+    },
+    {
+      "name": "accept negative",
+      "status": "pass"
+    },
+    {
+      "name": "empty comparison returns null metrics and no interval",
+      "status": "pass"
+    },
+    {
+      "name": "valid shared origin retained",
+      "status": "pass"
+    },
+    {
+      "name": "missing model excludes origin",
+      "status": "pass"
+    },
+    {
+      "name": "null observations exclude origin",
+      "status": "pass"
+    },
+    {
+      "name": "conflicting observed targets exclude origin",
+      "status": "pass"
+    },
+    {
+      "name": "duplicate identity rejects whole origin",
+      "status": "pass"
+    },
+    {
+      "name": "explicit empty paired_set_id preservation (current exporter statement)",
+      "status": "pass"
+    }
+  ],
+  "passed": 25,
+  "failed": 0,
+  "regression_probe": {
+    "name": "same_count_changed_predictions_retain_stale_saved_statistics",
+    "fixture": "synthetic_only",
+    "n_origins": 2,
+    "recomputed_delta_mae_pp": -1.5,
+    "retained_saved_interval": [
+      null,
+      null
+    ],
+    "saved_comparison_fallback_selected": false,
+    "defect_reproduced": false
+  }
+}

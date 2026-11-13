@@ -1,0 +1,12 @@
+{
+  "pid": 47527,
+  "port": 8547,
+  "command": [
+    "qa/clean-venv/bin/python",
+    "launch.py",
+    "--port",
+    "8547"
+  ],
+  "cwd": "course",
+  "server_python_network_blocked": true
+}

@@ -1,0 +1,25 @@
+{
+  "course_zip_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "pdf_sha256": "19ddaf35a4737f8daa98cfc190940bb5f4868747fa53c10e0971ae0eed5eff6c",
+  "pages": 7,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "result": "No clipping or overlap observed in the seven rendered pages. Tables repeat headers and references remain readable.",
+  "read_content": [
+    "Research target and nominal issue time",
+    "Ridge mean-loss objective and n-lambda penalty",
+    "Actual function/test mapping",
+    "Raw/clipped results and 12 block intervals",
+    "Post-hoc half-period results",
+    "K-means and LOF definitions",
+    "AI declaration and student confirmation scope"
+  ],
+  "source_modified": false
+}

@@ -1,0 +1,17 @@
+evalmachine.<anonymous>:8
+function predictionRows(split,horizon,anchor){return D.predictions.filter(r=>r.split===split&&numeric(r.horizon)===Number(horizon)&&(!anchor||week(r)===anchor)).map(r=>({...r,horizon:numeric(r.horizon),...Object.fromEntries(PREDICTION_NUMBERS.map(k=>[k,numeric(r[k])]))})).sort((a,b)=>byDate(a,b)||MODEL_KEYS.indexOf(a.model_id)-MODEL_KEYS.indexOf(b.model_id))}
+                                                                                                                                                                                                                                ^
+
+ReferenceError: PREDICTION_NUMBERS is not defined
+    at evalmachine.<anonymous>:8:225
+    at Array.map (<anonymous>)
+    at predictionRows (evalmachine.<anonymous>:8:162)
+    at reviewDiagnostics (evalmachine.<anonymous>:12:18)
+    at Object.<anonymous> (${ACCEPTANCE_ROOT}/reference/evidence/run-checks.cjs:38:13)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+
+Node.js v24.22.1

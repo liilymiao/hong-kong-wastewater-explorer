@@ -1,0 +1,6 @@
+{
+  "python": "AUDIT_ROOT/qa/clean-venv/bin/python",
+  "course": "AUDIT_ROOT/course",
+  "package_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "ready_utc": "2026-11-11T15:11:41.772520+00:00"
+}

@@ -1,0 +1,126 @@
+{
+  "command": [
+    "${USER_HOME}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/comparison-fingerprint.cjs"
+  ],
+  "cwd": "${RELEASE_ROOT}/repo",
+  "stdout": "website-release-tests.log",
+  "returncode": 0,
+  "exit_evidence": "Parent agent observed tool process session 87117 complete with exit_code 0; no start time or duration inferred.",
+  "bound_utc": "2026-11-13T15:15:10.274319+00:00",
+  "result": {
+    "status": "passed",
+    "assertions": 11349,
+    "verified_original_scopes": 8,
+    "retained_test_interval_states": 12,
+    "unchanged_export_rows": 3952,
+    "mutation_cases": [
+      {
+        "name": "same_count_prediction",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_raw_prediction",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_observation",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_origin",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "same_count_target",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "evaluation_version",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_version",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "configuration",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "frozen_decision",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_metadata",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "source_values",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_metrics",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_paired",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_bootstrap",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      },
+      {
+        "name": "saved_stage",
+        "n_origins": 40,
+        "saved_match": false,
+        "interval_rows": 0
+      }
+    ],
+    "sha256_verified_against_node_crypto": true,
+    "data_js_sha256": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342",
+    "scope": "Actual app functions and comparison render/export in a Node VM with a parsed DOM; not a real-browser claim"
+  },
+  "sha256": {
+    "app.js": "929169999668c26b2ca11d4ebe573420a1e6341dd151c0bd52ab7a751ff80fd7",
+    "index.html": "9342ee90fbb64fa3eb24628d2346530974d705027aac8f9aa4d7d7dfa4e02740",
+    "source_manifest.json": "e49c2d3682e730c11da63b2c56940bcd45772566f55b9edbe42630290233ea2a",
+    "comparison-fingerprint.js": "eae5b97e7b18b16c7e12edd99ed7dbba678edf972793e00098c405d8663d7def",
+    "comparison-manifest.js": "13d6bced7a3a811b7af7789003fdd34e3dd6337e39a2d3835ae9bbad14f28d16",
+    "scripts/build-comparison-manifest.cjs": "02eedc942efc8b379ea0047c4e7f51f9353c3a107dda3c3c975c665e30daad9f",
+    "tests/comparison-fingerprint.cjs": "430abbd269b3b41b77ae9ecb27907b6c0541d2c20ea3b9ca306bfee8a02cd078",
+    "tests/fixtures/app-v1.6.3.js": "9803e4dc716564ed005475b1fdbd92eea5691b57c3e50ebb235df49d6b66ea47",
+    "data.js": "f64af06f30fab8f370e52faf40ff4067e8c4a1230c5a3efcbe6938f46aaad342"
+  },
+  "log_sha256": "b535e49255378cda72400e1e25be388401652c233dba4d34fcfbdfcd3c385a0c",
+  "scope": "Actual app render/export functions in Node DOM; historical real-browser records are separate."
+}

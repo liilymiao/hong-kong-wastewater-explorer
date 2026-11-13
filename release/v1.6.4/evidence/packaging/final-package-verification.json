@@ -1,0 +1,45 @@
+{
+  "archive": "MATH7005 Final Candidate 20261111.zip",
+  "sha256": "2ea5d0ea8ccf41a90e1ae801b886b07357ca5e4aced58fbd546be0409c8b3399",
+  "manifest_checks": [
+    {
+      "manifest": "MANIFEST.json",
+      "matched_files": 256
+    },
+    {
+      "manifest": "python-app/release_manifest.json",
+      "matched_files": 137
+    }
+  ],
+  "executions": [
+    {
+      "command": [
+        "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python",
+        "scripts/check_report_links.py"
+      ],
+      "cwd": "${ACCEPTANCE_ROOT}/qa/final-package-trial/MATH7005 Final Candidate/python-app",
+      "returncode": 0,
+      "seconds": 0.067,
+      "log": "final-package-0.log"
+    },
+    {
+      "command": [
+        "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_pipeline_review.py::test_complete_bundle_has_verifiable_stage_chain",
+        "tests/test_course_report.py",
+        "tests/test_course_demo.py::test_replay_anchor_state_has_one_default_and_survives_navigation",
+        "--junitxml",
+        "${ACCEPTANCE_ROOT}/qa/final-package-tests.xml"
+      ],
+      "cwd": "${ACCEPTANCE_ROOT}/qa/final-package-trial/MATH7005 Final Candidate/python-app",
+      "returncode": 0,
+      "seconds": 2.658,
+      "log": "final-package-1.log"
+    }
+  ],
+  "tested_code_bindings_match": true,
+  "status": "passed"
+}

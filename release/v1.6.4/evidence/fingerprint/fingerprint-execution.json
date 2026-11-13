@@ -1,0 +1,20 @@
+{
+  "command": [
+    "${USER_HOME}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/comparison-fingerprint.cjs"
+  ],
+  "cwd": "${ACCEPTANCE_ROOT}/site",
+  "started_utc": "2026-11-11T15:20:20.086010+00:00",
+  "sha256": {
+    "app.js": "46e1b2fd8f1540c63f8f6622211dfcceda4be74e1fc9c0e2695ad6f60bc957b6",
+    "index.html": "669c6fb14d10b03af1451cff7990c422f152ca381d91d99c6fa67b95f31a3a55",
+    "comparison-fingerprint.js": "eae5b97e7b18b16c7e12edd99ed7dbba678edf972793e00098c405d8663d7def",
+    "comparison-manifest.js": "13d6bced7a3a811b7af7789003fdd34e3dd6337e39a2d3835ae9bbad14f28d16",
+    "scripts/build-comparison-manifest.cjs": "02eedc942efc8b379ea0047c4e7f51f9353c3a107dda3c3c975c665e30daad9f",
+    "tests/comparison-fingerprint.cjs": "430abbd269b3b41b77ae9ecb27907b6c0541d2c20ea3b9ca306bfee8a02cd078",
+    "tests/fixtures/app-v1.6.3.js": "9803e4dc716564ed005475b1fdbd92eea5691b57c3e50ebb235df49d6b66ea47",
+    "COMPARISON_INTEGRITY.md": "8d3168c70c4e9dcac1f6e65ddf68e2ca13bcd41c7c64f3b340df18b32908739d"
+  },
+  "returncode": 0,
+  "seconds": 16.299
+}

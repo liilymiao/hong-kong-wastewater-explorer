@@ -1,0 +1,4 @@
+﻿run_id,backtest_mode,split,score_mode,horizon,model_id,paired_set_id,n_origins,mae_pp,rmse_pp,raw_mae_pp,raw_rmse_pp,delta_mae_pp,relative_gain_pct,delta_ci_low_pp,delta_ci_high_pp,n_clipped,coverage,bootstrap_blocks,bootstrap_status,bootstrap_n_covered,bootstrap_n_uncovered,bootstrap_confidence_level,block_weeks
+frozen-v1,frozen_retrospective,test,raw,1,persistence,12394c6349a7eede4209,40,0.5293725799999999,0.8971151687867478,0.5293725799999999,0.8971151687867478,,,,,0,1,33,ok,40,0,0.95,8
+frozen-v1,frozen_retrospective,test,raw,1,clinical_ridge,12394c6349a7eede4209,40,0.4264691286245233,0.5193845912036675,0.4264691286245233,0.5193845912036675,,,,,0,1,33,ok,40,0,0.95,8
+frozen-v1,frozen_retrospective,test,raw,1,combined_ridge,12394c6349a7eede4209,40,0.4436741430901713,0.5983817725044441,0.4436741430901713,0.5983817725044441,-0.017205014465648,-4.034293061525657,-0.1098308628573359,0.0732934057900445,8,1,33,ok,40,0,0.95,8

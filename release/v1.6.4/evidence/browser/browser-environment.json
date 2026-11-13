@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-11T15:26:59.633921+00:00",
+  "platform": "macOS-27.3-arm64-arm-64bit",
+  "browser_engine": "WebKit",
+  "browser_version": "26.5",
+  "playwright_version": "1.62.1",
+  "headless": true,
+  "course_zip_sha256": "1ee1825bcd3318441b263ed40dbcf869bb6091d1a6ec5e3a1d0cf54166369ef6",
+  "course_app_sha256": "5d66604aef43f4d222df4a474ad125458e08363377832e8f4598118ece0b25b6",
+  "candidate_course_app_sha256": "368e521db4b3185b4f27e98fa90ee5c31803ed2955fe71cdf5feca930df36358",
+  "candidate_site_app_sha256": "46e1b2fd8f1540c63f8f6622211dfcceda4be74e1fc9c0e2695ad6f60bc957b6"
+}

@@ -1,0 +1,5 @@
+{
+  "python_external_dns_blocked": true,
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"${USER_HOME}/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"${ACCEPTANCE_ROOT}/qa/browser/network-guard/sitecustomize.py\", line 8, in guard\n    raise RuntimeError(\"Network disabled for browser acceptance: \"+event)\nRuntimeError: Network disabled for browser acceptance: socket.getaddrinfo\n"
+}

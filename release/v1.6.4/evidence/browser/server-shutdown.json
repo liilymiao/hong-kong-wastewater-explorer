@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-11-11T15:27:16.893792+00:00",
+  "stopped": [
+    {
+      "pid": 47527,
+      "port": 8547,
+      "command": "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python launch.py --port 8547",
+      "signal": "SIGTERM",
+      "listener_closed": true
+    },
+    {
+      "pid": 50516,
+      "port": 8548,
+      "command": "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python launch.py --port 8548",
+      "signal": "SIGTERM",
+      "listener_closed": true
+    },
+    {
+      "pid": 48744,
+      "port": 8549,
+      "command": "${ACCEPTANCE_ROOT}/qa/clean-venv/bin/python -m http.server 8549 --bind 127.0.0.1",
+      "signal": "SIGTERM",
+      "listener_closed": true
+    }
+  ]
+}
