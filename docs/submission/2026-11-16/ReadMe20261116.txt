@@ -1,0 +1,71 @@
+MATH7005 PROJECT SUBMISSION
+16 November 2026
+
+The Incremental Predictive Value of Hong Kong Wastewater Surveillance:
+A Joint Analysis of Wastewater and Clinical Signals
+
+FILES TO UPLOAD
+Upload these three files together to the Moodle Project submission:
+1. ProjectReport20261116.pdf — final English report.
+2. PythonCode20261116.zip — complete Python code, runnable application, frozen
+   data, saved results, tests and supporting documentation.
+3. ReadMe20261116.txt — this file.
+
+RUN THE APPLICATION
+Use Python 3.12. Extract PythonCode20261116.zip, then open a terminal in the
+extracted MATH7005 Course folder.
+
+macOS / Linux:
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock.txt
+.venv/bin/python launch.py --port 8501
+
+Windows:
+py -3.12 -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.lock.txt
+.venv\Scripts\python.exe -X utf8 launch.py --port 8501
+
+Open http://127.0.0.1:8501 and select Course demo.
+Dependency installation requires an internet connection. The application
+uses included data and results after installation; model reruns are not
+required for the demonstration. Stop the application with Ctrl+C.
+
+VERSION AND CONTENTS
+Python 1.5.4; release v1.6.4; scientific configuration 1.1.
+The COVID-19 analysis uses the frozen snapshot dated 23 October 2026.
+The eight-page report is included both separately and inside the code ZIP.
+This distribution updates report formatting and replaces machine-specific
+source paths with portable metadata. Python source, CSV data, configuration
+and numerical results are unchanged. The original Markdown and HTML report
+remain as generated analysis records.
+
+The extracted folder includes:
+README.md       Installation, reproduction and testing commands
+Course.md       Course demonstration and algorithm-to-test references
+Methods.md      Analysis methods and definitions
+Sources.md      Data sources
+STATUS.md       Recorded validation results
+AI使用声明.md   AI assistance declaration
+outputs/        Saved analysis outputs, final PDF and original report sources
+saved_results/  Frozen numerical reference results
+
+The application was execution-tested on macOS. Windows commands are
+provided for setup; Windows execution has not been independently verified.
+The README documents the test requiring an omitted internal source archive
+and the corresponding test-selection command.
+
+Project-owned code and documentation are released under the MIT License.
+Third-party materials retain the terms in THIRD_PARTY_NOTICES.md.
+
+ONLINE ACCESS
+Project application:
+https://liilymiao.github.io/hong-kong-wastewater-explorer/
+
+Final report:
+https://liilymiao.github.io/hong-kong-wastewater-explorer/docs/submission/2026-11-16/ProjectReport20261116.pdf
+
+Python code package:
+https://liilymiao.github.io/hong-kong-wastewater-explorer/docs/submission/2026-11-16/PythonCode20261116.zip
+
+Source repository:
+https://github.com/liilymiao/hong-kong-wastewater-explorer

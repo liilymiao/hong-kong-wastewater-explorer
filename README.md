@@ -22,7 +22,9 @@ Software 1.6.4 retains the unchanged dataset snapshot metadata from 1.6.2.
 
 Version **1.6.4** includes Python **1.5.4**, scientific configuration **1.1**, frozen results, video and eight subtitle tracks.
 
-[Python course package](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/latest/download/course-python.zip) | [English report](https://github.com/liilymiao/hong-kong-wastewater-explorer/releases/latest/download/report.pdf)
+[Python course package](https://liilymiao.github.io/hong-kong-wastewater-explorer/docs/submission/2026-11-16/PythonCode20261116.zip) | [English report](https://liilymiao.github.io/hong-kong-wastewater-explorer/docs/submission/2026-11-16/ProjectReport20261116.pdf) | [Run instructions](https://liilymiao.github.io/hong-kong-wastewater-explorer/docs/submission/2026-11-16/ReadMe20261116.txt)
+
+The 16 November course submission includes the eight-page report and portable source metadata. Python code, data, configuration and numerical results are unchanged from v1.6.4.
 
 The Python course entry follows the research question, a reproducible historical prediction, model comparison, patterns and export. The package includes a ten-minute demonstration outline and implementation-to-test mapping.
 
